@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B297CB00-DEAB-4291-A41F-35E6781C2A6D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RSSFeed</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F42B95239C2617134A4430E6732579F4E61E1491</key>
+		<string>https://github.com/johnny12000/RSSFeed</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RSSFeed/RSSFeed.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F42B95239C2617134A4430E6732579F4E61E1491</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/johnny12000/RSSFeed</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F42B95239C2617134A4430E6732579F4E61E1491</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F42B95239C2617134A4430E6732579F4E61E1491</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RSSFeed</string>
+		</dict>
+	</array>
+</dict>
+</plist>
