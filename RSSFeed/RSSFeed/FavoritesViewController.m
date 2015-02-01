@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 jhny. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "FavoritesViewController.h"
 
-@interface SecondViewController ()
+@interface FavoritesViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation FavoritesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

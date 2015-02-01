@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		B2F188DC1A7EBCA1007DECDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188DB1A7EBCA1007DECDE /* main.m */; };
 		B2F188DF1A7EBCA1007DECDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188DE1A7EBCA1007DECDE /* AppDelegate.m */; };
-		B2F188E21A7EBCA1007DECDE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188E11A7EBCA1007DECDE /* FirstViewController.m */; };
-		B2F188E51A7EBCA1007DECDE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188E41A7EBCA1007DECDE /* SecondViewController.m */; };
+		B2F188E21A7EBCA1007DECDE /* FeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188E11A7EBCA1007DECDE /* FeedsViewController.m */; };
+		B2F188E51A7EBCA1007DECDE /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188E41A7EBCA1007DECDE /* FavoritesViewController.m */; };
 		B2F188E81A7EBCA1007DECDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F188E61A7EBCA1007DECDE /* Main.storyboard */; };
 		B2F188EA1A7EBCA1007DECDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F188E91A7EBCA1007DECDE /* Images.xcassets */; };
 		B2F188ED1A7EBCA1007DECDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F188EB1A7EBCA1007DECDE /* LaunchScreen.xib */; };
 		B2F188F91A7EBCA1007DECDE /* RSSFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188F81A7EBCA1007DECDE /* RSSFeedTests.m */; };
+		B2F1890F1A7EC457007DECDE /* SourcesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F1890E1A7EC457007DECDE /* SourcesViewController.m */; };
+		B2F189121A7EC464007DECDE /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F189111A7EC464007DECDE /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +35,20 @@
 		B2F188DB1A7EBCA1007DECDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2F188DD1A7EBCA1007DECDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2F188DE1A7EBCA1007DECDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B2F188E01A7EBCA1007DECDE /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B2F188E11A7EBCA1007DECDE /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		B2F188E31A7EBCA1007DECDE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		B2F188E41A7EBCA1007DECDE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B2F188E01A7EBCA1007DECDE /* FeedsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedsViewController.h; sourceTree = "<group>"; };
+		B2F188E11A7EBCA1007DECDE /* FeedsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedsViewController.m; sourceTree = "<group>"; };
+		B2F188E31A7EBCA1007DECDE /* FavoritesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		B2F188E41A7EBCA1007DECDE /* FavoritesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		B2F188E71A7EBCA1007DECDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2F188E91A7EBCA1007DECDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2F188EC1A7EBCA1007DECDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B2F188F21A7EBCA1007DECDE /* RSSFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F188F71A7EBCA1007DECDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F188F81A7EBCA1007DECDE /* RSSFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSFeedTests.m; sourceTree = "<group>"; };
+		B2F1890D1A7EC457007DECDE /* SourcesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourcesViewController.h; sourceTree = "<group>"; };
+		B2F1890E1A7EC457007DECDE /* SourcesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourcesViewController.m; sourceTree = "<group>"; };
+		B2F189101A7EC464007DECDE /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		B2F189111A7EC464007DECDE /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +92,18 @@
 			children = (
 				B2F188DD1A7EBCA1007DECDE /* AppDelegate.h */,
 				B2F188DE1A7EBCA1007DECDE /* AppDelegate.m */,
-				B2F188E01A7EBCA1007DECDE /* FirstViewController.h */,
-				B2F188E11A7EBCA1007DECDE /* FirstViewController.m */,
-				B2F188E31A7EBCA1007DECDE /* SecondViewController.h */,
-				B2F188E41A7EBCA1007DECDE /* SecondViewController.m */,
+				B2F188E01A7EBCA1007DECDE /* FeedsViewController.h */,
+				B2F188E11A7EBCA1007DECDE /* FeedsViewController.m */,
+				B2F188E31A7EBCA1007DECDE /* FavoritesViewController.h */,
+				B2F188E41A7EBCA1007DECDE /* FavoritesViewController.m */,
 				B2F188E61A7EBCA1007DECDE /* Main.storyboard */,
 				B2F188E91A7EBCA1007DECDE /* Images.xcassets */,
 				B2F188EB1A7EBCA1007DECDE /* LaunchScreen.xib */,
 				B2F188D91A7EBCA1007DECDE /* Supporting Files */,
+				B2F1890D1A7EC457007DECDE /* SourcesViewController.h */,
+				B2F1890E1A7EC457007DECDE /* SourcesViewController.m */,
+				B2F189101A7EC464007DECDE /* AboutViewController.h */,
+				B2F189111A7EC464007DECDE /* AboutViewController.m */,
 			);
 			path = RSSFeed;
 			sourceTree = "<group>";
@@ -224,9 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F188E51A7EBCA1007DECDE /* SecondViewController.m in Sources */,
+				B2F189121A7EC464007DECDE /* AboutViewController.m in Sources */,
+				B2F1890F1A7EC457007DECDE /* SourcesViewController.m in Sources */,
+				B2F188E51A7EBCA1007DECDE /* FavoritesViewController.m in Sources */,
 				B2F188DF1A7EBCA1007DECDE /* AppDelegate.m in Sources */,
-				B2F188E21A7EBCA1007DECDE /* FirstViewController.m in Sources */,
+				B2F188E21A7EBCA1007DECDE /* FeedsViewController.m in Sources */,
 				B2F188DC1A7EBCA1007DECDE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  AboutViewController.h
 //  RSSFeed
 //
 //  Created by Nikola Ristic on 2/1/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface AboutViewController : UIViewController
 
 @end
-

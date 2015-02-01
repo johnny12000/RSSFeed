@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  FirstViewController.h
 //  RSSFeed
 //
 //  Created by Nikola Ristic on 2/1/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface FeedsViewController : UIViewController
 
 
 @end

@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 jhny. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "FeedsViewController.h"
 
-@interface FirstViewController ()
+@interface FeedsViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation FeedsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
