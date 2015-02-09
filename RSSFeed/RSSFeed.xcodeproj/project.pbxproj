@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A73A44041A890DBA00728E3A /* Rss.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A44031A890DBA00728E3A /* Rss.m */; };
+		A73A44071A890DF300728E3A /* Source.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A44061A890DF300728E3A /* Source.m */; };
+		A73A440B1A890EF000728E3A /* RssReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A440A1A890EF000728E3A /* RssReader.m */; };
+		A73A440E1A89135F00728E3A /* RssReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A440D1A89135F00728E3A /* RssReaderTests.m */; };
 		B2F188DC1A7EBCA1007DECDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188DB1A7EBCA1007DECDE /* main.m */; };
 		B2F188DF1A7EBCA1007DECDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188DE1A7EBCA1007DECDE /* AppDelegate.m */; };
 		B2F188E21A7EBCA1007DECDE /* FeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188E11A7EBCA1007DECDE /* FeedsViewController.m */; };
@@ -30,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A73A44021A890DBA00728E3A /* Rss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rss.h; path = Models/Rss.h; sourceTree = "<group>"; };
+		A73A44031A890DBA00728E3A /* Rss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rss.m; path = Models/Rss.m; sourceTree = "<group>"; };
+		A73A44051A890DF300728E3A /* Source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Source.h; path = Models/Source.h; sourceTree = "<group>"; };
+		A73A44061A890DF300728E3A /* Source.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Source.m; path = Models/Source.m; sourceTree = "<group>"; };
+		A73A44091A890EF000728E3A /* RssReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RssReader.h; path = ServiceAgents/RssReader.h; sourceTree = "<group>"; };
+		A73A440A1A890EF000728E3A /* RssReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssReader.m; path = ServiceAgents/RssReader.m; sourceTree = "<group>"; };
+		A73A440D1A89135F00728E3A /* RssReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssReaderTests.m; path = ServiceAgents/RssReaderTests.m; sourceTree = "<group>"; };
 		B2F188D61A7EBCA1007DECDE /* RSSFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F188DA1A7EBCA1007DECDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F188DB1A7EBCA1007DECDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +80,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A73A44011A890D8B00728E3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A73A44021A890DBA00728E3A /* Rss.h */,
+				A73A44031A890DBA00728E3A /* Rss.m */,
+				A73A44051A890DF300728E3A /* Source.h */,
+				A73A44061A890DF300728E3A /* Source.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A73A44081A890ED200728E3A /* ServiceAgents */ = {
+			isa = PBXGroup;
+			children = (
+				A73A44091A890EF000728E3A /* RssReader.h */,
+				A73A440A1A890EF000728E3A /* RssReader.m */,
+			);
+			name = ServiceAgents;
+			sourceTree = "<group>";
+		};
+		A73A440C1A89133300728E3A /* ServiceAgents */ = {
+			isa = PBXGroup;
+			children = (
+				A73A440D1A89135F00728E3A /* RssReaderTests.m */,
+			);
+			name = ServiceAgents;
+			sourceTree = "<group>";
+		};
 		B2F188CD1A7EBCA1007DECDE = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +129,8 @@
 		B2F188D81A7EBCA1007DECDE /* RSSFeed */ = {
 			isa = PBXGroup;
 			children = (
+				A73A44081A890ED200728E3A /* ServiceAgents */,
+				A73A44011A890D8B00728E3A /* Models */,
 				B2F188DD1A7EBCA1007DECDE /* AppDelegate.h */,
 				B2F188DE1A7EBCA1007DECDE /* AppDelegate.m */,
 				B2F188E01A7EBCA1007DECDE /* FeedsViewController.h */,
@@ -120,6 +161,7 @@
 		B2F188F51A7EBCA1007DECDE /* RSSFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				A73A440C1A89133300728E3A /* ServiceAgents */,
 				B2F188F81A7EBCA1007DECDE /* RSSFeedTests.m */,
 				B2F188F61A7EBCA1007DECDE /* Supporting Files */,
 			);
@@ -234,9 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73A44041A890DBA00728E3A /* Rss.m in Sources */,
 				B2F189121A7EC464007DECDE /* AboutViewController.m in Sources */,
 				B2F1890F1A7EC457007DECDE /* SourcesViewController.m in Sources */,
 				B2F188E51A7EBCA1007DECDE /* FavoritesViewController.m in Sources */,
+				A73A44071A890DF300728E3A /* Source.m in Sources */,
+				A73A440B1A890EF000728E3A /* RssReader.m in Sources */,
 				B2F188DF1A7EBCA1007DECDE /* AppDelegate.m in Sources */,
 				B2F188E21A7EBCA1007DECDE /* FeedsViewController.m in Sources */,
 				B2F188DC1A7EBCA1007DECDE /* main.m in Sources */,
@@ -248,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F188F91A7EBCA1007DECDE /* RSSFeedTests.m in Sources */,
+				A73A440E1A89135F00728E3A /* RssReaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +476,7 @@
 				B2F188FE1A7EBCA1007DECDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2F188FF1A7EBCA1007DECDE /* Build configuration list for PBXNativeTarget "RSSFeedTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +485,7 @@
 				B2F189011A7EBCA1007DECDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
