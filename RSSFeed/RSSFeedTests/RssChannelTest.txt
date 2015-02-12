@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+<title>TechCrunch » Apple</title>
+
+<link>http://techcrunch.com</link>
+<description>Startup and Technology News</description>
+<lastBuildDate>Thu, 12 Feb 2015 17:46:32 +0000</lastBuildDate>
+<language>en</language>
+<sy:updatePeriod>hourly</sy:updatePeriod>
+<sy:updateFrequency>1</sy:updateFrequency>
+<generator>http://wordpress.com/</generator>
+<cloud domain="techcrunch.com" port="80" path="/?rsscloud=notify" registerProcedure="" protocol="http-post" />
+<image>
+<url>http://1.gravatar.com/blavatar/d9ea925a71f82f06a1e6224298f7fe80?s=96&amp;d=http%3A%2F%2Fs2.wp.com%2Fi%2Fbuttonw-com.png</url>
+<title> » Apple</title>
+<link>http://techcrunch.com</link>
+</image>
+<atom:link rel="search" type="application/opensearchdescription+xml" href="http://techcrunch.com/osd.xml" title="TechCrunch" />
+
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/techcrunch/apple" /><feedburner:info uri="techcrunch/apple" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://techcrunch.com/?pushpress=hub" /><item>
+<title>iPhone And iPad Users Can Now Download iOS Apps From Pinterest</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/uaL83cemDNY/</link>
+<comments>http://techcrunch.com/2015/02/11/app-pins-pinterest/#comments</comments>
+<pubDate>Thu, 12 Feb 2015 06:31:32 +0000</pubDate>
+<dc:creator><![CDATA[Jon Russell]]></dc:creator>
+<category><![CDATA[Apps]]></category>
+<category><![CDATA[Apple]]></category>
+<category><![CDATA[iOS]]></category>
+<category><![CDATA[Pinterest]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1118319</guid>
+<description>&lt;img width="680" height="386" src="https://tctechcrunch2011.files.wordpress.com/2015/02/pinboard.jpg?w=680" class="attachment-large wp-post-image" alt="pinboard" /&gt;&amp;nbsp;Pinterest is making its visual social network a destination for app downloads, after it announced a partnership with Apple that lets its users download iOS apps directly from its mobile app. &lt;a href="http://techcrunch.com/2015/02/11/app-pins-pinterest/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/uaL83cemDNY" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/11/app-pins-pinterest/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/pinboard.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/pinboard.jpg" type="image/jpeg" medium="image"><media:title type="html">iPhone%20And%20iPad%20Users%20Can%20Now%20Download%20iOS%20Apps%20From%26nbsp%3BPinterest</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/pinboard.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/pinboard.jpg?w=150" medium="image">
+<media:title type="html">pinboard</media:title>
+</media:content>
+
+<media:content url="http://2.gravatar.com/avatar/5f5876ccfd72ee5c2620b86429e8caf5?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">Jon</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/screenshot-2015-02-12-13-16-27.png?w=680" medium="image">
+<media:title type="html">Screenshot 2015-02-12 13.16.27</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/11/app-pins-pinterest/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>Photos For Mac OS X First Impressions And Walkthrough</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/j0XrfbRZ8R4/</link>
+<comments>http://techcrunch.com/2015/02/11/photos-for-mac-os-x-first-impressions-and-walkthrough/#comments</comments>
+<pubDate>Wed, 11 Feb 2015 20:42:49 +0000</pubDate>
+<dc:creator><![CDATA[Darrell Etherington]]></dc:creator>
+<category><![CDATA[Apps]]></category>
+<category><![CDATA[Media]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Apple]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1117936</guid>
+<description>&lt;img width="680" height="453" src="https://tctechcrunch2011.files.wordpress.com/2015/02/photos-os-x.jpg?w=680" class="attachment-large wp-post-image" alt="photos-os-x" /&gt;&amp;nbsp;Apple&amp;#8217;s Photos app for OS X is actually available beyond the confines of Cupertino for the first time since it was revealed at the annual Worldwide Developers Conference held by Apple last June, and we got to spend some time finding out how it works and what it offers. I may be unique in the crop of those who&amp;#8217;ve tested it so far, in that I come to Photos with essentially a clean&amp;hellip; &lt;a href="http://techcrunch.com/2015/02/11/photos-for-mac-os-x-first-impressions-and-walkthrough/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/j0XrfbRZ8R4" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/11/photos-for-mac-os-x-first-impressions-and-walkthrough/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/photos-os-x.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="http://pthumbnails.5min.com/10372921/518646037_3_1279_727.jpg" type="image/jpeg" medium="image"><media:title type="html">Photos%20For%20Mac%20OS%20X%20First%20Impressions%20And%26nbsp%3BWalkthrough</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/photos-os-x.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/photos-os-x.jpg?w=150" medium="image">
+<media:title type="html">photos-os-x</media:title>
+</media:content>
+
+<media:content url="http://1.gravatar.com/avatar/188039e12983eb749171a75cfd01378d?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">etherin</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/screen-shot-2015-02-11-at-8-12-21-am.png?w=150" medium="image">
+<media:title type="html">Screen Shot 2015-02-11 at 8.12.21 AM</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/screen-shot-2015-02-11-at-8-09-34-am.png?w=150" medium="image">
+<media:title type="html">Screen Shot 2015-02-11 at 8.09.34 AM</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/photos-temp.jpg?w=150" medium="image">
+<media:title type="html">photos-temp</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/photos-os-x.jpg" medium="image">
+<media:title type="html">photos-os-x</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/11/photos-for-mac-os-x-first-impressions-and-walkthrough/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>Apple’s Activation Lock Leads To Big Drops In Smartphone Theft Worldwide</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/C5xCgpLaiYA/</link>
+<comments>http://techcrunch.com/2015/02/11/apples-activation-lock-leads-to-big-drops-in-smartphone-theft-worldwide/#comments</comments>
+<pubDate>Wed, 11 Feb 2015 15:24:30 +0000</pubDate>
+<dc:creator><![CDATA[Darrell Etherington]]></dc:creator>
+<category><![CDATA[Gadgets]]></category>
+<category><![CDATA[Mobile]]></category>
+<category><![CDATA[Security]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Apple]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1117813</guid>
+<description>&lt;img width="680" height="374" src="https://tctechcrunch2011.files.wordpress.com/2014/12/apple-security.jpg?w=680" class="attachment-large wp-post-image" alt="apple-security" /&gt;&amp;nbsp;The temptation of a smartphone for a thief is dropping, thanks to Apple&amp;#8217;s decision to implement a remote kill switch via Find My Phone that can erase and disable a phone once it&amp;#8217;s been stolen or gone missing. A new report from Reuters found that iPhone theft dropped by 50 percent in London, 40 percent in San Francisco and 25 percent in New York. The drops represent theft activity&amp;hellip; &lt;a href="http://techcrunch.com/2015/02/11/apples-activation-lock-leads-to-big-drops-in-smartphone-theft-worldwide/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/C5xCgpLaiYA" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/11/apples-activation-lock-leads-to-big-drops-in-smartphone-theft-worldwide/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/12/apple-security.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/12/apple-security.jpg" type="image/jpeg" medium="image"><media:title type="html">Apple%26%238217%3Bs%20Activation%20Lock%20Leads%20To%20Big%20Drops%20In%20Smartphone%20Theft%26nbsp%3BWorldwide</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/12/apple-security.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/12/apple-security.jpg?w=150" medium="image">
+<media:title type="html">apple-security</media:title>
+</media:content>
+
+<media:content url="http://1.gravatar.com/avatar/188039e12983eb749171a75cfd01378d?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">etherin</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/11/apples-activation-lock-leads-to-big-drops-in-smartphone-theft-worldwide/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>Apple Will Spend $848 Million Building A Massive Solar Farm In Monterey</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/wfgcTHpNS08/</link>
+<comments>http://techcrunch.com/2015/02/10/apple-will-spend-848-million-building-a-massive-solar-farm-in-monterey/#comments</comments>
+<pubDate>Tue, 10 Feb 2015 21:19:48 +0000</pubDate>
+<dc:creator><![CDATA[Greg Kumparak]]></dc:creator>
+<category><![CDATA[GreenTech]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[solar energy]]></category>
+<category><![CDATA[Tim Cook]]></category>
+<category><![CDATA[First Solar]]></category>
+<category><![CDATA[Apple]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1117512</guid>
+<description>&lt;img width="680" height="463" src="https://tctechcrunch2011.files.wordpress.com/2015/02/cook.jpg?w=680" class="attachment-large wp-post-image" alt="cook" /&gt;&amp;nbsp;Tim Cook dropped a bit of news in a conversation at the Goldman Sachs Technology and Internet conference today: Apple is putting a massive $848 million into solar energy. According to Cook, Apple is putting $848 million into building a 1300-acre solar farm in Monterey, California, in partnership with Arizona-based First Solar. As part of the deal, Apple will get electricity from the farm at&amp;hellip; &lt;a href="http://techcrunch.com/2015/02/10/apple-will-spend-848-million-building-a-massive-solar-farm-in-monterey/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/wfgcTHpNS08" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/10/apple-will-spend-848-million-building-a-massive-solar-farm-in-monterey/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/cook.jpg?w=210&amp;h=158&amp;crop=1" />
+
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/cook.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/cook.jpg?w=150" medium="image">
+<media:title type="html">cook</media:title>
+</media:content>
+
+<media:content url="http://2.gravatar.com/avatar/86f75cc66896ab9b0602715f082803d6?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">gregkumparak</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/cook.jpg?w=680" medium="image">
+<media:title type="html">cook</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/10/apple-will-spend-848-million-building-a-massive-solar-farm-in-monterey/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>JetBlue Will Accept Apple Pay At 30,000 Feet</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/Q2E9d-jluKU/</link>
+<comments>http://techcrunch.com/2015/02/10/jetblue-will-accept-apple-pay-at-30000-feet/#comments</comments>
+<pubDate>Tue, 10 Feb 2015 14:07:44 +0000</pubDate>
+<dc:creator><![CDATA[Jordan Crook]]></dc:creator>
+<category><![CDATA[eCommerce]]></category>
+<category><![CDATA[Gadgets]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Apple]]></category>
+<category><![CDATA[Apple Pay]]></category>
+<category><![CDATA[JetBlue]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1117202</guid>
+<description>&lt;img width="680" height="311" src="https://tctechcrunch2011.files.wordpress.com/2015/02/jetblue.jpg?w=680" class="attachment-large wp-post-image" alt="jetblue" /&gt;&amp;nbsp;JetBlue has become the first U.S. airline to accept Apple Pay in-flight, meaning customers can use their iPhone to purchase snack boxes, premium items, etc. from the airline.
+The idea here is that some people tuck their wallets away in carry-on bags, stowed in luggage compartments above, and hold up service to get out a credit card and pay.
+Fewer people part with their portable personal&amp;#8230; &lt;a href="http://techcrunch.com/2015/02/10/jetblue-will-accept-apple-pay-at-30000-feet/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/Q2E9d-jluKU" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/10/jetblue-will-accept-apple-pay-at-30000-feet/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/jetblue.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/jetblue.jpg" type="image/jpeg" medium="image"><media:title type="html">JetBlue%20Will%20Accept%20Apple%20Pay%20At%2030%2C000%26nbsp%3BFeet</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/jetblue.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/jetblue.jpg?w=150" medium="image">
+<media:title type="html">jetblue</media:title>
+</media:content>
+
+<media:content url="http://1.gravatar.com/avatar/123a4c264172746af556b0c74c72b308?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">biggsismyboss</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/10/jetblue-will-accept-apple-pay-at-30000-feet/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>Apple Streaming Music Service Not Necessarily A Slam Dunk</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/K3IgzmO3dVo/</link>
+<comments>http://techcrunch.com/2015/02/09/apple-streaming-music-service-not-necessarily-a-slam-dunk/#comments</comments>
+<pubDate>Mon, 09 Feb 2015 20:18:29 +0000</pubDate>
+<dc:creator><![CDATA[Ron Miller]]></dc:creator>
+<category><![CDATA[Column]]></category>
+<category><![CDATA[Opinion]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Apple]]></category>
+<category><![CDATA[Beats]]></category>
+<category><![CDATA[Music]]></category>
+<category><![CDATA[streaming]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1116890</guid>
+<description>&lt;img width="680" height="453" src="https://tctechcrunch2011.files.wordpress.com/2015/02/11877197746_9503d64aeb_k.jpg?w=680" class="attachment-large wp-post-image" alt="Basketball player dunking a basketball" /&gt;&amp;nbsp;It seems clear that Apple wants to get into music streaming in a big way, and as Josh Constine reported yesterday, Apple could even be looking at buying Taylor Swift&amp;#8217;s record label. With Dr. Dre and Beats in the fold, Apple looks to be setting itself up for a monster launch, one that could sweep existing players like Spotify by the wayside. There is a widely held belief that when&amp;hellip; &lt;a href="http://techcrunch.com/2015/02/09/apple-streaming-music-service-not-necessarily-a-slam-dunk/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/K3IgzmO3dVo" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/09/apple-streaming-music-service-not-necessarily-a-slam-dunk/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/11877197746_9503d64aeb_k.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/11877197746_9503d64aeb_k.jpg" type="image/jpeg" medium="image"><media:title type="html">Apple%20Streaming%20Music%20Service%20Not%20Necessarily%20A%20Slam%26nbsp%3BDunk</media:title></media:content><twitter> <![CDATA[ ron_miller ]]> </twitter>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/11877197746_9503d64aeb_k.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/11877197746_9503d64aeb_k.jpg?w=150" medium="image">
+<media:title type="html">11877197746_9503d64aeb_k</media:title>
+</media:content>
+
+<media:content url="http://0.gravatar.com/avatar/0b82cfe9f0e15c08c5816481c9f383d9?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">ronjourn</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/09/apple-streaming-music-service-not-necessarily-a-slam-dunk/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>iOS 8.3 Beta Arrives With Wireless CarPlay Support</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/7sct8yBrAcs/</link>
+<comments>http://techcrunch.com/2015/02/09/ios-8-3-beta-arrives-with-wireless-carplay-support/#comments</comments>
+<pubDate>Mon, 09 Feb 2015 19:07:47 +0000</pubDate>
+<dc:creator><![CDATA[Darrell Etherington]]></dc:creator>
+<category><![CDATA[Mobile]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Transportation]]></category>
+<category><![CDATA[Apple]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1116845</guid>
+<description>&lt;img width="667" height="680" src="https://tctechcrunch2011.files.wordpress.com/2015/02/carplay-ios-8-3.png?w=667" class="attachment-large wp-post-image" alt="carplay-ios-8-3" /&gt;&amp;nbsp;Apple released iOS 8.3 as a beta for developers today, which is unusual because iOS 8.2 is only on Beta 5 and not yet available to consumers. The new beta offers a single notable feature as of this writing: Wireless CarPlay support, provided to TechCrunch by a source familiar with the beta and pictured in the screenshot above. CarPlay so far works only via wired connection, but a wireless&amp;hellip; &lt;a href="http://techcrunch.com/2015/02/09/ios-8-3-beta-arrives-with-wireless-carplay-support/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/7sct8yBrAcs" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/09/ios-8-3-beta-arrives-with-wireless-carplay-support/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/carplay-ios-8-3.png?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/carplay-ios-8-3.png" type="image/png" medium="image"><media:title type="html">iOS%208.3%20Beta%20Arrives%20With%20Wireless%20CarPlay%26nbsp%3BSupport</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/carplay-ios-8-3.png?w=147" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/carplay-ios-8-3.png?w=147" medium="image">
+<media:title type="html">carplay-ios-8-3</media:title>
+</media:content>
+
+<media:content url="http://1.gravatar.com/avatar/188039e12983eb749171a75cfd01378d?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">etherin</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/09/ios-8-3-beta-arrives-with-wireless-carplay-support/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>Apple’s iOS 9 Pegged As A Stability Update, Which Is Way Better Than A Feature Frenzy</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/1YLubHw5qGs/</link>
+<comments>http://techcrunch.com/2015/02/09/ios-9-stability-improvements/#comments</comments>
+<pubDate>Mon, 09 Feb 2015 16:59:12 +0000</pubDate>
+<dc:creator><![CDATA[Darrell Etherington]]></dc:creator>
+<category><![CDATA[Mobile]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Apple]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1116777</guid>
+<description>&lt;img width="680" height="383" src="https://tctechcrunch2011.files.wordpress.com/2015/01/ios9.jpeg?w=680" class="attachment-large wp-post-image" alt="ios9" /&gt;&amp;nbsp;Apple&amp;#8217;s iOS 9 is going to be focused on improving stability and zapping bugs, according to a new report from the reliable 9to5Mac. The major update for Apple&amp;#8217;s iPhone, iPad and iPod Touch for 2015 is expected to take a step back from the rapid release of new features in favor of building on the existing framework to make sure everything already offered works more consistently.&amp;hellip; &lt;a href="http://techcrunch.com/2015/02/09/ios-9-stability-improvements/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/1YLubHw5qGs" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/09/ios-9-stability-improvements/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/01/ios9.jpeg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/ios9.jpeg" type="image/jpeg" medium="image"><media:title type="html">Apple%26%238217%3Bs%20iOS%209%20Pegged%20As%20A%20Stability%20Update%2C%20Which%20Is%20Way%20Better%20Than%20A%20Feature%26nbsp%3BFrenzy</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/01/ios9.jpeg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/ios9.jpeg?w=150" medium="image">
+<media:title type="html">ios9</media:title>
+</media:content>
+
+<media:content url="http://1.gravatar.com/avatar/188039e12983eb749171a75cfd01378d?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">etherin</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/09/ios-9-stability-improvements/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>Apple, The Record Label?</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/fxYeXWL-bAU/</link>
+<comments>http://techcrunch.com/2015/02/08/exclusive-streaming/#comments</comments>
+<pubDate>Mon, 09 Feb 2015 04:12:17 +0000</pubDate>
+<dc:creator><![CDATA[Josh Constine]]></dc:creator>
+<category><![CDATA[Entertainment]]></category>
+<category><![CDATA[Media]]></category>
+<category><![CDATA[Mobile]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Apple]]></category>
+<category><![CDATA[Spotify]]></category>
+<category><![CDATA[iTunes]]></category>
+<category><![CDATA[music streaming]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1116548</guid>
+<description>&lt;img width="680" height="358" src="https://tctechcrunch2011.files.wordpress.com/2015/02/itunes-record-label1.png?w=680" class="attachment-large wp-post-image" alt="iTunes Record Label" /&gt;&amp;nbsp;You better believe that when Apple&amp;#8217;s streaming music service comes out later this year, it&amp;#8217;s going to come hard. Apple&amp;#8217;s MO is to arrive late but with superior firepower, as it did with the iPhone and will with the upcoming Apple Watch. What does that mean for its quest to steamroll Spotify, Google Play, Deezer and everyone else in streaming? I&amp;#8217;d bet part of it will be&amp;hellip; &lt;a href="http://techcrunch.com/2015/02/08/exclusive-streaming/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/fxYeXWL-bAU" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/08/exclusive-streaming/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/itunes-record-label1.png?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/itunes-record-label1.png" type="image/png" medium="image"><media:title type="html">Apple%2C%20The%20Record%26nbsp%3BLabel%3F</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/itunes-record-label1.png?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/itunes-record-label1.png?w=150" medium="image">
+<media:title type="html">iTunes Record Label</media:title>
+</media:content>
+
+<media:content url="http://0.gravatar.com/avatar/fd3b857e7f0024396cdbd36c4c102a5d?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">joshsc</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/taylor_swift_-_1989.png" medium="image">
+<media:title type="html">Taylor_Swift_-_1989</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/itunes-promotion.png?w=680" medium="image">
+<media:title type="html">Itunes Promotion</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/taylor-swift.png?w=680" medium="image">
+<media:title type="html">Taylor Swift</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/08/exclusive-streaming/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>Gillmor Gang: Heroes &amp; Villains</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/cGLmAfHOAj8/</link>
+<comments>http://techcrunch.com/2015/02/07/gillmor-gang-heroes-villains/#comments</comments>
+<pubDate>Sat, 07 Feb 2015 18:00:30 +0000</pubDate>
+<dc:creator><![CDATA[Steve Gillmor]]></dc:creator>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Video]]></category>
+<category><![CDATA[Danny Sullivan]]></category>
+<category><![CDATA[john taschek]]></category>
+<category><![CDATA[Kevin Marks]]></category>
+<category><![CDATA[Steve Gillmor]]></category>
+<category><![CDATA[Microsoft]]></category>
+<category><![CDATA[Apple]]></category>
+<category><![CDATA[Google]]></category>
+<category><![CDATA[Silicon Valley]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1116448</guid>
+<description>&lt;img width="680" height="383" src="https://tctechcrunch2011.files.wordpress.com/2014/02/gg-test-pattern-sepia3.jpg?w=680" class="attachment-large wp-post-image" alt="Gillmor Gang Artcard" /&gt;&amp;nbsp;The Gillmor Gang &amp;#8212; Danny Sullivan, John Taschek, Kevin Marks, David Sifry, and Steve Gillmor. Topics include Crunchies, @handle, continued Microsoft spending spree on email and calendar, an @dannysullivan snap master class on search, an update on Robert Scoble. Plus, the latest G3 below on Women who Code, or should they?
+@stevegillmor, @dannysullivan, @jtaschek, @kevinmarks, @dsifry &lt;a href="http://techcrunch.com/2015/02/07/gillmor-gang-heroes-villains/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/cGLmAfHOAj8" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/07/gillmor-gang-heroes-villains/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/02/gg-test-pattern-sepia3.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="http://pthumbnails.5min.com/10372790/518639499_88_1279_727.jpg" type="image/jpeg" medium="image"><media:title type="html">Gillmor%20Gang%3A%20Heroes%20%26amp%3B%26nbsp%3BVillains</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/02/gg-test-pattern-sepia3.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/02/gg-test-pattern-sepia3.jpg?w=150" medium="image">
+<media:title type="html">GG test pattern sepia3</media:title>
+</media:content>
+
+<media:content url="http://2.gravatar.com/avatar/e819990a43a5972b40593cdc6896eef9?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">steve</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/07/gillmor-gang-heroes-villains/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>13 Questions With Matt Rogers</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/NA295FbfkoA/</link>
+<comments>http://techcrunch.com/2015/02/06/13-questions-with-matt-rogers/#comments</comments>
+<pubDate>Fri, 06 Feb 2015 19:00:22 +0000</pubDate>
+<dc:creator><![CDATA[Matt Burns]]></dc:creator>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[matt rogers]]></category>
+<category><![CDATA[consumer electronics]]></category>
+<category><![CDATA[Android]]></category>
+<category><![CDATA[engineer]]></category>
+<category><![CDATA[Nest Labs]]></category>
+<category><![CDATA[Apple]]></category>
+<category><![CDATA[Motorola]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1114627</guid>
+<description>&lt;img width="680" height="510" src="https://tctechcrunch2011.files.wordpress.com/2015/02/rogers-13q.jpg?w=680" class="attachment-large wp-post-image" alt="rogers-13q" /&gt;&amp;nbsp;Welcome to 13 Questions, a series aimed at bringing a human face to notable figures in the world of startups, hardware, and tech. Ever wonder how your favorite designer learned to love tech? Curious what&amp;#8217;s on your favorite VC&amp;#8217;s bucket list? Want to see the person behind the media hype? 13 Questions is here.
+Matt Rogers is the co-founder and VP of Engineering of Nest Labs. Before&amp;#8230; &lt;a href="http://techcrunch.com/2015/02/06/13-questions-with-matt-rogers/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/NA295FbfkoA" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/06/13-questions-with-matt-rogers/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/rogers-13q.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/rogers-13q.jpg" type="image/jpeg" medium="image"><media:title type="html">13%20Questions%20With%20Matt%26nbsp%3BRogers</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/rogers-13q.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/rogers-13q.jpg?w=150" medium="image">
+<media:title type="html">rogers-13q</media:title>
+</media:content>
+
+<media:content url="http://0.gravatar.com/avatar/c921fdee122025b0436360dc6bb7322d?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">mjburnsy</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/06/13-questions-with-matt-rogers/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>Unwinding The Swatch Group Smartwatch Announcement</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/zaIUtB6O9iI/</link>
+<comments>http://techcrunch.com/2015/02/05/unwinding-the-swatch-group-smartwatch-announcement/#comments</comments>
+<pubDate>Thu, 05 Feb 2015 19:17:24 +0000</pubDate>
+<dc:creator><![CDATA[John Biggs]]></dc:creator>
+<category><![CDATA[Gadgets]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[chairman]]></category>
+<category><![CDATA[kinetic energy]]></category>
+<category><![CDATA[Android]]></category>
+<category><![CDATA[swatch]]></category>
+<category><![CDATA[Apple]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1115496</guid>
+<description>&lt;img width="680" height="453" src="https://tctechcrunch2011.files.wordpress.com/2013/05/swatch-2.jpg?w=680" class="attachment-large wp-post-image" alt="Swatch-2" /&gt;&amp;nbsp;The Swatch Group dropped a bombshell &amp;#8211; in its staid way &amp;#8211; announcing plans to release a smartwatch in the next three months, potentially to coincide with the April launch of the Apple Watch. First, understand that watch companies don&amp;#8217;t know how to market to tech consumers. As I wrote here, Swatch is an integral part in the haute horology industry, a sort of heavy base for&amp;hellip; &lt;a href="http://techcrunch.com/2015/02/05/unwinding-the-swatch-group-smartwatch-announcement/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/zaIUtB6O9iI" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/05/unwinding-the-swatch-group-smartwatch-announcement/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2013/05/swatch-2.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2013/05/swatch-2.jpg" type="image/jpeg" medium="image"><media:title type="html">Unwinding%20The%20Swatch%20Group%20Smartwatch%26nbsp%3BAnnouncement</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2013/05/swatch-2.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2013/05/swatch-2.jpg?w=150" medium="image">
+<media:title type="html">Swatch-2</media:title>
+</media:content>
+
+<media:content url="http://0.gravatar.com/avatar/c0a943f484a32e62ed3bc81dd0dd25da?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">john</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/05/unwinding-the-swatch-group-smartwatch-announcement/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>Photos For Mac OS X Now Available In Developer Preview, Consumer Launch This Spring</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/RgHsuBzU0Lo/</link>
+<comments>http://techcrunch.com/2015/02/05/photos-for-mac-os-x-now-available-in-developer-preview-consumer-launch-this-spring/#comments</comments>
+<pubDate>Thu, 05 Feb 2015 19:03:00 +0000</pubDate>
+<dc:creator><![CDATA[Darrell Etherington]]></dc:creator>
+<category><![CDATA[Apps]]></category>
+<category><![CDATA[Media]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Apple]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1115611</guid>
+<description>&lt;img width="680" height="418" src="https://tctechcrunch2011.files.wordpress.com/2015/02/mbp15-moments-pr-print.jpg?w=680" class="attachment-large wp-post-image" alt="MBP15-Moments-PR-PRINT" /&gt;&amp;nbsp;Back when it revealed OS X Yosemite last June, Apple also showed off a new desktop app for managing pictures called Photos. It was always supposed to launch in early 2015, rather than at the outset of Yosemite availability, so Apple is keeping with that timeline with today&amp;#8217;s introduction of the software in the developer preview of OS X 10.10.3. The Photos app replaces iPhoto, and will&amp;hellip; &lt;a href="http://techcrunch.com/2015/02/05/photos-for-mac-os-x-now-available-in-developer-preview-consumer-launch-this-spring/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/RgHsuBzU0Lo" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/05/photos-for-mac-os-x-now-available-in-developer-preview-consumer-launch-this-spring/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/mbp15-moments-pr-print.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/mbp15-moments-pr-print.jpg" type="image/jpeg" medium="image"><media:title type="html">Photos%20For%20Mac%20OS%20X%20Now%20Available%20In%20Developer%20Preview%2C%20Consumer%20Launch%20This%26nbsp%3BSpring</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/02/mbp15-moments-pr-print.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/mbp15-moments-pr-print.jpg?w=150" medium="image">
+<media:title type="html">MBP15-Moments-PR-PRINT</media:title>
+</media:content>
+
+<media:content url="http://1.gravatar.com/avatar/188039e12983eb749171a75cfd01378d?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">etherin</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/mbp15-edit-pr-print.jpg" medium="image">
+<media:title type="html">MBP15-Edit-PR-PRINT</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/mba13-iphone6-ipadmini3-photos-pr-print.jpg" medium="image">
+<media:title type="html">MBA13-iPhone6-iPadMini3-Photos-PR-PRINT</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/05/photos-for-mac-os-x-now-available-in-developer-preview-consumer-launch-this-spring/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>Apple’s iPhone Overtakes Android In US Sales For The First Time Since 2012</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/yCU0hyhygMU/</link>
+<comments>http://techcrunch.com/2015/02/04/apples-iphone-overtakes-android-in-us-sales-for-the-first-time-since-2012/#comments</comments>
+<pubDate>Wed, 04 Feb 2015 08:53:30 +0000</pubDate>
+<dc:creator><![CDATA[Ingrid Lunden]]></dc:creator>
+<category><![CDATA[Mobile]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Nokia]]></category>
+<category><![CDATA[Samsung]]></category>
+<category><![CDATA[Apple]]></category>
+<category><![CDATA[iPhone]]></category>
+<category><![CDATA[Android]]></category>
+<category><![CDATA[kantar worldpanel]]></category>
+<category><![CDATA[kantar]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1114791</guid>
+<description>&lt;img width="680" height="453" src="https://tctechcrunch2011.files.wordpress.com/2014/06/img_9900.jpg?w=680" class="attachment-large wp-post-image" alt="Apple Moscone" /&gt;&amp;nbsp;Apple, in its flush of new, bigger iPhone 6 handsets, has been selling record numbers of its older and newer model smartphones in the last few months, and now it&amp;#8217;s passed another significant milestone: it has managed to overtake sales of Android devices in the key market of the U.S. for the first time in three years.
+According to figures from Kantar Worldpanel ComTech, the market&amp;#8230; &lt;a href="http://techcrunch.com/2015/02/04/apples-iphone-overtakes-android-in-us-sales-for-the-first-time-since-2012/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/yCU0hyhygMU" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/04/apples-iphone-overtakes-android-in-us-sales-for-the-first-time-since-2012/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/06/img_9900.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/06/img_9900.jpg" type="image/jpeg" medium="image"><media:title type="html">Apple%26%238217%3Bs%20iPhone%20Overtakes%20Android%20In%20US%20Sales%20For%20The%20First%20Time%20Since%26nbsp%3B2012</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/06/img_9900.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/06/img_9900.jpg?w=150" medium="image">
+<media:title type="html">Apple Moscone</media:title>
+</media:content>
+
+<media:content url="http://0.gravatar.com/avatar/6648ec93043f0f368091adece63c6d52?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">ingridlunden</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/screen-shot-2015-02-04-at-08-21-34.png" medium="image">
+<media:title type="html">Screen Shot 2015-02-04 at 08.21.34</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/04/apples-iphone-overtakes-android-in-us-sales-for-the-first-time-since-2012/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>Apple To Build A $2 Billion Data Command Center In Arizona</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/FQn6WcCUzA0/</link>
+<comments>http://techcrunch.com/2015/02/02/apple-to-build-a-2-billion-data-command-center-in-arizona/#comments</comments>
+<pubDate>Mon, 02 Feb 2015 20:36:59 +0000</pubDate>
+<dc:creator><![CDATA[Darrell Etherington]]></dc:creator>
+<category><![CDATA[Gadgets]]></category>
+<category><![CDATA[GreenTech]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Apple]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1114107</guid>
+<description>&lt;img width="680" height="473" src="https://tctechcrunch2011.files.wordpress.com/2014/12/applehq.jpg?w=680" class="attachment-large wp-post-image" alt="applehq" /&gt;&amp;nbsp;Apple will build a $2 billion global command center located in Mesa, Arizona, the company revealed on Monday (via CNBC). It will employ 150 full-time personnel, and will also result in between 300 and 500 construction and trade jobs, and will play host to the company&amp;#8217;s data operations across the globe.
+Apple&amp;#8217;s arrangement involves repurposing a facility that previously housed GT&amp;#8230; &lt;a href="http://techcrunch.com/2015/02/02/apple-to-build-a-2-billion-data-command-center-in-arizona/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/FQn6WcCUzA0" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/02/apple-to-build-a-2-billion-data-command-center-in-arizona/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/12/applehq.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/12/applehq.jpg" type="image/jpeg" medium="image"><media:title type="html">Apple%20To%20Build%20A%20%242%20Billion%20Data%20Command%20Center%20In%26nbsp%3BArizona</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/12/applehq.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/12/applehq.jpg?w=150" medium="image">
+<media:title type="html">applehq</media:title>
+</media:content>
+
+<media:content url="http://1.gravatar.com/avatar/188039e12983eb749171a75cfd01378d?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">etherin</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/02/apple-to-build-a-2-billion-data-command-center-in-arizona/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>The Diary Of A Cord Cutter In 2015</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/KZIDj669NqI/</link>
+<comments>http://techcrunch.com/2015/02/01/the-diary-of-a-cord-cutter-in-2015/#comments</comments>
+<pubDate>Sun, 01 Feb 2015 20:42:08 +0000</pubDate>
+<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+<category><![CDATA[Opinion]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Netflix]]></category>
+<category><![CDATA[Hulu]]></category>
+<category><![CDATA[Amazon]]></category>
+<category><![CDATA[Android TV]]></category>
+<category><![CDATA[roku]]></category>
+<category><![CDATA[Apple]]></category>
+<category><![CDATA[tv]]></category>
+<category><![CDATA[television]]></category>
+<category><![CDATA[cord cutting]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1112898</guid>
+<description>&lt;img width="680" height="383" src="https://tctechcrunch2011.files.wordpress.com/2015/01/cord-cutter2.png?w=680" class="attachment-large wp-post-image" alt="cord-cutter2" /&gt;&amp;nbsp;I know I&amp;#8217;m late to the party by some accounts. Early adopters cut the cord years ago and haven&amp;#8217;t looked back. For me, turning off cable TV was an idea I flirted with, yet I just kept renewing my package deal for some reason. But there has been no better time to finally severe ties with big cable, and their pricey television packages that have you paying for hundreds of channels&amp;hellip; &lt;a href="http://techcrunch.com/2015/02/01/the-diary-of-a-cord-cutter-in-2015/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/KZIDj669NqI" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/02/01/the-diary-of-a-cord-cutter-in-2015/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/01/cord-cutter2.png?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/cord-cutter2.png" type="image/png" medium="image"><media:title type="html">The%20Diary%20Of%20A%20Cord%20Cutter%20In%26nbsp%3B2015</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/01/cord-cutter2.png?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/cord-cutter2.png?w=150" medium="image">
+<media:title type="html">cord-cutter2</media:title>
+</media:content>
+
+<media:content url="http://2.gravatar.com/avatar/5225bb627e112543aa03bf3b2958be3f?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">sarahintampa</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/netflix-devices.jpg" medium="image">
+<media:title type="html">netflix-devices</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/12/chromecast.jpg" medium="image">
+<media:title type="html">chromecast</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/roku3.jpg" medium="image">
+<media:title type="html">roku3</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/cbs-all-access.png?w=680" medium="image">
+<media:title type="html">cbs-all-access</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/hulu-last-five.png?w=680" medium="image">
+<media:title type="html">hulu-last-five</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/screen-shot-2015-02-01-at-1-48-37-pm.png?w=680" medium="image">
+<media:title type="html">Screen Shot 2015-02-01 at 1.48.37 PM</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/netflix-recommend-this.jpg?w=680" medium="image">
+<media:title type="html">netflix-recommend-this</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/12/screen-shot-2014-12-22-at-9-38-01-am.png?w=680" medium="image">
+<media:title type="html">The Interview</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/02/roku-movies.png?w=680" medium="image">
+<media:title type="html">roku-movies</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/02/01/the-diary-of-a-cord-cutter-in-2015/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>11 TechCrunch Stories You Don’t Want To Miss This Week</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/HakLKubaxy4/</link>
+<comments>http://techcrunch.com/2015/01/31/11-techcrunch-stories-you-dont-want-to-miss-this-week-14/#comments</comments>
+<pubDate>Sat, 31 Jan 2015 15:06:13 +0000</pubDate>
+<dc:creator><![CDATA[Anna Escher]]></dc:creator>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[weekly roundup]]></category>
+<category><![CDATA[Apple]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1113379</guid>
+<description>&lt;img width="680" height="383" src="https://tctechcrunch2011.files.wordpress.com/2014/08/tc-weekly-roundup.jpg?w=680" class="attachment-large wp-post-image" alt="TC-weekly-roundup" /&gt;&amp;nbsp;This week&amp;#8217;s tech news has included a massive earnings report from Apple , Snapchat&amp;#8217;s Discover launch, Apple Watch shipping dates and a particularly inflammatory Newsweek cover. These are our best stories (1/24-1/30). &lt;a href="http://techcrunch.com/2015/01/31/11-techcrunch-stories-you-dont-want-to-miss-this-week-14/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/HakLKubaxy4" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/01/31/11-techcrunch-stories-you-dont-want-to-miss-this-week-14/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/08/tc-weekly-roundup.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/08/tc-weekly-roundup.jpg" type="image/jpeg" medium="image"><media:title type="html">11%20TechCrunch%20Stories%20You%20Don%E2%80%99t%20Want%20To%20Miss%20This%26nbsp%3BWeek</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/08/tc-weekly-roundup.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/08/tc-weekly-roundup.jpg?w=150" medium="image">
+<media:title type="html">TC-weekly-roundup</media:title>
+</media:content>
+
+<media:content url="http://1.gravatar.com/avatar/d05e13c21f96d9b303b2b6001ef12dfd?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">annaescher</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/apple.jpg?w=680" medium="image">
+<media:title type="html">apple</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/01/31/11-techcrunch-stories-you-dont-want-to-miss-this-week-14/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>CrunchWeek: Apple’s Huge Quarter, Snapchat Discover, And Newsweek’s Cover Fail</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/WyCArxlh-gg/</link>
+<comments>http://techcrunch.com/2015/01/30/crunchweek-apples-huge-quarter-snapchat-discover-and-newsweeks-cover-fail/#comments</comments>
+<pubDate>Sat, 31 Jan 2015 03:28:52 +0000</pubDate>
+<dc:creator><![CDATA[Kyle Russell,Colleen Taylor,Alexia Tsotsis]]></dc:creator>
+<category><![CDATA[Apps]]></category>
+<category><![CDATA[Drama]]></category>
+<category><![CDATA[Earnings]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Video]]></category>
+<category><![CDATA[Japan]]></category>
+<category><![CDATA[Colleen Taylor]]></category>
+<category><![CDATA[TechCrunch]]></category>
+<category><![CDATA[Apple]]></category>
+<category><![CDATA[China]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1113433</guid>
+<description>&lt;img width="680" height="510" src="https://tctechcrunch2011.files.wordpress.com/2015/01/crunchweek-4-3.jpg?w=680" class="attachment-large wp-post-image" alt="crunchweek-4-3" /&gt;&amp;nbsp;Today&amp;#8217;s episode of CrunchWeek is a very special milestone for us here at TechCrunch, marking the 100th time we&amp;#8217;ve met up to casually talk about the week&amp;#8217;s most interesting news. &lt;a href="http://techcrunch.com/2015/01/30/crunchweek-apples-huge-quarter-snapchat-discover-and-newsweeks-cover-fail/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/WyCArxlh-gg" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/01/30/crunchweek-apples-huge-quarter-snapchat-discover-and-newsweeks-cover-fail/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/01/crunchweek-4-3.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="http://pthumbnails.5min.com/10372574/518628679_19_1279_727.jpg" type="image/jpeg" medium="image"><media:title type="html">CrunchWeek%3A%20Apple%26%238217%3Bs%20Huge%20Quarter%2C%20Snapchat%20Discover%2C%20And%20Newsweek%26%238217%3Bs%20Cover%26nbsp%3BFail</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/01/crunchweek-4-3.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/crunchweek-4-3.jpg?w=150" medium="image">
+<media:title type="html">crunchweek-4-3</media:title>
+</media:content>
+
+<media:content url="http://0.gravatar.com/avatar/6e588b9518f29ec55c08c7d488798840?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">kylebrussell</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/01/30/crunchweek-apples-huge-quarter-snapchat-discover-and-newsweeks-cover-fail/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>“Zombie” Apps On The Rise – 83% Of Apps Not On Top Lists, Up From 74% Last Year</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/RIDejCVZAJo/</link>
+<comments>http://techcrunch.com/2015/01/30/zombie-apps-on-the-rise-83-of-apps-not-on-top-lists-up-from-74-last-year/#comments</comments>
+<pubDate>Fri, 30 Jan 2015 17:32:03 +0000</pubDate>
+<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+<category><![CDATA[Apps]]></category>
+<category><![CDATA[Mobile]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[iOS App Store]]></category>
+<category><![CDATA[Apple]]></category>
+<category><![CDATA[app-store]]></category>
+<category><![CDATA[trends]]></category>
+<category><![CDATA[zombies]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1113268</guid>
+<description>&lt;img width="680" height="324" src="https://tctechcrunch2011.files.wordpress.com/2014/06/apps-ios7.jpg?w=680" class="attachment-large wp-post-image" alt="apps-ios7" /&gt;&amp;nbsp;With the app economy showing no sign of slowing, the iOS App Store, too, continues to grow, and has now reached over 1.42 million apps, according to a new report out this morning from app analytics firm adjust. One interesting metric the report uncovered is just how many of the apps are effectively invisible to consumers &amp;#8211; something adjust lovingly refers to as &amp;#8220;zombie&amp;hellip; &lt;a href="http://techcrunch.com/2015/01/30/zombie-apps-on-the-rise-83-of-apps-not-on-top-lists-up-from-74-last-year/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/RIDejCVZAJo" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/01/30/zombie-apps-on-the-rise-83-of-apps-not-on-top-lists-up-from-74-last-year/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/06/apps-ios7.jpg?w=210&amp;h=158&amp;crop=1" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/06/apps-ios7.jpg" type="image/jpeg" medium="image"><media:title type="html">%26%238220%3BZombie%26%238221%3B%20Apps%20On%20The%20Rise%20%26%238211%3B%2083%25%20Of%20Apps%20Not%20On%20Top%20Lists%2C%20Up%20From%2074%25%20Last%26nbsp%3BYear</media:title></media:content>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2014/06/apps-ios7.jpg?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2014/06/apps-ios7.jpg?w=150" medium="image">
+<media:title type="html">apps-ios7</media:title>
+</media:content>
+
+<media:content url="http://2.gravatar.com/avatar/5225bb627e112543aa03bf3b2958be3f?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">sarahintampa</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-30-at-11-56-11-am.png?w=680" medium="image">
+<media:title type="html">Screen Shot 2015-01-30 at 11.56.11 AM</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-30-at-11-56-18-am.png?w=680" medium="image">
+<media:title type="html">Screen Shot 2015-01-30 at 11.56.18 AM</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-30-at-12-01-06-pm.png?w=680" medium="image">
+<media:title type="html">Screen Shot 2015-01-30 at 12.01.06 PM</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-30-at-12-01-18-pm.png?w=680" medium="image">
+<media:title type="html">Screen Shot 2015-01-30 at 12.01.18 PM</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-30-at-12-04-32-pm.png?w=547" medium="image">
+<media:title type="html">Screen Shot 2015-01-30 at 12.04.32 PM</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-30-at-12-06-09-pm.png?w=680" medium="image">
+<media:title type="html">Screen Shot 2015-01-30 at 12.06.09 PM</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-30-at-12-10-39-pm.png?w=680" medium="image">
+<media:title type="html">Screen Shot 2015-01-30 at 12.10.39 PM</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/01/30/zombie-apps-on-the-rise-83-of-apps-not-on-top-lists-up-from-74-last-year/?ncid=rss</feedburner:origLink></item>
+<item>
+<title>iTunes Connect Issue Logging Developers Into Other Accounts [Now Offline]</title>
+<link>http://feedproxy.google.com/~r/techcrunch/apple/~3/cGutyYSEOrc/</link>
+<comments>http://techcrunch.com/2015/01/29/itunes-connect-issue-logging-developers-into-other-accounts/#comments</comments>
+<pubDate>Thu, 29 Jan 2015 16:52:16 +0000</pubDate>
+<dc:creator><![CDATA[Kyle Russell]]></dc:creator>
+<category><![CDATA[Developer]]></category>
+<category><![CDATA[TC]]></category>
+<category><![CDATA[Twitter]]></category>
+<category><![CDATA[app-store]]></category>
+<category><![CDATA[Apple]]></category>
+
+<guid isPermaLink="false">http://techcrunch.com/?p=1112664</guid>
+<description>&lt;img width="680" height="505" src="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-29-at-8-44-40-am.png?w=680" class="attachment-large wp-post-image" alt="iTunes Connect" /&gt;&amp;nbsp;An issue with Apple&amp;#8217;s iTunes Connect service, which lets developers upload new versions of their apps to the App Store and track sales and income, is causing some developers to log into the wrong accounts this morning. &lt;a href="http://techcrunch.com/2015/01/29/itunes-connect-issue-logging-developers-into-other-accounts/?ncid=rss"&gt;Read More&lt;/a&gt;&lt;img src="//feeds.feedburner.com/~r/techcrunch/apple/~4/cGutyYSEOrc" height="1" width="1" alt=""/&gt;</description>
+<wfw:commentRss>http://techcrunch.com/2015/01/29/itunes-connect-issue-logging-developers-into-other-accounts/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-29-at-8-44-40-am.png?w=210&amp;h=158&amp;crop=1" />
+
+<media:thumbnail url="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-29-at-8-44-40-am.png?w=150" />
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-29-at-8-44-40-am.png?w=150" medium="image">
+<media:title type="html">iTunes Connect</media:title>
+</media:content>
+
+<media:content url="http://0.gravatar.com/avatar/6e588b9518f29ec55c08c7d488798840?s=96&amp;d=identicon&amp;r=G" medium="image">
+<media:title type="html">kylebrussell</media:title>
+</media:content>
+
+<media:content url="https://tctechcrunch2011.files.wordpress.com/2015/01/screen-shot-2015-01-29-at-8-44-40-am.png?w=680" medium="image">
+<media:title type="html">iTunes Connect</media:title>
+</media:content>
+<feedburner:origLink>http://techcrunch.com/2015/01/29/itunes-connect-issue-logging-developers-into-other-accounts/?ncid=rss</feedburner:origLink></item>
+</channel>
+</rss>

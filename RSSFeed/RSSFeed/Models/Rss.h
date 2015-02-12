@@ -10,4 +10,11 @@
 
 @interface Rss : NSObject
 
+@property NSObject* image;
+@property NSString* channel;
+@property NSString* title;
+@property NSDate* date;
+@property NSURL* url;
+@property BOOL isFavorite;
+
 @end

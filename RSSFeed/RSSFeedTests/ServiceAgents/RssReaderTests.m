@@ -26,7 +26,7 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testReadRssStream {
     // This is an example of a functional test case.
     XCTAssert(YES, @"Pass");
     
@@ -34,6 +34,10 @@
     
     void (^completionBlock)(NSArray* data, NSError* connectionError) = ^(NSArray* data, NSError* connectionError){
         NSLog(@"Completion Block!");
+        NSLog(@"Number of items: %lu", (unsigned long)[data count]);
+        
+        XCTAssertNotEqual(0, [data count]);
+        
         hasCalledBack = YES;
     };
     
@@ -49,17 +53,10 @@
     
     if (!hasCalledBack)
     {
-        XCTFail(@"mnjeh");
-        //STFail(@"I know this will fail, thanks");
+        XCTFail(@"Callback method was not invoked");
     }
     
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
 
 @end

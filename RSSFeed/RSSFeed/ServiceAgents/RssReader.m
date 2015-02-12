@@ -7,6 +7,11 @@
 //
 
 #import "RssReader.h"
+#import "RssParser.h"
+
+@interface RssReader()
+
+@end
 
 @implementation RssReader
 
@@ -20,15 +25,18 @@
                                        queue:[NSOperationQueue currentQueue]
                            completionHandler:^(NSURLResponse* response, NSData* data, NSError* connectionError){
                                
-                               NSMutableArray *result = nil;
+                               NSArray *result = nil;
+                               
                                if(!connectionError)
                                {
-                                    result = [[NSMutableArray alloc]init];
-                                   //TODO: Convert data to RSS objects
-                                   //NSString *content = [NSString stringWithUTF8String:[data bytes]];
+                                   RssParser* parser = [[RssParser alloc]init];
+                                   result = [parser getRssArrayFromData:data];
                                }
+                               
                                handler(result, connectionError);
                            }];
 }
+
+
 
 @end
