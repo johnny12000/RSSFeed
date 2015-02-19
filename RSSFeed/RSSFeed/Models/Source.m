@@ -10,4 +10,16 @@
 
 @implementation Source
 
+
+- (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSObject*)image{
+    if(self == [super init]){
+        self.name = name;
+        self.url = url;
+        self.index = index;
+        self.image = image;
+    }
+    
+    return self;
+}
+
 @end

@@ -24,6 +24,10 @@
 		B2F4B7951A8D25C50097D219 /* RssParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7941A8D25C50097D219 /* RssParser.m */; };
 		B2F4B7971A8D272F0097D219 /* RssParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7961A8D272F0097D219 /* RssParserTests.m */; };
 		B2F4B7991A8D27EB0097D219 /* RssChannelTest.txt in Resources */ = {isa = PBXBuildFile; fileRef = B2F4B7981A8D27EB0097D219 /* RssChannelTest.txt */; };
+		B2F4B79D1A964DC10097D219 /* RssRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B79C1A964DC10097D219 /* RssRepository.m */; };
+		B2F4B79F1A9652E00097D219 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F4B79E1A9652E00097D219 /* libsqlite3.dylib */; };
+		B2F4B7A11A96582E0097D219 /* feeds.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = B2F4B7A01A96582E0097D219 /* feeds.sqlite3 */; };
+		B2F4B7A41A9658740097D219 /* RssRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7A31A9658740097D219 /* RssRepositoryTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,11 @@
 		B2F4B7941A8D25C50097D219 /* RssParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssParser.m; path = ServiceAgents/RssParser.m; sourceTree = "<group>"; };
 		B2F4B7961A8D272F0097D219 /* RssParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssParserTests.m; path = ServiceAgents/RssParserTests.m; sourceTree = "<group>"; };
 		B2F4B7981A8D27EB0097D219 /* RssChannelTest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RssChannelTest.txt; sourceTree = "<group>"; };
+		B2F4B79B1A964DC10097D219 /* RssRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RssRepository.h; path = Repositories/RssRepository.h; sourceTree = "<group>"; };
+		B2F4B79C1A964DC10097D219 /* RssRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssRepository.m; path = Repositories/RssRepository.m; sourceTree = "<group>"; };
+		B2F4B79E1A9652E00097D219 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B2F4B7A01A96582E0097D219 /* feeds.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = feeds.sqlite3; path = RSSFeed/feeds.sqlite3; sourceTree = "<group>"; };
+		B2F4B7A31A9658740097D219 /* RssRepositoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssRepositoryTests.m; path = Repositories/RssRepositoryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F4B79F1A9652E00097D219 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +132,8 @@
 		B2F188CD1A7EBCA1007DECDE = {
 			isa = PBXGroup;
 			children = (
+				B2F4B7A01A96582E0097D219 /* feeds.sqlite3 */,
+				B2F4B79E1A9652E00097D219 /* libsqlite3.dylib */,
 				B2F188D81A7EBCA1007DECDE /* RSSFeed */,
 				B2F188F51A7EBCA1007DECDE /* RSSFeedTests */,
 				B2F188D71A7EBCA1007DECDE /* Products */,
@@ -140,6 +152,7 @@
 		B2F188D81A7EBCA1007DECDE /* RSSFeed */ = {
 			isa = PBXGroup;
 			children = (
+				B2F4B79A1A964D720097D219 /* Repositories */,
 				A73A44081A890ED200728E3A /* ServiceAgents */,
 				A73A44011A890D8B00728E3A /* Models */,
 				B2F188DD1A7EBCA1007DECDE /* AppDelegate.h */,
@@ -172,6 +185,7 @@
 		B2F188F51A7EBCA1007DECDE /* RSSFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				B2F4B7A21A9658490097D219 /* Repositories */,
 				A73A440C1A89133300728E3A /* ServiceAgents */,
 				B2F188F81A7EBCA1007DECDE /* RSSFeedTests.m */,
 				B2F188F61A7EBCA1007DECDE /* Supporting Files */,
@@ -185,6 +199,23 @@
 				B2F188F71A7EBCA1007DECDE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2F4B79A1A964D720097D219 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B2F4B79B1A964DC10097D219 /* RssRepository.h */,
+				B2F4B79C1A964DC10097D219 /* RssRepository.m */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		B2F4B7A21A9658490097D219 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B2F4B7A31A9658740097D219 /* RssRepositoryTests.m */,
+			);
+			name = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +301,7 @@
 				B2F188E81A7EBCA1007DECDE /* Main.storyboard in Resources */,
 				B2F188ED1A7EBCA1007DECDE /* LaunchScreen.xib in Resources */,
 				B2F188EA1A7EBCA1007DECDE /* Images.xcassets in Resources */,
+				B2F4B7A11A96582E0097D219 /* feeds.sqlite3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +329,7 @@
 				B2F188DF1A7EBCA1007DECDE /* AppDelegate.m in Sources */,
 				B2F188E21A7EBCA1007DECDE /* FeedsViewController.m in Sources */,
 				B2F188DC1A7EBCA1007DECDE /* main.m in Sources */,
+				B2F4B79D1A964DC10097D219 /* RssRepository.m in Sources */,
 				B2F4B7951A8D25C50097D219 /* RssParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +340,7 @@
 			files = (
 				B2F188F91A7EBCA1007DECDE /* RSSFeedTests.m in Sources */,
 				A73A440E1A89135F00728E3A /* RssReaderTests.m in Sources */,
+				B2F4B7A41A9658740097D219 /* RssRepositoryTests.m in Sources */,
 				B2F4B7971A8D272F0097D219 /* RssParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
