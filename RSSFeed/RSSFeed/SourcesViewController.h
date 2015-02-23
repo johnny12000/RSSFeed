@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SourcesViewController : UIViewController
+@interface SourcesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *sourcesTable;
 
 @end
