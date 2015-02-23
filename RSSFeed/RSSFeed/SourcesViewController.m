@@ -63,15 +63,21 @@
     
 }
 
-
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"EditSourceSegue"])
+    {
+        AddEditSourceViewController *vc = [segue destinationViewController];
+        [vc setModel: (Source*)[self.sources objectAtIndex: self.sourcesTable.indexPathForSelectedRow.row]];
+    }
+    else if ([[segue identifier] isEqualToString:@"AddSourceSegue"])
+    {
+        AddEditSourceViewController *vc = [segue destinationViewController];
+        [vc setNewModel];
+    }
 }
-*/
 
 @end

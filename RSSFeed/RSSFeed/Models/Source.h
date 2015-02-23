@@ -10,11 +10,13 @@
 
 @interface Source : NSObject
 
+@property NSString *uid;
 @property NSData *image;
 @property NSString *name;
 @property NSString *url;
 @property NSInteger index;
 
 - (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image;
+- (id) initWithUid:(NSString*)uid name:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image;
 
 @end

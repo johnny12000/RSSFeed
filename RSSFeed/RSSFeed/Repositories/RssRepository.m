@@ -36,18 +36,18 @@ static RssRepository *_instance;
 
 - (NSArray*) getSources {
     NSMutableArray *retval = [[NSMutableArray alloc] init];
-    NSString *query = @"SELECT name, url, index_number, image FROM Sources";
+    NSString *query = @"SELECT uid, name, url, index_number, image FROM Sources";
     sqlite3_stmt *statement;
     
     if (sqlite3_prepare_v2(_database, [query UTF8String], -1, &statement, nil) == SQLITE_OK) {
         while (sqlite3_step(statement) == SQLITE_ROW) {
+            NSString *uid = [[NSString alloc] initWithUTF8String: (char*)sqlite3_column_text(statement, 0)];
+            NSString *name = [[NSString alloc] initWithUTF8String: (char*)sqlite3_column_text(statement, 1)];
+            NSString *url = [[NSString alloc]initWithUTF8String: (char*)sqlite3_column_text(statement, 2)];
+            int index = sqlite3_column_int(statement, 3);
+            NSData *imageData = [[NSData alloc]initWithBytes:sqlite3_column_blob(statement, 4) length:sqlite3_column_bytes(statement, 4)];
             
-            NSString *name = [[NSString alloc] initWithUTF8String: (char*)sqlite3_column_text(statement, 0)];
-            NSString *url = [[NSString alloc]initWithUTF8String: (char*)sqlite3_column_text(statement, 1)];
-            int index = sqlite3_column_int(statement, 2);
-            NSData *imageData = [[NSData alloc]initWithBytes:sqlite3_column_blob(statement, 3) length:sqlite3_column_bytes(statement, 3)];
-            
-            Source *src = [[Source alloc] initWithName:name url:url index:index andImage:imageData];
+            Source *src = [[Source alloc]  initWithUid:uid name:name url:url index:index andImage:imageData];
             [retval addObject:src];
             
         }
@@ -59,7 +59,7 @@ static RssRepository *_instance;
 
 - (BOOL) addSource:(Source*)source {
     
-    NSString* query = [NSString stringWithFormat: @"INSERT INTO Sources (name, url, image, index_number) VALUES ('%@', '%@', '%@', %ld)", source.name, source.url, source.image, source.index];
+    NSString* query = [NSString stringWithFormat: @"INSERT INTO Sources (uid, name, url, image, index_number) VALUES ('%@', '%@', '%@', '%@', %ld)", source.uid, source.name, source.url, source.image, source.index];
     
     char* errInfo;
     
@@ -75,7 +75,7 @@ static RssRepository *_instance;
 
 - (BOOL) updateSource:(Source*)source {
     
-    NSString *query = [NSString stringWithFormat: @"UPDATE Sources SET name = '%@', image = '%@', index_number = %ld WHERE url = '%@'", source.name, source.image, (long)source.index, source.url];
+    NSString *query = [NSString stringWithFormat: @"UPDATE Sources SET name = '%@', url = '%@', image = '%@', index_number = %ld WHERE uid = '%@'", source.name, source.url, source.image, (long)source.index, source.uid];
     
     char* errInfo;
     
@@ -91,7 +91,7 @@ static RssRepository *_instance;
 
 - (BOOL) deleteSource:(Source*)source {
     
-    NSString *query = [NSString stringWithFormat: @"DELETE Sources WHERE url = '%@'", source.url];
+    NSString *query = [NSString stringWithFormat: @"DELETE Sources WHERE uid = '%@'", source.uid];
     
     char* errInfo;
     

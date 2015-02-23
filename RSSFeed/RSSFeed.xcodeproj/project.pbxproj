@@ -28,6 +28,7 @@
 		B2F4B79F1A9652E00097D219 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F4B79E1A9652E00097D219 /* libsqlite3.dylib */; };
 		B2F4B7A11A96582E0097D219 /* feeds.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = B2F4B7A01A96582E0097D219 /* feeds.sqlite3 */; };
 		B2F4B7A41A9658740097D219 /* RssRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7A31A9658740097D219 /* RssRepositoryTests.m */; };
+		B2F4B7A71A9BCD130097D219 /* AddEditSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7A61A9BCD130097D219 /* AddEditSourceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		B2F4B79E1A9652E00097D219 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		B2F4B7A01A96582E0097D219 /* feeds.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = feeds.sqlite3; path = RSSFeed/feeds.sqlite3; sourceTree = "<group>"; };
 		B2F4B7A31A9658740097D219 /* RssRepositoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssRepositoryTests.m; path = Repositories/RssRepositoryTests.m; sourceTree = "<group>"; };
+		B2F4B7A51A9BCD130097D219 /* AddEditSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditSourceViewController.h; sourceTree = "<group>"; };
+		B2F4B7A61A9BCD130097D219 /* AddEditSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditSourceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				B2F1890E1A7EC457007DECDE /* SourcesViewController.m */,
 				B2F189101A7EC464007DECDE /* AboutViewController.h */,
 				B2F189111A7EC464007DECDE /* AboutViewController.m */,
+				B2F4B7A51A9BCD130097D219 /* AddEditSourceViewController.h */,
+				B2F4B7A61A9BCD130097D219 /* AddEditSourceViewController.m */,
 			);
 			path = RSSFeed;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 				B2F188DC1A7EBCA1007DECDE /* main.m in Sources */,
 				B2F4B79D1A964DC10097D219 /* RssRepository.m in Sources */,
 				B2F4B7951A8D25C50097D219 /* RssParser.m in Sources */,
+				B2F4B7A71A9BCD130097D219 /* AddEditSourceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
