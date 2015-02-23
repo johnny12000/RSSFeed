@@ -16,10 +16,16 @@
 }
 
 + (RssRepository*) instance;
-- (NSArray*) feeds;
-- (NSArray*) sources;
 
-- (void) addSource:(Source*)source;
-- (void) addFavorite:(Rss*)rss;
+- (NSArray*) getSources;
+- (BOOL) addSource:(Source*)source;
+- (BOOL) updateSource:(Source*)source;
+- (BOOL) deleteSource:(Source*)source;
+
+
+- (NSArray*) getFavorites;
+- (BOOL) addFavorite:(Rss*)rss;
+- (BOOL) removeFavorite:(Rss*)rss;
+
 
 @end

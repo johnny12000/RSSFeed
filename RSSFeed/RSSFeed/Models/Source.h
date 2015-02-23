@@ -15,6 +15,6 @@
 @property NSString *url;
 @property NSInteger index;
 
-- (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSObject*)image;
+- (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image;
 
 @end

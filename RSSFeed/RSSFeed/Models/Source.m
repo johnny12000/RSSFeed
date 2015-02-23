@@ -11,7 +11,7 @@
 @implementation Source
 
 
-- (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSObject*)image{
+- (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image{
     if(self == [super init]){
         self.name = name;
         self.url = url;

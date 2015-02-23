@@ -30,16 +30,33 @@
 //tests to see if data is retrieved from dummy database
 - (void)testGetSources {
     
-    NSArray *result = [self.testRepository sources];
+    NSArray *result = [self.testRepository getSources];
     XCTAssertNotEqual(0, [result count]);
 }
 
+- (void)testUpdateSource{
+    
+    Source* src = [[Source alloc]initWithName:@"test1" url:@"url" index:2 andImage:nil];
+    BOOL result = [self.testRepository updateSource:src];
+    XCTAssertTrue(result);
+    
+}
+
 - (void) testGetFavorites{
-    NSArray *result = [self.testRepository feeds];
+    NSArray *result = [self.testRepository getFavorites];
     XCTAssertEqual(0, [result count]);
     
 }
 
+
+- (void) testAddSource {
+    
+    
+    Source* src = [[Source alloc]initWithName:@"testAdd" url:@"urlAdd" index:4 andImage:nil];
+    BOOL result = [self.testRepository addSource:src];
+    XCTAssertTrue(result);
+    
+}
 
 
 @end
