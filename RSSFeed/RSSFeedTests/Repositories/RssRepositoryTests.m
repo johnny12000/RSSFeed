@@ -42,6 +42,13 @@
     
 }
 
+- (void) testDeleteSource {
+    Source *src = [[Source alloc] initWithUid:@"F46C37B4-EC15-478A-9560-7FA757B49C7A" name:@"" url:@"" index:1 andImage:nil];
+    BOOL result = [self.testRepository deleteSource:src];
+    XCTAssertTrue(result);
+}
+
+
 - (void) testGetFavorites{
     NSArray *result = [self.testRepository getFavorites];
     XCTAssertEqual(0, [result count]);

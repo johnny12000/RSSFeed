@@ -13,4 +13,6 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *sourcesTable;
 
+- (IBAction)setSourceDelete:(id)sender;
+
 @end

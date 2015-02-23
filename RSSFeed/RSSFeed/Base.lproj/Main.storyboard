@@ -182,7 +182,11 @@
                                 <segue destination="SiL-2G-m76" kind="show" identifier="AddSourceSegue" id="Pcr-F5-JpO"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Delete" id="5ho-at-TBB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Delete" id="5ho-at-TBB">
+                            <connections>
+                                <action selector="setSourceDelete:" destination="WRw-mY-9KN" id="VJ3-zS-eQB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="sourcesTable" destination="Msb-0m-Awi" id="KOM-VZ-TCF"/>

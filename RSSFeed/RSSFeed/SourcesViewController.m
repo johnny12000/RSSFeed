@@ -13,7 +13,7 @@
 @interface SourcesViewController ()
 
 @property RssRepository* repository;
-@property NSArray* sources;
+@property NSMutableArray* sources;
 
 @end
 
@@ -28,7 +28,7 @@
     
     self.repository = [[RssRepository alloc] init];
     
-    self.sources = [self.repository getSources];
+    self.sources = [[NSMutableArray alloc] initWithArray:[self.repository getSources]];
     
     // Do any additional setup after loading the view.
     self.sourcesTable.delegate = self;
@@ -63,6 +63,27 @@
     
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        Source *object = (Source*)[self.sources objectAtIndex:indexPath.row];
+        [self.sources removeObjectAtIndex:indexPath.row];
+        BOOL result = [self.repository deleteSource:object];
+        
+        if(result)
+        {
+            //TODO: display error message
+        }
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+
+
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -80,4 +101,18 @@
     }
 }
 
+- (IBAction)setSourceDelete:(id)sender {
+    
+    if ([self.sourcesTable isEditing]) {
+        [self.sourcesTable setEditing:NO animated:YES];
+        //[self.editButtonsetTitle:@"Edit"forState:UIControlStateNormal];
+    }
+    else {
+        //[self.editButtonsetTitle:@"Done"forState:UIControlStateNormal];
+        
+        // Turn on edit mode
+        
+        [self.sourcesTable setEditing:YES animated:YES];
+    }
+}
 @end

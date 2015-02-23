@@ -91,7 +91,7 @@ static RssRepository *_instance;
 
 - (BOOL) deleteSource:(Source*)source {
     
-    NSString *query = [NSString stringWithFormat: @"DELETE Sources WHERE uid = '%@'", source.uid];
+    NSString *query = [NSString stringWithFormat: @"DELETE FROM Sources WHERE uid = '%@'", source.uid];
     
     char* errInfo;
     
