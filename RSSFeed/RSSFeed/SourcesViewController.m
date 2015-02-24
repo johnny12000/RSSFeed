@@ -28,8 +28,6 @@
     
     self.repository = [[RssRepository alloc] init];
     
-    self.sources = [[NSMutableArray alloc] initWithArray:[self.repository getSources]];
-    
     // Do any additional setup after loading the view.
     self.sourcesTable.delegate = self;
     self.sourcesTable.dataSource = self;
@@ -40,11 +38,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    [self refreshData];
+}
 
 #pragma mark - TableView elements
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
     return self.sources.count;
     
 }
@@ -83,10 +86,27 @@
     }
 }
 
+- (IBAction)setSourceDelete:(id)sender {
+    
+    if ([self.sourcesTable isEditing]) {
+        [self.sourcesTable setEditing:NO animated:YES];
+    }
+    else {
+        [self.sourcesTable setEditing:YES animated:YES];
+    }
+}
+
+#pragma mark - Actions
+
+- (void) refreshData {
+    
+    self.sources = [[NSMutableArray alloc] initWithArray:[self.repository getSources]];
+    [self.sourcesTable reloadData];
+}
 
 #pragma mark - Navigation
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Make sure your segue name in storyboard is the same as this line
     if ([[segue identifier] isEqualToString:@"EditSourceSegue"])
@@ -101,18 +121,4 @@
     }
 }
 
-- (IBAction)setSourceDelete:(id)sender {
-    
-    if ([self.sourcesTable isEditing]) {
-        [self.sourcesTable setEditing:NO animated:YES];
-        //[self.editButtonsetTitle:@"Edit"forState:UIControlStateNormal];
-    }
-    else {
-        //[self.editButtonsetTitle:@"Done"forState:UIControlStateNormal];
-        
-        // Turn on edit mode
-        
-        [self.sourcesTable setEditing:YES animated:YES];
-    }
-}
 @end
