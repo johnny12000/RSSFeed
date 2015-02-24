@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7109EC81A9CBE3400A68D19 /* FeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7109EC71A9CBE3400A68D19 /* FeedTableViewCell.m */; };
 		A73A44041A890DBA00728E3A /* Rss.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A44031A890DBA00728E3A /* Rss.m */; };
 		A73A44071A890DF300728E3A /* Source.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A44061A890DF300728E3A /* Source.m */; };
 		A73A440B1A890EF000728E3A /* RssReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A440A1A890EF000728E3A /* RssReader.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7109EC61A9CBE3400A68D19 /* FeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewCell.h; sourceTree = "<group>"; };
+		A7109EC71A9CBE3400A68D19 /* FeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewCell.m; sourceTree = "<group>"; };
 		A73A44021A890DBA00728E3A /* Rss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rss.h; path = Models/Rss.h; sourceTree = "<group>"; };
 		A73A44031A890DBA00728E3A /* Rss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rss.m; path = Models/Rss.m; sourceTree = "<group>"; };
 		A73A44051A890DF300728E3A /* Source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Source.h; path = Models/Source.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				B2F189111A7EC464007DECDE /* AboutViewController.m */,
 				B2F4B7A51A9BCD130097D219 /* AddEditSourceViewController.h */,
 				B2F4B7A61A9BCD130097D219 /* AddEditSourceViewController.m */,
+				A7109EC61A9CBE3400A68D19 /* FeedTableViewCell.h */,
+				A7109EC71A9CBE3400A68D19 /* FeedTableViewCell.m */,
 			);
 			path = RSSFeed;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 				A73A44041A890DBA00728E3A /* Rss.m in Sources */,
 				B2F189121A7EC464007DECDE /* AboutViewController.m in Sources */,
 				B2F1890F1A7EC457007DECDE /* SourcesViewController.m in Sources */,
+				A7109EC81A9CBE3400A68D19 /* FeedTableViewCell.m in Sources */,
 				B2F188E51A7EBCA1007DECDE /* FavoritesViewController.m in Sources */,
 				A73A44071A890DF300728E3A /* Source.m in Sources */,
 				A73A440B1A890EF000728E3A /* RssReader.m in Sources */,

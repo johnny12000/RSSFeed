@@ -21,25 +21,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FeedCell" rowHeight="119" id="9qG-Ld-pJG">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FeedCell" rowHeight="119" id="9qG-Ld-pJG" customClass="FeedTableViewCell">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9qG-Ld-pJG" id="f5K-0m-1CI">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zyv-5I-VYT">
-                                                    <rect key="frame" x="8" y="8" width="120" height="100"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zyv-5I-VYT">
+                                                    <rect key="frame" x="8" y="8" width="120" height="99"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="Y0v-D4-9wP"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Text" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yta-Bw-lZq">
-                                                    <rect key="frame" x="136" y="8" width="448" height="69"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yta-Bw-lZq">
+                                                    <rect key="frame" x="136" y="8" width="448" height="68"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTf-CO-r9d">
-                                                    <rect key="frame" x="136" y="87" width="456" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTf-CO-r9d">
+                                                    <rect key="frame" x="136" y="86" width="456" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="8Fv-27-cNV"/>
                                                     </constraints>
@@ -47,8 +47,8 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JfO-xM-4Fc">
-                                                    <rect key="frame" x="78" y="68" width="50" height="40"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JfO-xM-4Fc">
+                                                    <rect key="frame" x="78" y="67" width="50" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="6Fd-Am-fk9"/>
                                                         <constraint firstAttribute="width" constant="50" id="P9F-hH-JIc"/>
@@ -67,12 +67,23 @@
                                                 <constraint firstItem="Yta-Bw-lZq" firstAttribute="top" secondItem="Zyv-5I-VYT" secondAttribute="top" id="bHK-1m-gjl"/>
                                                 <constraint firstItem="Zyv-5I-VYT" firstAttribute="top" secondItem="f5K-0m-1CI" secondAttribute="topMargin" id="eVW-j1-xBH"/>
                                                 <constraint firstItem="VTf-CO-r9d" firstAttribute="bottom" secondItem="JfO-xM-4Fc" secondAttribute="bottom" id="g2S-o7-Z7q"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="JfO-xM-4Fc" secondAttribute="bottom" constant="3" id="gsn-5s-6mc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="JfO-xM-4Fc" secondAttribute="bottom" constant="2" id="gsn-5s-6mc"/>
                                                 <constraint firstItem="VTf-CO-r9d" firstAttribute="trailing" secondItem="f5K-0m-1CI" secondAttribute="trailingMargin" id="jHN-lr-eOz"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Zyv-5I-VYT" secondAttribute="bottom" constant="3" id="wl5-S7-M3N"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Zyv-5I-VYT" secondAttribute="bottom" constant="3" id="zHF-5n-rF5"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="gsn-5s-6mc"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="feedDateLabel" destination="VTf-CO-r9d" id="KQR-3Z-DfO"/>
+                                            <outlet property="feedImageView" destination="Zyv-5I-VYT" id="ee6-Q9-mm1"/>
+                                            <outlet property="feedTitleLabel" destination="Yta-Bw-lZq" id="j7z-8E-V52"/>
+                                            <outlet property="sourceImageView" destination="JfO-xM-4Fc" id="eoi-XW-7A8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>

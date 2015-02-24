@@ -8,7 +8,11 @@
 
 #import "FeedsViewController.h"
 
+
 @interface FeedsViewController ()
+
+@property RssReader* rssReader;
+@property NSArray* feeds;
 
 @end
 
@@ -17,6 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    if(self.rssReader == nil)
+        self.rssReader = [[RssReader alloc] init];
+    
+    
+    self.feedsTable.delegate = self;
+    self.feedsTable.dataSource = self;
+    
+    [self refreshData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,25 +37,39 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Actions
 
-#pragma mark - UITableViewDataSource
+- (void) refreshData {
+    //http://feeds.feedburner.com/techcrunch/startups?format=xml
+    //http://www.b92.net/info/rss/vesti.xml
+    [self.rssReader getDataFromUrl:@"http://feeds.feedburner.com/techcrunch/startups?format=xml" completionHandler:^(NSArray* data, NSError* connectionError){
+        self.feeds = data;
+        
+        [self.feedsTable reloadData];
+    }];
+    
+    
+    
+}
 
-
-#pragma mark - UITableViewDelegate
+#pragma mark - UITableView
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return [self.feeds count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *simpleTableIdentifier = @"FeedCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    FeedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        cell = [[FeedTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
+    Rss* rss = [self.feeds objectAtIndex:indexPath.row];
+    
+    [cell setCellModel:rss];
     //cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
     //cell.imageView.image = [UIImage imageNamed:@"geekPic.jpg"];
     

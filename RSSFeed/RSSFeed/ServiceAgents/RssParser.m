@@ -15,6 +15,11 @@
 @property NSMutableArray *result;
 @property Rss* item;
 
+@property NSString* key;
+@property NSMutableString* value;
+
+@property NSString * channel;
+
 @end
 
 
@@ -23,9 +28,12 @@
 
 - (NSArray*) getRssArrayFromData:(NSData*)data{
     
+    self.value = [[NSMutableString alloc] init];
+    
     self.result = [[NSMutableArray alloc]init];
 
     self.parser = [[NSXMLParser alloc] initWithData:data];
+    
     [self.parser setDelegate:self];
     [self.parser parse];
     
@@ -39,7 +47,7 @@ didStartElement:(NSString *)elementName
   qualifiedName:(NSString *)qualifiedName
      attributes:(NSDictionary*)attributeDict {
     
-    NSLog(@"Started Element %@", elementName);
+    //NSLog(@"Started Element %@", elementName);
     
     if([elementName isEqualToString:@"channel"])
         self.result = [[NSMutableArray alloc]init];
@@ -48,6 +56,14 @@ didStartElement:(NSString *)elementName
     {
         self.item = [[Rss alloc]init];
     }
+    
+    if([elementName isEqualToString:@"media:thumbnail"]) {
+        
+        NSURL *url = [NSURL URLWithString:[attributeDict valueForKey:@"url"]];
+        [self.item setValue:[NSData dataWithContentsOfURL:url] forKey:@"image"];
+    }
+    
+    [self.value setString:@""];
 }
 
 - (void) parser:(NSXMLParser*)parser
@@ -55,18 +71,47 @@ didStartElement:(NSString *)elementName
    namespaceURI:(NSString *)namespaceURI
   qualifiedName:(NSString *)qName {
     
-    NSLog(@"Found an element named: %@ with a value of: %@", elementName, qName);
-    if([elementName isEqualToString:@"item"])
+    NSLog(@"Found an element named: %@ with a value of: %@", elementName, self.value);
+    
+    if([elementName isEqualToString:@"channel"]) {
+        self.channel = [self.value copy];
+    }
+    
+    if([elementName isEqualToString:@"item"]) {
         [self.result addObject:self.item];
+    }
+    
+    if([elementName isEqualToString:@"title"]) {
+        
+        self.item.title =  [self.value copy];
+    }
+    
+    if([elementName isEqualToString:@"link"]) {
+        [self.item setValue:[self.value copy] forKey:@"url"];
+    }
+    
+    if([elementName isEqualToString:@"url"]) {
+        NSURL *url = [NSURL URLWithString:self.value];
+        [self.item setValue:[NSData dataWithContentsOfURL:url] forKey:@"image"];
+    }
+    
+    if ([elementName isEqualToString:@"pubDate"]){
+        NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"EEE, dd MMM YYYY hh:mm:ss ZZZ"];
+        [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en"]];
+        
+        [self.item setValue:[formatter dateFromString:self.value] forKey:@"date"];
+    }
+    
+    if([elementName isEqualToString:@"description"]) {
+        [self.item setValue:[self.value copy] forKey:@"shortDescription"];
+    }
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
-    id element;
-    if(element == nil)
-        element = [[NSMutableString alloc] init];
-    
-    [element appendString:string];
-    
+    [self.value appendString:string];
+    //NSLog(@"Value: %@", self.value);
 }
+
 
 @end
