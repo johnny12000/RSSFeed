@@ -26,7 +26,7 @@
 @implementation RssParser
 
 
-- (NSArray*) getRssArrayFromData:(NSData*)data{
+- (NSArray*) getRssArrayFromData:(NSData*)data {
     
     self.value = [[NSMutableString alloc] init];
     
@@ -71,7 +71,7 @@ didStartElement:(NSString *)elementName
    namespaceURI:(NSString *)namespaceURI
   qualifiedName:(NSString *)qName {
     
-    NSLog(@"Found an element named: %@ with a value of: %@", elementName, self.value);
+    //NSLog(@"Found an element named: %@ with a value of: %@", elementName, self.value);
     
     if([elementName isEqualToString:@"channel"]) {
         self.channel = [self.value copy];
@@ -108,7 +108,7 @@ didStartElement:(NSString *)elementName
     }
 }
 
-- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     [self.value appendString:string];
     //NSLog(@"Value: %@", self.value);
 }

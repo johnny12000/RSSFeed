@@ -30,6 +30,7 @@
 		B2F4B7A11A96582E0097D219 /* feeds.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = B2F4B7A01A96582E0097D219 /* feeds.sqlite3 */; };
 		B2F4B7A41A9658740097D219 /* RssRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7A31A9658740097D219 /* RssRepositoryTests.m */; };
 		B2F4B7A71A9BCD130097D219 /* AddEditSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7A61A9BCD130097D219 /* AddEditSourceViewController.m */; };
+		B2F4B7AA1A9CEA090097D219 /* FeedDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7A91A9CEA090097D219 /* FeedDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		B2F4B7A31A9658740097D219 /* RssRepositoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssRepositoryTests.m; path = Repositories/RssRepositoryTests.m; sourceTree = "<group>"; };
 		B2F4B7A51A9BCD130097D219 /* AddEditSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditSourceViewController.h; sourceTree = "<group>"; };
 		B2F4B7A61A9BCD130097D219 /* AddEditSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditSourceViewController.m; sourceTree = "<group>"; };
+		B2F4B7A81A9CEA090097D219 /* FeedDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailsViewController.h; sourceTree = "<group>"; };
+		B2F4B7A91A9CEA090097D219 /* FeedDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,8 @@
 				B2F4B7A61A9BCD130097D219 /* AddEditSourceViewController.m */,
 				A7109EC61A9CBE3400A68D19 /* FeedTableViewCell.h */,
 				A7109EC71A9CBE3400A68D19 /* FeedTableViewCell.m */,
+				B2F4B7A81A9CEA090097D219 /* FeedDetailsViewController.h */,
+				B2F4B7A91A9CEA090097D219 /* FeedDetailsViewController.m */,
 			);
 			path = RSSFeed;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 				B2F188E51A7EBCA1007DECDE /* FavoritesViewController.m in Sources */,
 				A73A44071A890DF300728E3A /* Source.m in Sources */,
 				A73A440B1A890EF000728E3A /* RssReader.m in Sources */,
+				B2F4B7AA1A9CEA090097D219 /* FeedDetailsViewController.m in Sources */,
 				B2F188DF1A7EBCA1007DECDE /* AppDelegate.m in Sources */,
 				B2F188E21A7EBCA1007DECDE /* FeedsViewController.m in Sources */,
 				B2F188DC1A7EBCA1007DECDE /* main.m in Sources */,

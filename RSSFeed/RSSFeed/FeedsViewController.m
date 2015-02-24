@@ -76,5 +76,14 @@
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"FeedDetailSegue"])
+    {
+        FeedDetailsViewController *vc = [segue destinationViewController];
+        [vc setModel:[self.feeds objectAtIndex:self.feedsTable.indexPathForSelectedRow.row]];
+    }
+}
+
 
 @end

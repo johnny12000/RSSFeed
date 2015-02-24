@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RssReader.h"
 #import "FeedTableViewCell.h"
+#import "FeedDetailsViewController.h"
 
 @interface FeedsViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
