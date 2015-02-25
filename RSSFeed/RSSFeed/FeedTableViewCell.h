@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *feedTitleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *feedDateLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *sourceImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *isFavoriteImageView;
 
 - (void) setCellModel:(Rss*)feed;
 

@@ -24,10 +24,15 @@
 - (void) setCellModel:(Rss*)feed {
     
     self.feedTitleLabel.text = feed.title;
-    self.feedDateLabel.text = [NSString stringWithFormat:@"%@", feed.date];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd.MM.YYYY HH:mm"];
+    
+    self.feedDateLabel.text = [dateFormatter stringFromDate:feed.date];
     //self.sourceImageView.image =
     self.feedImageView.image = [[UIImage alloc] initWithData:feed.image];
     
+    [self.isFavoriteImageView setHidden:TRUE];
     
     
 }
