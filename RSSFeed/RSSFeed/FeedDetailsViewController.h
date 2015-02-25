@@ -17,7 +17,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *feedTitleLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *sourceImageView;
 @property (strong, nonatomic) IBOutlet UILabel *feedDescriptionLabel;
-@property (strong, nonatomic) IBOutlet UILabel *feedTextLabel;
+@property (strong, nonatomic) IBOutlet UIWebView *contentWebView;
 
 - (void) setModel:(Rss*)feed;
 

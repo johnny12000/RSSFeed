@@ -87,7 +87,9 @@ didStartElement:(NSString *)elementName
     }
     
     if([elementName isEqualToString:@"link"]) {
-        [self.item setValue:[self.value copy] forKey:@"url"];
+        
+        
+        [self.item setValue:[NSURL URLWithString:[self.value copy]] forKey:@"url"];
     }
     
     if([elementName isEqualToString:@"url"]) {

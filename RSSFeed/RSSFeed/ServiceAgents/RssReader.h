@@ -12,4 +12,6 @@
 
 - (void) getDataFromUrl:(NSString*)url completionHandler:(void (^)(NSArray* data, NSError* connectionError)) handler;
 
+- (NSURLRequest*) getContentOfUrl:(NSURL*)url;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "FeedDetailsViewController.h"
+#import "RssReader.h"
 
 @interface FeedDetailsViewController ()
 
@@ -18,18 +19,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.feedImageView.image = [UIImage imageWithData:self.feed.image];
+    
     self.feedTitleLabel.text = self.feed.title;
+    
     NSDateFormatter* formatter  = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"EEE, dd MMM YYYY hh:mm:ss ZZZ"];
+    [formatter setDateFormat:@"dd.MM.YYYY HH:mm"];
     
     self.feedDateLabel.text = [formatter stringFromDate: self.feed.date];
-    self.feedDescriptionLabel.text = self.feed.description;
-    self.feedTextLabel.text = self.feed.content;
     
+    self.feedDescriptionLabel.text = self.feed.shortDescription;//.description;
     
+    //self.feedTextLabel.text = self.feed.content;
+    
+    RssReader *rdr = [[RssReader alloc] init];
+    
+    [self.contentWebView loadRequest:[rdr getContentOfUrl:self.feed.url]];
+    //self.contentWebView lo
     
 }
 

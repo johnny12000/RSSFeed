@@ -37,6 +37,8 @@
                            }];
 }
 
-
+- (NSURLRequest*) getContentOfUrl:(NSURL*)url {
+    return [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:60];
+}
 
 @end
