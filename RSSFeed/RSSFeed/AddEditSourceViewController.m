@@ -34,8 +34,18 @@
 
 - (IBAction)sourceEdited:(id)sender {
     
-    Source *source = [[Source alloc] initWithName:self.sourceNameTextField.text url:self.sourceUrlTextField.text index:1 andImage:nil];
-    BOOL result = [[RssRepository instance] addSource:source];
+    self.source.name = self.sourceNameTextField.text;
+    self.source.url = self.sourceUrlTextField.text;
+    
+    
+    BOOL result;
+    
+    if(self.source.uid)
+        result = [[RssRepository instance] updateSource:self.source];
+    else{
+        self.source.uid = [[NSUUID UUID] UUIDString];
+        result = [[RssRepository instance] addSource:self.source];
+    }
     
     if(result){
         //TODO: some message should be displayed
