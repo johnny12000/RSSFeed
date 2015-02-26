@@ -9,13 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "Source.h"
 #import "RssRepository.h"
+#import "NSString+Validation.h"
 
 @interface AddEditSourceViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextField *sourceNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *sourceUrlTextField;
 
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *doneButton;
+
 - (IBAction)sourceEdited:(id)sender;
 - (IBAction)sourceCanceled:(id)sender;
+
+
+- (IBAction)nameChanged:(id)sender;
+- (IBAction)linkChanged:(id)sender;
 
 
 - (void) setModel:(Source*)source;

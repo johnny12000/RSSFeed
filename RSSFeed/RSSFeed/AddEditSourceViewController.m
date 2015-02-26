@@ -22,6 +22,8 @@
     
     self.sourceNameTextField.text = self.source.name;
     self.sourceUrlTextField.text = self.source.url;
+    
+    [self setViewState];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,6 +63,16 @@
     
 }
 
+- (IBAction)nameChanged:(id)sender {
+    //TODO: check if name is uniqe
+    
+}
+
+- (IBAction)linkChanged:(id)sender {
+    
+    [self setViewState];
+}
+
 #pragma mark - Set Model
 
 - (void) setModel:(Source*)source {
@@ -72,6 +84,13 @@
     self.source = [[Source alloc]init];
 }
 
+#pragma mark - Set View State
 
+- (void) setViewState{
+    
+    BOOL isDataValid = [self.sourceUrlTextField.text isWebLink];
+    
+    [self.doneButton setEnabled: isDataValid];
+}
 
 @end

@@ -31,6 +31,8 @@
 		B2F4B7A41A9658740097D219 /* RssRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7A31A9658740097D219 /* RssRepositoryTests.m */; };
 		B2F4B7A71A9BCD130097D219 /* AddEditSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7A61A9BCD130097D219 /* AddEditSourceViewController.m */; };
 		B2F4B7AA1A9CEA090097D219 /* FeedDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7A91A9CEA090097D219 /* FeedDetailsViewController.m */; };
+		B2F4B7AD1A9F8D830097D219 /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7AC1A9F8D830097D219 /* NSString+Validation.m */; };
+		B2F4B7B21A9F92340097D219 /* NSString+ValidationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7B11A9F92340097D219 /* NSString+ValidationTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,9 @@
 		B2F4B7A61A9BCD130097D219 /* AddEditSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditSourceViewController.m; sourceTree = "<group>"; };
 		B2F4B7A81A9CEA090097D219 /* FeedDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailsViewController.h; sourceTree = "<group>"; };
 		B2F4B7A91A9CEA090097D219 /* FeedDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailsViewController.m; sourceTree = "<group>"; };
+		B2F4B7AB1A9F8D830097D219 /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Validation.h"; path = "Helpers/NSString+Validation.h"; sourceTree = "<group>"; };
+		B2F4B7AC1A9F8D830097D219 /* NSString+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Validation.m"; path = "Helpers/NSString+Validation.m"; sourceTree = "<group>"; };
+		B2F4B7B11A9F92340097D219 /* NSString+ValidationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ValidationTests.m"; path = "Helpers/NSString+ValidationTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +146,8 @@
 		A7D4F8341A9F6021005CA2D7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B2F4B7AB1A9F8D830097D219 /* NSString+Validation.h */,
+				B2F4B7AC1A9F8D830097D219 /* NSString+Validation.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -208,6 +215,7 @@
 		B2F188F51A7EBCA1007DECDE /* RSSFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				B2F4B7AE1A9F91870097D219 /* Helpers */,
 				B2F4B7A21A9658490097D219 /* Repositories */,
 				A73A440C1A89133300728E3A /* ServiceAgents */,
 				B2F188F81A7EBCA1007DECDE /* RSSFeedTests.m */,
@@ -239,6 +247,14 @@
 				B2F4B7A31A9658740097D219 /* RssRepositoryTests.m */,
 			);
 			name = Repositories;
+			sourceTree = "<group>";
+		};
+		B2F4B7AE1A9F91870097D219 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B2F4B7B11A9F92340097D219 /* NSString+ValidationTests.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F4B7AD1A9F8D830097D219 /* NSString+Validation.m in Sources */,
 				A73A44041A890DBA00728E3A /* Rss.m in Sources */,
 				B2F189121A7EC464007DECDE /* AboutViewController.m in Sources */,
 				B2F1890F1A7EC457007DECDE /* SourcesViewController.m in Sources */,
@@ -367,6 +384,7 @@
 				B2F188F91A7EBCA1007DECDE /* RSSFeedTests.m in Sources */,
 				A73A440E1A89135F00728E3A /* RssReaderTests.m in Sources */,
 				B2F4B7A41A9658740097D219 /* RssRepositoryTests.m in Sources */,
+				B2F4B7B21A9F92340097D219 /* NSString+ValidationTests.m in Sources */,
 				B2F4B7971A8D272F0097D219 /* RssParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

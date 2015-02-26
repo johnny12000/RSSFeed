@@ -361,6 +361,9 @@
                                 <rect key="frame" x="16" y="125" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameChanged:" destination="SiL-2G-m76" eventType="editingChanged" id="r2n-J6-f3f"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source Url" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1k-2A-mmi">
                                 <rect key="frame" x="16" y="201" width="164" height="20.5"/>
@@ -375,6 +378,9 @@
                                 <rect key="frame" x="16" y="230" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="linkChanged:" destination="SiL-2G-m76" eventType="editingChanged" id="fsJ-iv-b0s"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -406,6 +412,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="doneButton" destination="AUg-6g-3Dd" id="BgR-hQ-0GS"/>
                         <outlet property="sourceNameTextField" destination="H8x-uB-EuS" id="cmr-FC-xH0"/>
                         <outlet property="sourceUrlTextField" destination="Idx-8s-IhG" id="zqJ-bq-rRj"/>
                     </connections>
