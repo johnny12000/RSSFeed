@@ -138,6 +138,13 @@
 			name = ServiceAgents;
 			sourceTree = "<group>";
 		};
+		A7D4F8341A9F6021005CA2D7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		B2F188CD1A7EBCA1007DECDE = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +168,7 @@
 		B2F188D81A7EBCA1007DECDE /* RSSFeed */ = {
 			isa = PBXGroup;
 			children = (
+				A7D4F8341A9F6021005CA2D7 /* Helpers */,
 				B2F4B79A1A964D720097D219 /* Repositories */,
 				A73A44081A890ED200728E3A /* ServiceAgents */,
 				A73A44011A890D8B00728E3A /* Models */,

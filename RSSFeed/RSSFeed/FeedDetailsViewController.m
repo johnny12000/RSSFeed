@@ -47,6 +47,32 @@
 
 #pragma mark - Model
 
+- (IBAction)setFavorite:(id)sender {
+    
+    [[RssRepository instance] addFavorite:self.feed];
+    
+}
+
+- (IBAction)shareFeed:(id)sender {
+    
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[self.feed.url]
+                                                                                         applicationActivities:nil];
+ 
+    
+    [self.navigationController presentViewController:activityViewController animated:YES completion:nil];
+}
+
+
+- (id) activityViewControllerPlaceholderItem:(UIActivityViewController *)activityViewController {
+    return nil;
+}
+
+- (id) activityViewController:(UIActivityViewController *)activityViewController itemForActivityType:(NSString *)activityType {
+    return nil;
+}
+
+
+
 - (void) setModel:(Rss*)feed {
     self.feed = feed;
 }

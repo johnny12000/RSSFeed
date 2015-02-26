@@ -106,7 +106,7 @@
             </objects>
             <point key="canvasLocation" x="1554" y="-349"/>
         </scene>
-        <!--Feed Details View Controller-->
+        <!--Title-->
         <scene sceneID="ETj-tr-gD0">
             <objects>
                 <viewController id="VKD-1z-80J" customClass="FeedDetailsViewController" sceneMemberID="viewController">
@@ -181,6 +181,9 @@
                                 <state key="normal" image="first">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="setFavorite:" destination="VKD-1z-80J" eventType="touchUpInside" id="te0-K9-kiN"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5u5-Hz-le6">
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -218,6 +221,13 @@
                             <constraint firstItem="0Hh-yz-Iif" firstAttribute="leading" secondItem="5iX-mE-748" secondAttribute="leading" id="uCm-Gr-bFc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="XcA-5z-X0F">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="HEB-Qu-bTz">
+                            <connections>
+                                <action selector="shareFeed:" destination="VKD-1z-80J" id="R1C-tf-ptc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="contentWebView" destination="0Hh-yz-Iif" id="OLt-Gg-ddQ"/>
                         <outlet property="feedDateLabel" destination="7P5-zZ-6XO" id="tQf-RO-tKH"/>

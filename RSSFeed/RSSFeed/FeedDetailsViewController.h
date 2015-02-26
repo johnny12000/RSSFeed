@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Rss.h"
+#import "RssRepository.h"
 
-
-@interface FeedDetailsViewController : UIViewController
+@interface FeedDetailsViewController : UIViewController <UIActivityItemSource>
 
 @property (strong, nonatomic) IBOutlet UIImageView *feedImageView;
 @property (strong, nonatomic) IBOutlet UILabel *feedDateLabel;
@@ -18,6 +18,9 @@
 @property (strong, nonatomic) IBOutlet UIImageView *sourceImageView;
 @property (strong, nonatomic) IBOutlet UILabel *feedDescriptionLabel;
 @property (strong, nonatomic) IBOutlet UIWebView *contentWebView;
+
+- (IBAction)setFavorite:(id)sender;
+- (IBAction)shareFeed:(id)sender;
 
 - (void) setModel:(Rss*)feed;
 
