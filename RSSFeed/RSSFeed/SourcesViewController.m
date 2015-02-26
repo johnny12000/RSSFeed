@@ -90,9 +90,11 @@
     
     if ([self.sourcesTable isEditing]) {
         [self.sourcesTable setEditing:NO animated:YES];
+        self.deleteButton.title = @"Delete";
     }
     else {
         [self.sourcesTable setEditing:YES animated:YES];
+        self.deleteButton.title = @"Done";
     }
 }
 

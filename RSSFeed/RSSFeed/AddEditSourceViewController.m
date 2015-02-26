@@ -64,12 +64,10 @@
 }
 
 - (IBAction)nameChanged:(id)sender {
-    //TODO: check if name is uniqe
-    
+    [self setViewState];
 }
 
 - (IBAction)linkChanged:(id)sender {
-    
     [self setViewState];
 }
 
@@ -88,6 +86,7 @@
 
 - (void) setViewState{
     
+    //TODO: check if name is uniqe
     BOOL isDataValid = [self.sourceUrlTextField.text isWebLink];
     
     [self.doneButton setEnabled: isDataValid];

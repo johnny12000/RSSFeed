@@ -12,6 +12,7 @@
 @interface SourcesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *sourcesTable;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *deleteButton;
 
 - (IBAction)setSourceDelete:(id)sender;
 

@@ -329,6 +329,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="deleteButton" destination="5ho-at-TBB" id="iaS-84-5GB"/>
                         <outlet property="sourcesTable" destination="Msb-0m-Awi" id="KOM-VZ-TCF"/>
                     </connections>
                 </viewController>
