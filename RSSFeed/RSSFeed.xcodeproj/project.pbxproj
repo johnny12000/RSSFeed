@@ -33,6 +33,8 @@
 		B2F4B7AA1A9CEA090097D219 /* FeedDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7A91A9CEA090097D219 /* FeedDetailsViewController.m */; };
 		B2F4B7AD1A9F8D830097D219 /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7AC1A9F8D830097D219 /* NSString+Validation.m */; };
 		B2F4B7B21A9F92340097D219 /* NSString+ValidationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7B11A9F92340097D219 /* NSString+ValidationTests.m */; };
+		B2F4B7B61A9F9BED0097D219 /* Rss+Notifications.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7B51A9F9BED0097D219 /* Rss+Notifications.m */; };
+		B2F4B7B91A9F9D5A0097D219 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4B7B81A9F9D5A0097D219 /* MainTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,10 @@
 		B2F4B7AB1A9F8D830097D219 /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Validation.h"; path = "Helpers/NSString+Validation.h"; sourceTree = "<group>"; };
 		B2F4B7AC1A9F8D830097D219 /* NSString+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Validation.m"; path = "Helpers/NSString+Validation.m"; sourceTree = "<group>"; };
 		B2F4B7B11A9F92340097D219 /* NSString+ValidationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ValidationTests.m"; path = "Helpers/NSString+ValidationTests.m"; sourceTree = "<group>"; };
+		B2F4B7B41A9F9BED0097D219 /* Rss+Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Rss+Notifications.h"; path = "Helpers/Rss+Notifications.h"; sourceTree = "<group>"; };
+		B2F4B7B51A9F9BED0097D219 /* Rss+Notifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Rss+Notifications.m"; path = "Helpers/Rss+Notifications.m"; sourceTree = "<group>"; };
+		B2F4B7B71A9F9D5A0097D219 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		B2F4B7B81A9F9D5A0097D219 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,8 @@
 			children = (
 				B2F4B7AB1A9F8D830097D219 /* NSString+Validation.h */,
 				B2F4B7AC1A9F8D830097D219 /* NSString+Validation.m */,
+				B2F4B7B41A9F9BED0097D219 /* Rss+Notifications.h */,
+				B2F4B7B51A9F9BED0097D219 /* Rss+Notifications.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -199,6 +207,8 @@
 				A7109EC71A9CBE3400A68D19 /* FeedTableViewCell.m */,
 				B2F4B7A81A9CEA090097D219 /* FeedDetailsViewController.h */,
 				B2F4B7A91A9CEA090097D219 /* FeedDetailsViewController.m */,
+				B2F4B7B71A9F9D5A0097D219 /* MainTabBarController.h */,
+				B2F4B7B81A9F9D5A0097D219 /* MainTabBarController.m */,
 			);
 			path = RSSFeed;
 			sourceTree = "<group>";
@@ -369,7 +379,9 @@
 				A73A440B1A890EF000728E3A /* RssReader.m in Sources */,
 				B2F4B7AA1A9CEA090097D219 /* FeedDetailsViewController.m in Sources */,
 				B2F188DF1A7EBCA1007DECDE /* AppDelegate.m in Sources */,
+				B2F4B7B91A9F9D5A0097D219 /* MainTabBarController.m in Sources */,
 				B2F188E21A7EBCA1007DECDE /* FeedsViewController.m in Sources */,
+				B2F4B7B61A9F9BED0097D219 /* Rss+Notifications.m in Sources */,
 				B2F188DC1A7EBCA1007DECDE /* main.m in Sources */,
 				B2F4B79D1A964DC10097D219 /* RssRepository.m in Sources */,
 				B2F4B7951A8D25C50097D219 /* RssParser.m in Sources */,

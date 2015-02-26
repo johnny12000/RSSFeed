@@ -12,10 +12,21 @@
 @interface FeedDetailsViewController ()
 
 @property Rss* feed;
+@property RssRepository* repository;
 
 @end
 
 @implementation FeedDetailsViewController
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        self.repository = [RssRepository instance];
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,11 +56,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Model
+#pragma mark - Actions
 
 - (IBAction)setFavorite:(id)sender {
     
-    [[RssRepository instance] addFavorite:self.feed];
+    BOOL result = [self.repository addFavorite:self.feed];
+    
+    if(result)
+       [self.feed notifyFeedAddedToFavorites];
     
 }
 
@@ -57,21 +71,13 @@
     
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[self.feed.url]
                                                                                          applicationActivities:nil];
- 
+    
     
     [self.navigationController presentViewController:activityViewController animated:YES completion:nil];
 }
 
 
-- (id) activityViewControllerPlaceholderItem:(UIActivityViewController *)activityViewController {
-    return nil;
-}
-
-- (id) activityViewController:(UIActivityViewController *)activityViewController itemForActivityType:(NSString *)activityType {
-    return nil;
-}
-
-
+#pragma mark - Model
 
 - (void) setModel:(Rss*)feed {
     self.feed = feed;

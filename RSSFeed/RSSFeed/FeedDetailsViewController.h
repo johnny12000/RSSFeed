@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Rss.h"
 #import "RssRepository.h"
+#import "Rss+Notifications.h"
 
-@interface FeedDetailsViewController : UIViewController <UIActivityItemSource>
+@interface FeedDetailsViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *feedImageView;
 @property (strong, nonatomic) IBOutlet UILabel *feedDateLabel;

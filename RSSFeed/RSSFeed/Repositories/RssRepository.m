@@ -114,7 +114,7 @@ static RssRepository *_instance;
 }
 
 - (BOOL) addFavorite:(Rss*)rss {
-    return FALSE;
+    return TRUE;
 }
 
 - (BOOL) removeFavorite:(Rss*)rss {
