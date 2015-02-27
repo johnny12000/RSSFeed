@@ -11,9 +11,7 @@
 #import "FeedTableViewCell.h"
 #import "FeedDetailsViewController.h"
 
-@interface FeedsViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
-
-@property (strong, nonatomic) IBOutlet UITableView *feedsTable;
+@interface FeedsViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end
 

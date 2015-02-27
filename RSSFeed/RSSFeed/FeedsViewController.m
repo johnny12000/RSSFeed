@@ -26,8 +26,10 @@
         self.rssReader = [[RssReader alloc] init];
     
     
-    self.feedsTable.delegate = self;
-    self.feedsTable.dataSource = self;
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    refreshControl.tintColor = [UIColor magentaColor];
+    self.refreshControl = refreshControl;
     
     [self refreshData];
 }
@@ -45,7 +47,7 @@
     [self.rssReader getDataFromUrl:@"http://feeds.feedburner.com/techcrunch/startups?format=xml" completionHandler:^(NSArray* data, NSError* connectionError){
         self.feeds = data;
         
-        [self.feedsTable reloadData];
+        [self.tableView reloadData];
     }];
     
     
@@ -60,8 +62,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    static NSString *simpleTableIdentifier = @"FeedCell";
-    FeedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    static NSString *simpleTableIdentifier = @"Cell";
+    id cl = [self.tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    FeedTableViewCell *cell = cl;
     
     if (cell == nil) {
         cell = [[FeedTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
@@ -81,7 +84,7 @@
     if ([[segue identifier] isEqualToString:@"FeedDetailSegue"])
     {
         FeedDetailsViewController *vc = [segue destinationViewController];
-        [vc setModel:[self.feeds objectAtIndex:self.feedsTable.indexPathForSelectedRow.row]];
+        [vc setModel:[self.feeds objectAtIndex:self.tableView.indexPathForSelectedRow.row]];
     }
 }
 
