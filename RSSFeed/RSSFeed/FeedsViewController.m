@@ -12,7 +12,9 @@
 @interface FeedsViewController ()
 
 @property RssReader* rssReader;
-@property NSArray* feeds;
+@property NSMutableArray* feeds;
+@property RssRepository* repository;
+@property NSArray* sources;
 
 @end
 
@@ -24,6 +26,11 @@
     
     if(self.rssReader == nil)
         self.rssReader = [[RssReader alloc] init];
+    
+    if(self.repository == nil)
+        self.repository = [[RssRepository alloc] init];
+    
+    
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     self.refreshControl = refreshControl;
@@ -42,11 +49,19 @@
 - (void) refreshData {
     //http://feeds.feedburner.com/techcrunch/startups?format=xml
     //http://www.b92.net/info/rss/vesti.xml
-    [self.rssReader getDataFromUrl:@"http://feeds.feedburner.com/techcrunch/startups?format=xml" completionHandler:^(NSArray* data, NSError* connectionError){
-        self.feeds = data;
-        [self.tableView reloadData];
-        [self.refreshControl endRefreshing];
-    }];
+    
+    self.sources = [self.repository getSources];
+    
+    self.feeds = [[NSMutableArray alloc]init];
+    
+    for (Source* source in self.sources) {
+        [self.rssReader getDataFromUrl:source.url completionHandler:^(NSArray* data, NSError* connectionError){
+            NSLog(@"Source : %@", source.name);
+            [self.feeds addObjectsFromArray:data];
+            [self.tableView reloadData];
+            [self.refreshControl endRefreshing];
+        }];
+    }
 }
 
 #pragma mark - UITableView
@@ -58,12 +73,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *simpleTableIdentifier = @"Cell";
-    id cl = [self.tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    FeedTableViewCell *cell = cl;
+    FeedTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     Rss* rss = [self.feeds objectAtIndex:indexPath.row];
+    NSPredicate* srcPredicate = [NSPredicate predicateWithFormat:@"url = %@", rss.channel];
     
-    [cell setCellModel:rss];
+    Source* source = [[self.sources filteredArrayUsingPredicate:srcPredicate] firstObject];
+    
+    [cell setCellModel:rss andSource:source];
+    
     return cell;
 }
 
@@ -72,7 +90,14 @@
     if ([[segue identifier] isEqualToString:@"FeedDetailSegue"])
     {
         FeedDetailsViewController *vc = [segue destinationViewController];
-        [vc setModel:[self.feeds objectAtIndex:self.tableView.indexPathForSelectedRow.row]];
+        
+        Rss* rss = [self.feeds objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+        
+        NSPredicate* srcPredicate = [NSPredicate predicateWithFormat:@"url = %@", rss.channel];
+        
+        Source* source = [[self.sources filteredArrayUsingPredicate:srcPredicate] firstObject];
+        
+        [vc setModel:rss withSource:source];
     }
 }
 

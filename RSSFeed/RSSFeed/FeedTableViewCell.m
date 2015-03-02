@@ -11,6 +11,7 @@
 @interface FeedTableViewCell()
 
 @property Rss* feed;
+@property Source* source;
 
 @end
 
@@ -27,9 +28,10 @@
 }
 
 
-- (void) setCellModel:(Rss*)feed {
+- (void) setCellModel:(Rss*)feed andSource:(Source*)source {
     
     self.feed = feed;
+    self.source = source;
     
     self.feedTitleLabel.text = self.feed.title;
     
@@ -37,7 +39,7 @@
     [dateFormatter setDateFormat:@"dd.MM.YYYY HH:mm"];
     
     self.feedDateLabel.text = [dateFormatter stringFromDate:self.feed.date];
-    //self.sourceImageView.image =
+    self.sourceImageView.image = [UIImage imageWithData:source.image];
     self.feedImageView.image = [[UIImage alloc] initWithData:self.feed.image];
     
     [self.isFavoriteImageView setHidden:TRUE];

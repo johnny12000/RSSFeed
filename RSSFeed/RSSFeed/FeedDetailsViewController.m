@@ -12,6 +12,7 @@
 @interface FeedDetailsViewController ()
 
 @property Rss* feed;
+@property Source* source;
 @property RssRepository* repository;
 
 @end
@@ -42,7 +43,7 @@
     
     self.feedDescriptionLabel.text = self.feed.shortDescription;//.description;
     
-    //self.feedTextLabel.text = self.feed.content;
+    self.sourceImageView.image = [UIImage imageWithData:self.source.image];
     
     RssReader *rdr = [[RssReader alloc] init];
     
@@ -81,8 +82,9 @@
 
 #pragma mark - Model
 
-- (void) setModel:(Rss*)feed {
+- (void) setModel:(Rss*)feed withSource:(Source*)source {
     self.feed = feed;
+    self.source = source;
 }
 
 @end

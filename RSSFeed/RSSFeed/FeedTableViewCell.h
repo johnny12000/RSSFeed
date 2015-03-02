@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Rss.h"
+#import "Source.h"
 
 @interface FeedTableViewCell : UITableViewCell
 
@@ -17,6 +18,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *sourceImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *isFavoriteImageView;
 
-- (void) setCellModel:(Rss*)feed;
+- (void) setCellModel:(Rss*)feed andSource:(Source*)source;
 
 @end

@@ -10,6 +10,7 @@
 #import "Rss.h"
 #import "RssRepository.h"
 #import "Rss+Notifications.h"
+#import "Source.h"
 
 @interface FeedDetailsViewController : UIViewController
 
@@ -23,6 +24,6 @@
 - (IBAction)setFavorite:(id)sender;
 - (IBAction)shareFeed:(id)sender;
 
-- (void) setModel:(Rss*)feed;
+- (void) setModel:(Rss*)feed withSource:(Source*)source;
 
 @end
