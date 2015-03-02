@@ -25,11 +25,9 @@
     if(self.rssReader == nil)
         self.rssReader = [[RssReader alloc] init];
     
-    
-    
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
-    refreshControl.tintColor = [UIColor magentaColor];
     self.refreshControl = refreshControl;
+    [refreshControl addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
     
     [self refreshData];
 }
@@ -46,12 +44,9 @@
     //http://www.b92.net/info/rss/vesti.xml
     [self.rssReader getDataFromUrl:@"http://feeds.feedburner.com/techcrunch/startups?format=xml" completionHandler:^(NSArray* data, NSError* connectionError){
         self.feeds = data;
-        
         [self.tableView reloadData];
+        [self.refreshControl endRefreshing];
     }];
-    
-    
-    
 }
 
 #pragma mark - UITableView
@@ -66,16 +61,9 @@
     id cl = [self.tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     FeedTableViewCell *cell = cl;
     
-    if (cell == nil) {
-        cell = [[FeedTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-    }
-    
     Rss* rss = [self.feeds objectAtIndex:indexPath.row];
     
     [cell setCellModel:rss];
-    //cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-    //cell.imageView.image = [UIImage imageNamed:@"geekPic.jpg"];
-    
     return cell;
 }
 

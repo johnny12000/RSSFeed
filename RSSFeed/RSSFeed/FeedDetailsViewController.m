@@ -46,7 +46,9 @@
     
     RssReader *rdr = [[RssReader alloc] init];
     
-    [self.contentWebView loadRequest:[rdr getContentOfUrl:self.feed.url]];
+    id content = [rdr getContentOfUrl:self.feed.url];
+    
+    //[self.contentWebView loadRequest:content];
     //self.contentWebView lo
     
 }

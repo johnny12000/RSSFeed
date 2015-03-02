@@ -8,6 +8,12 @@
 
 #import "FeedTableViewCell.h"
 
+@interface FeedTableViewCell()
+
+@property Rss* feed;
+
+@end
+
 @implementation FeedTableViewCell
 
 - (void)awakeFromNib {
@@ -23,18 +29,18 @@
 
 - (void) setCellModel:(Rss*)feed {
     
-    self.feedTitleLabel.text = feed.title;
+    self.feed = feed;
+    
+    self.feedTitleLabel.text = self.feed.title;
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"dd.MM.YYYY HH:mm"];
     
-    self.feedDateLabel.text = [dateFormatter stringFromDate:feed.date];
+    self.feedDateLabel.text = [dateFormatter stringFromDate:self.feed.date];
     //self.sourceImageView.image =
-    self.feedImageView.image = [[UIImage alloc] initWithData:feed.image];
+    self.feedImageView.image = [[UIImage alloc] initWithData:self.feed.image];
     
     [self.isFavoriteImageView setHidden:TRUE];
-    
-    
 }
 
 @end
