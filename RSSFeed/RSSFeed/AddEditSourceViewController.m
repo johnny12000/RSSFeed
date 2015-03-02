@@ -38,7 +38,7 @@
     
     self.source.name = self.sourceNameTextField.text;
     self.source.url = self.sourceUrlTextField.text;
-    
+    self.source.isUsed = TRUE;
     
     BOOL result;
     

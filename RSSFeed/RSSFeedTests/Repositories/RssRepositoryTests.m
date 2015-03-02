@@ -36,14 +36,14 @@
 
 - (void)testUpdateSource{
     
-    Source* src = [[Source alloc]initWithName:@"test1" url:@"url" index:2 andImage:nil];
+    Source* src = [[Source alloc]initWithName:@"test1" url:@"url" index:2 andImage:nil andIsUsed:TRUE];
     BOOL result = [self.testRepository updateSource:src];
     XCTAssertTrue(result);
     
 }
 
 - (void) testDeleteSource {
-    Source *src = [[Source alloc] initWithUid:@"F46C37B4-EC15-478A-9560-7FA757B49C7A" name:@"" url:@"" index:1 andImage:nil];
+    Source *src = [[Source alloc] initWithUid:@"F46C37B4-EC15-478A-9560-7FA757B49C7A" name:@"" url:@"" index:1 andImage:nil andIsUsed:TRUE];
     BOOL result = [self.testRepository deleteSource:src];
     XCTAssertTrue(result);
 }
@@ -58,8 +58,7 @@
 
 - (void) testAddSource {
     
-    
-    Source* src = [[Source alloc]initWithName:@"testAdd" url:@"urlAdd" index:4 andImage:nil];
+    Source* src = [[Source alloc]initWithName:@"testAdd" url:@"urlAdd" index:4 andImage:nil andIsUsed:TRUE];
     BOOL result = [self.testRepository addSource:src];
     XCTAssertTrue(result);
     

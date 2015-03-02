@@ -15,8 +15,9 @@
 @property NSString *name;
 @property NSString *url;
 @property NSInteger index;
+@property BOOL isUsed;
 
-- (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image;
-- (id) initWithUid:(NSString*)uid name:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image;
+- (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image andIsUsed:(BOOL)isUsed;
+- (id) initWithUid:(NSString*)uid name:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image andIsUsed:(BOOL)isUsed;
 
 @end
