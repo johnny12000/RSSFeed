@@ -15,6 +15,7 @@
 @property NSMutableArray* feeds;
 @property RssRepository* repository;
 @property NSArray* sources;
+@property NSArray* favorites;
 
 @end
 
@@ -52,6 +53,8 @@
     
     self.sources = [self.repository getSources];
     
+    self.favorites = [self.repository getFavorites];
+    
     self.feeds = [[NSMutableArray alloc]init];
     
     for (Source* source in self.sources) {
@@ -80,7 +83,10 @@
     
     Source* source = [[self.sources filteredArrayUsingPredicate:srcPredicate] firstObject];
     
-    [cell setCellModel:rss andSource:source];
+    NSPredicate* isFavPredicate = [NSPredicate predicateWithFormat:@"url = %@", rss.url.absoluteString];
+    BOOL isFavorite = [self.favorites filteredArrayUsingPredicate:isFavPredicate].count != 0;
+    
+    [cell setCellModel:rss andSource:source isFavorite:isFavorite];
     
     return cell;
 }

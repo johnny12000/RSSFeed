@@ -28,7 +28,7 @@
 }
 
 
-- (void) setCellModel:(Rss*)feed andSource:(Source*)source {
+- (void) setCellModel:(Rss*)feed andSource:(Source*)source isFavorite:(BOOL)isFavorite {
     
     self.feed = feed;
     self.source = source;
@@ -42,7 +42,7 @@
     self.sourceImageView.image = [UIImage imageWithData:source.image];
     self.feedImageView.image = [[UIImage alloc] initWithData:self.feed.image];
     
-    [self.isFavoriteImageView setHidden:TRUE];
+    [self.isFavoriteImageView setHidden:!isFavorite];
 }
 
 @end

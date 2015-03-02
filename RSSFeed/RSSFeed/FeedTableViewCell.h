@@ -18,6 +18,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *sourceImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *isFavoriteImageView;
 
-- (void) setCellModel:(Rss*)feed andSource:(Source*)source;
+- (void) setCellModel:(Rss*)feed andSource:(Source*)source isFavorite:(BOOL)isFavorite;
 
 @end
