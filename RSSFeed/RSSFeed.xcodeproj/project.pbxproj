@@ -12,7 +12,7 @@
 		A73A44071A890DF300728E3A /* Source.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A44061A890DF300728E3A /* Source.m */; };
 		A73A440B1A890EF000728E3A /* RssReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A440A1A890EF000728E3A /* RssReader.m */; };
 		A73A440E1A89135F00728E3A /* RssReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A440D1A89135F00728E3A /* RssReaderTests.m */; };
-		A7D69B151AA0A61400110104 /* FeedsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D69B141AA0A61400110104 /* FeedsTableViewController.m */; };
+		A7DBF3A21AA604FA0060AC9B /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */; };
 		B2F188DC1A7EBCA1007DECDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188DB1A7EBCA1007DECDE /* main.m */; };
 		B2F188DF1A7EBCA1007DECDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188DE1A7EBCA1007DECDE /* AppDelegate.m */; };
 		B2F188E21A7EBCA1007DECDE /* FeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188E11A7EBCA1007DECDE /* FeedsViewController.m */; };
@@ -58,8 +58,7 @@
 		A73A44091A890EF000728E3A /* RssReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RssReader.h; path = ServiceAgents/RssReader.h; sourceTree = "<group>"; };
 		A73A440A1A890EF000728E3A /* RssReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssReader.m; path = ServiceAgents/RssReader.m; sourceTree = "<group>"; };
 		A73A440D1A89135F00728E3A /* RssReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssReaderTests.m; path = ServiceAgents/RssReaderTests.m; sourceTree = "<group>"; };
-		A7D69B131AA0A61400110104 /* FeedsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedsTableViewController.h; sourceTree = "<group>"; };
-		A7D69B141AA0A61400110104 /* FeedsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedsTableViewController.m; sourceTree = "<group>"; };
+		A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		B2F188D61A7EBCA1007DECDE /* RSSFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F188DA1A7EBCA1007DECDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F188DB1A7EBCA1007DECDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -212,8 +211,7 @@
 				B2F4B7A91A9CEA090097D219 /* FeedDetailsViewController.m */,
 				B2F4B7B71A9F9D5A0097D219 /* MainTabBarController.h */,
 				B2F4B7B81A9F9D5A0097D219 /* MainTabBarController.m */,
-				A7D69B131AA0A61400110104 /* FeedsTableViewController.h */,
-				A7D69B141AA0A61400110104 /* FeedsTableViewController.m */,
+				A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */,
 			);
 			path = RSSFeed;
 			sourceTree = "<group>";
@@ -356,6 +354,7 @@
 				B2F188ED1A7EBCA1007DECDE /* LaunchScreen.xib in Resources */,
 				B2F188EA1A7EBCA1007DECDE /* Images.xcassets in Resources */,
 				B2F4B7A11A96582E0097D219 /* feeds.sqlite3 in Resources */,
+				A7DBF3A21AA604FA0060AC9B /* FeedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +378,6 @@
 				B2F189121A7EC464007DECDE /* AboutViewController.m in Sources */,
 				B2F1890F1A7EC457007DECDE /* SourcesViewController.m in Sources */,
 				A7109EC81A9CBE3400A68D19 /* FeedTableViewCell.m in Sources */,
-				A7D69B151AA0A61400110104 /* FeedsTableViewController.m in Sources */,
 				B2F188E51A7EBCA1007DECDE /* FavoritesViewController.m in Sources */,
 				A73A44071A890DF300728E3A /* Source.m in Sources */,
 				A73A440B1A890EF000728E3A /* RssReader.m in Sources */,

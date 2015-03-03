@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Rss.h"
 #import "RssRepository.h"
+#import "FeedTableViewCell.h"
+#import "FeedDetailsViewController.h"
 
 
 @interface FavoritesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>

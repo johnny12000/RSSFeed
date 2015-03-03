@@ -12,7 +12,7 @@
 
 @property NSArray* favorites;
 @property RssRepository* repository;
-
+@property NSArray* sources;
 
 @end
 
@@ -25,6 +25,8 @@
     if(self.repository == nil)
         self.repository = [[RssRepository alloc] init];
     
+    UINib *nib = [UINib nibWithNibName:@"FeedCell" bundle:nil];
+    [self.favoritesTableView registerNib:nib forCellReuseIdentifier:@"FeedCell"];
     
     self.favoritesTableView.dataSource = self;
     self.favoritesTableView.delegate = self;
@@ -42,6 +44,7 @@
 
 - (void) reloadData {
     self.favorites = [self.repository getFavorites];
+    self.sources = [self.repository getSources];
     
     [self.favoritesTableView reloadData];
 }
@@ -54,19 +57,41 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"FeedCell";
+    FeedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     Rss* rss = [self.favorites objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = rss.title;
+    NSPredicate* srcPredicate = [NSPredicate predicateWithFormat:@"url = %@", rss.channel];
     
-    UIImage* image = [UIImage imageWithData:rss.image];
-    cell.imageView.image  = image;
+    Source* source = [[self.sources filteredArrayUsingPredicate:srcPredicate] firstObject];
+    
+    [cell setCellModel:rss andSource:source isFavorite:TRUE];
     
     return cell;
 }
 
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"FeedDetailSegue" sender:self];
+}
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"FeedDetailSegue"])
+    {
+        FeedDetailsViewController *vc = [segue destinationViewController];
+        
+        Rss* rss = [self.favorites objectAtIndex:self.favoritesTableView.indexPathForSelectedRow.row];
+        
+        NSPredicate* srcPredicate = [NSPredicate predicateWithFormat:@"url = %@", rss.channel];
+        
+        Source* source = [[self.sources filteredArrayUsingPredicate:srcPredicate] firstObject];
+        
+        [vc setModel:rss withSource:source];
+    }
+}
 
 @end

@@ -31,7 +31,8 @@
     if(self.repository == nil)
         self.repository = [[RssRepository alloc] init];
     
-    
+    UINib *nib = [UINib nibWithNibName:@"FeedCell" bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"FeedCell"];
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     self.refreshControl = refreshControl;
@@ -77,7 +78,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    static NSString *simpleTableIdentifier = @"Cell";
+    static NSString *simpleTableIdentifier = @"FeedCell";
     FeedTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     Rss* rss = [self.feeds objectAtIndex:indexPath.row];
@@ -92,6 +93,12 @@
     
     return cell;
 }
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"FeedDetailSegue" sender:self];
+}
+
+#pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Make sure your segue name in storyboard is the same as this line
