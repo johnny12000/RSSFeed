@@ -51,7 +51,9 @@
     //http://feeds.feedburner.com/techcrunch/startups?format=xml
     //http://www.b92.net/info/rss/vesti.xml
     
-    self.sources = [self.repository getSources];
+    NSPredicate* filterSources = [NSPredicate predicateWithFormat:@"isUsed = TRUE"];
+    
+    self.sources = [[self.repository getSources] filteredArrayUsingPredicate:filterSources];
     
     self.favorites = [self.repository getFavorites];
     

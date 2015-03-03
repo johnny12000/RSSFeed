@@ -111,11 +111,58 @@ static RssRepository *_instance;
 
 
 - (NSArray*) getFavorites {
-    return [[NSArray alloc]init];
+    NSMutableArray *retval = [[NSMutableArray alloc] init];
+    NSString *query = @"SELECT url, source, title, date, image, short_description, content, index_number FROM Favorites";
+    sqlite3_stmt *statement;
+    
+    if (sqlite3_prepare_v2(_database, [query UTF8String], -1, &statement, nil) == SQLITE_OK) {
+        while (sqlite3_step(statement) == SQLITE_ROW) {
+            NSString *url = [[NSString alloc] initWithUTF8String: (char*)sqlite3_column_text(statement, 0)];
+            NSString *source = [[NSString alloc] initWithUTF8String: (char*)sqlite3_column_text(statement, 1)];
+            NSString *title = [[NSString alloc]initWithUTF8String: (char*)sqlite3_column_text(statement, 2)];
+            NSString *dateString = [[NSString alloc]initWithUTF8String: (char*)sqlite3_column_text(statement, 3)];
+            
+            NSString *imageB64 = [[NSString alloc]initWithUTF8String: (char*)sqlite3_column_text(statement, 4)];
+            NSData *imageData = [[NSData alloc] initWithBase64EncodedString:imageB64 options:0];
+            NSString* shortDescription = [[NSString alloc]initWithUTF8String: (char*)sqlite3_column_text(statement, 5)];
+            NSString* content = [[NSString alloc]initWithUTF8String: (char*)sqlite3_column_text(statement, 6)];
+            int index = sqlite3_column_int(statement, 7);
+            
+            
+            Rss* rss = [[Rss alloc] init];
+            rss.url = url;
+            rss.channel = source;
+            rss.title = title;
+            rss.image = imageData;
+            rss.shortDescription = shortDescription;
+            rss.content = content;
+            
+            [retval addObject:rss];
+            
+        }
+        sqlite3_finalize(statement);
+    }
+    
+    return retval;
 }
 
 - (BOOL) addFavorite:(Rss*)rss {
-    return TRUE;
+    
+    //CREATE TABLE Favorites (url title, source text, title text, date text, image blob, short_description text, content blob, index_number integer);
+    
+    NSString* query = [NSString stringWithFormat: @"INSERT INTO Favorites (url, source, title, date, image, short_description, content, index_number) VALUES ('%@', '%@', '%@', '%@', '%@', '%@', '%@', %d)", rss.url, rss.channel, rss.title, [self getUTCFormateDate:rss.date], [rss.image base64EncodedStringWithOptions:0], rss.shortDescription, rss.content, 0];
+    
+    char* errInfo;
+    
+    int result = sqlite3_exec(_database, [query UTF8String], nil, nil, &errInfo);
+    
+    if (SQLITE_OK == result) {
+        return TRUE;
+    }
+    else {
+        return FALSE;
+    }
+
 }
 
 - (BOOL) removeFavorite:(Rss*)rss {
@@ -126,6 +173,17 @@ static RssRepository *_instance;
     
     sqlite3_close(_database);
     
+}
+
+- (NSString*) getUTCFormateDate:(NSDate *)localDate {
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    NSTimeZone *timeZone = [NSTimeZone timeZoneWithName:@"UTC"];
+    [dateFormatter setTimeZone:timeZone];
+    [dateFormatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    NSString *dateString = [dateFormatter stringFromDate:localDate];
+    
+    return dateString;
 }
 
 @end

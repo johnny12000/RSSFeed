@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Rss.h"
+#import "RssRepository.h"
 
-@interface FavoritesViewController : UIViewController
 
+@interface FavoritesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *favoritesTableView;
 
 @end
 
