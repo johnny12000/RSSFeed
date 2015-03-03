@@ -52,6 +52,7 @@
     
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
    
     static NSString *CellIdentifier = @"SourceCell";
@@ -60,8 +61,12 @@
     
     Source* source = (Source*)[self.sources objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = source.name;
     
+    cell.textLabel.text = source.name;
+    if(source.isUsed)
+        [tableView selectRowAtIndexPath:indexPath
+                               animated:YES
+                         scrollPosition:UITableViewScrollPositionNone];
     return cell;
     
 }
@@ -97,6 +102,19 @@
         self.deleteButton.title = @"Done";
     }
 }
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Source* source = [self.sources objectAtIndex:indexPath.row];
+    source.isUsed = TRUE;
+    [self.repository updateSource:source];
+}
+
+- (void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Source* source = [self.sources objectAtIndex:indexPath.row];
+    source.isUsed = FALSE;
+    [self.repository updateSource:source];
+}
+
 
 #pragma mark - Actions
 
