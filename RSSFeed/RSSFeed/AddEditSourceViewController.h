@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Source.h"
 #import "RssRepository.h"
+#import "RssReader.h"
 #import "NSString+Validation.h"
 
 @interface AddEditSourceViewController : UIViewController

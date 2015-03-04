@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A7109EC81A9CBE3400A68D19 /* FeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7109EC71A9CBE3400A68D19 /* FeedTableViewCell.m */; };
+		A723C42B1AA71476003944DD /* ChannelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A723C42A1AA71476003944DD /* ChannelParser.m */; };
+		A723C42D1AA73E27003944DD /* ChannelParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A723C42C1AA73E27003944DD /* ChannelParserTests.m */; };
 		A73A44041A890DBA00728E3A /* Rss.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A44031A890DBA00728E3A /* Rss.m */; };
 		A73A44071A890DF300728E3A /* Source.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A44061A890DF300728E3A /* Source.m */; };
 		A73A440B1A890EF000728E3A /* RssReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A440A1A890EF000728E3A /* RssReader.m */; };
@@ -51,6 +53,9 @@
 /* Begin PBXFileReference section */
 		A7109EC61A9CBE3400A68D19 /* FeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewCell.h; sourceTree = "<group>"; };
 		A7109EC71A9CBE3400A68D19 /* FeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewCell.m; sourceTree = "<group>"; };
+		A723C4291AA71476003944DD /* ChannelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelParser.h; sourceTree = "<group>"; };
+		A723C42A1AA71476003944DD /* ChannelParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelParser.m; sourceTree = "<group>"; };
+		A723C42C1AA73E27003944DD /* ChannelParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChannelParserTests.m; path = ServiceAgents/ChannelParserTests.m; sourceTree = "<group>"; };
 		A73A44021A890DBA00728E3A /* Rss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rss.h; path = Models/Rss.h; sourceTree = "<group>"; };
 		A73A44031A890DBA00728E3A /* Rss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rss.m; path = Models/Rss.m; sourceTree = "<group>"; };
 		A73A44051A890DF300728E3A /* Source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Source.h; path = Models/Source.h; sourceTree = "<group>"; };
@@ -137,6 +142,8 @@
 				A73A440A1A890EF000728E3A /* RssReader.m */,
 				B2F4B7931A8D25C50097D219 /* RssParser.h */,
 				B2F4B7941A8D25C50097D219 /* RssParser.m */,
+				A723C4291AA71476003944DD /* ChannelParser.h */,
+				A723C42A1AA71476003944DD /* ChannelParser.m */,
 			);
 			name = ServiceAgents;
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 				A73A440D1A89135F00728E3A /* RssReaderTests.m */,
 				B2F4B7961A8D272F0097D219 /* RssParserTests.m */,
 				B2F4B7981A8D27EB0097D219 /* RssChannelTest.txt */,
+				A723C42C1AA73E27003944DD /* ChannelParserTests.m */,
 			);
 			name = ServiceAgents;
 			sourceTree = "<group>";
@@ -389,6 +397,7 @@
 				B2F188DC1A7EBCA1007DECDE /* main.m in Sources */,
 				B2F4B79D1A964DC10097D219 /* RssRepository.m in Sources */,
 				B2F4B7951A8D25C50097D219 /* RssParser.m in Sources */,
+				A723C42B1AA71476003944DD /* ChannelParser.m in Sources */,
 				B2F4B7A71A9BCD130097D219 /* AddEditSourceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +410,7 @@
 				A73A440E1A89135F00728E3A /* RssReaderTests.m in Sources */,
 				B2F4B7A41A9658740097D219 /* RssRepositoryTests.m in Sources */,
 				B2F4B7B21A9F92340097D219 /* NSString+ValidationTests.m in Sources */,
+				A723C42D1AA73E27003944DD /* ChannelParserTests.m in Sources */,
 				B2F4B7971A8D272F0097D219 /* RssParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

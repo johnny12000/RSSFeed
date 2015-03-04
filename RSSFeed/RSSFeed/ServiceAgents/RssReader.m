@@ -8,6 +8,7 @@
 
 #import "RssReader.h"
 #import "RssParser.h"
+#import "ChannelParser.h"
 
 @interface RssReader()
 
@@ -35,6 +36,29 @@
                                
                                handler(result, connectionError);
                            }];
+}
+
+
+- (void) getImageDataFromUrl:(NSString *)url completionHandler:(void (^)(NSData *, NSError *))handler {
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:url]
+                                                cachePolicy:NSURLRequestReturnCacheDataElseLoad
+                                            timeoutInterval:30];
+    
+    [NSURLConnection sendAsynchronousRequest:urlRequest
+                                       queue:[NSOperationQueue currentQueue]
+                           completionHandler:^(NSURLResponse* response, NSData* data, NSError* connectionError){
+                               
+                               NSData *result = nil;
+                               
+                               if(!connectionError)
+                               {
+                                   ChannelParser* parser = [[ChannelParser alloc]init];
+                                   result = [parser getChannelImage:data];
+                               }
+                               
+                               handler(result, connectionError);
+                           }];
+
 }
 
 - (NSURLRequest*) getContentOfUrl:(NSURL*)url {

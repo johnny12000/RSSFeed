@@ -45,7 +45,11 @@ static RssRepository *_instance;
             NSString *name = [[NSString alloc] initWithUTF8String: (char*)sqlite3_column_text(statement, 1)];
             NSString *url = [[NSString alloc]initWithUTF8String: (char*)sqlite3_column_text(statement, 2)];
             int index = sqlite3_column_int(statement, 3);
-            NSData *imageData = [[NSData alloc]initWithBytes:sqlite3_column_blob(statement, 4) length:sqlite3_column_bytes(statement, 4)];
+            
+            NSString *imageB64 = [[NSString alloc]initWithUTF8String: (char*)sqlite3_column_text(statement, 4)];
+            NSData *imageData = [[NSData alloc] initWithBase64EncodedString:imageB64 options:0];
+            
+            //NSData *imageData = [[NSData alloc]initWithBytes:sqlite3_column_blob(statement, 4) length:sqlite3_column_bytes(statement, 4)];
             BOOL isUsed = sqlite3_column_int(statement, 5);
             
             Source *src = [[Source alloc]  initWithUid:uid name:name url:url index:index andImage:imageData andIsUsed:isUsed];
@@ -60,7 +64,7 @@ static RssRepository *_instance;
 
 - (BOOL) addSource:(Source*)source {
     
-    NSString* query = [NSString stringWithFormat: @"INSERT INTO Sources (uid, name, url, image, index_number, is_used) VALUES ('%@', '%@', '%@', '%@', %ld, %d)", source.uid, source.name, source.url, source.image, source.index, source.isUsed];
+    NSString* query = [NSString stringWithFormat: @"INSERT INTO Sources (uid, name, url, image, index_number, is_used) VALUES ('%@', '%@', '%@', '%@', %ld, %d)", source.uid, source.name, source.url, [source.image base64EncodedStringWithOptions:0], source.index, source.isUsed];
     
     char* errInfo;
     
@@ -76,7 +80,7 @@ static RssRepository *_instance;
 
 - (BOOL) updateSource:(Source*)source {
     
-    NSString *query = [NSString stringWithFormat: @"UPDATE Sources SET name = '%@', url = '%@', image = '%@', index_number = %ld, is_used = %d WHERE uid = '%@'", source.name, source.url, source.image, (long)source.index, source.isUsed, source.uid];
+    NSString *query = [NSString stringWithFormat: @"UPDATE Sources SET name = '%@', url = '%@', image = '%@', index_number = %ld, is_used = %d WHERE uid = '%@'", source.name, source.url, [source.image base64EncodedStringWithOptions:0], (long)source.index, source.isUsed, source.uid];
     
     char* errInfo;
     

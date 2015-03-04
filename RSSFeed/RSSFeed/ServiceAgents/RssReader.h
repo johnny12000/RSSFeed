@@ -12,6 +12,8 @@
 
 - (void) getDataFromUrl:(NSString*)url completionHandler:(void (^)(NSArray* data, NSError* connectionError)) handler;
 
+- (void) getImageDataFromUrl:(NSString *)url completionHandler:(void (^)(NSData *, NSError *))handler;
+
 - (NSURLRequest*) getContentOfUrl:(NSURL*)url;
 
 @end

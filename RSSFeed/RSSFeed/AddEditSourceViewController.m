@@ -11,10 +11,21 @@
 @interface AddEditSourceViewController ()
 
 @property Source* source;
+@property RssReader* reader;
 
 @end
 
 @implementation AddEditSourceViewController
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        self.reader = [[RssReader alloc] init];
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,21 +51,25 @@
     self.source.url = self.sourceUrlTextField.text;
     self.source.isUsed = TRUE;
     
-    BOOL result;
-    
-    if(self.source.uid)
-        result = [[RssRepository instance] updateSource:self.source];
-    else{
-        self.source.uid = [[NSUUID UUID] UUIDString];
-        result = [[RssRepository instance] addSource:self.source];
-    }
-    
-    if(result){
-        //TODO: some message should be displayed
-    }
-    
-    [self.navigationController popToRootViewControllerAnimated:TRUE];
-    
+    [self.reader getImageDataFromUrl:self.source.url completionHandler:^(NSData* image, NSError* error){
+        self.source.image = image;
+        
+        BOOL result;
+        
+        if(self.source.uid)
+            result = [[RssRepository instance] updateSource:self.source];
+        else{
+            self.source.uid = [[NSUUID UUID] UUIDString];
+            result = [[RssRepository instance] addSource:self.source];
+        }
+        
+        if(result){
+            //TODO: some message should be displayed
+        }
+        
+        [self.navigationController popToRootViewControllerAnimated:TRUE];
+        
+    }];
 }
 
 - (IBAction)sourceCanceled:(id)sender {

@@ -132,7 +132,7 @@
     if ([[segue identifier] isEqualToString:@"EditSourceSegue"])
     {
         AddEditSourceViewController *vc = [segue destinationViewController];
-        [vc setModel: (Source*)[self.sources objectAtIndex: self.sourcesTable.indexPathForSelectedRow.row]];
+        [vc setModel: (Source*)[self.sources objectAtIndex:[self.sourcesTable indexPathForCell:sender].row]];
     }
     else if ([[segue identifier] isEqualToString:@"AddSourceSegue"])
     {
