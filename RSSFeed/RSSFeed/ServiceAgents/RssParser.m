@@ -26,7 +26,9 @@
 @implementation RssParser
 
 
-- (NSArray*) getRssArrayFromData:(NSData*)data {
+- (NSArray*) getRssArrayFromData:(NSData*)data fromChannel:(NSString *)url {
+    
+    self.channel = url;
     
     self.value = [[NSMutableString alloc] init];
     
@@ -55,6 +57,7 @@ didStartElement:(NSString *)elementName
     if([elementName isEqualToString:@"item"])
     {
         self.item = [[Rss alloc]init];
+        self.item.channel = [self.channel copy];
     }
     
     if([elementName isEqualToString:@"media:thumbnail"]) {
@@ -73,9 +76,9 @@ didStartElement:(NSString *)elementName
     
     //NSLog(@"Found an element named: %@ with a value of: %@", elementName, self.value);
     
-    if([elementName isEqualToString:@"channel"]) {
-        self.channel = [self.value copy];
-    }
+//    if([elementName isEqualToString:@"channel"]) {
+//        self.channel = [self.value copy];
+//    }
     
     if([elementName isEqualToString:@"item"]) {
         [self.result addObject:self.item];

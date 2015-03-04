@@ -10,6 +10,6 @@
 
 @interface RssParser : NSObject <NSXMLParserDelegate>
 
-- (NSArray*) getRssArrayFromData:(NSData*)data;
+- (NSArray*) getRssArrayFromData:(NSData*)data fromChannel:(NSString*)url;
 
 @end

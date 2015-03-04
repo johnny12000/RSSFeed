@@ -168,17 +168,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="568" placeholderIntrinsicHeight="531" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="118" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oQO-gH-rCk">
-                                <rect key="frame" x="16" y="20" width="568" height="531"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="118" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oQO-gH-rCk">
+                                <rect key="frame" x="0.0" y="64" width="600" height="472"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oQO-gH-rCk" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="LyP-jn-YlS"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="oQO-gH-rCk" secondAttribute="bottom" id="NeE-pC-XTU"/>
-                            <constraint firstItem="oQO-gH-rCk" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="jR6-GY-sOW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oQO-gH-rCk" secondAttribute="trailing" id="xrG-dv-8cT"/>
+                            <constraint firstAttribute="centerX" secondItem="oQO-gH-rCk" secondAttribute="centerX" id="BG7-zj-4LN"/>
+                            <constraint firstAttribute="width" secondItem="oQO-gH-rCk" secondAttribute="width" id="NBc-MK-asd"/>
+                            <constraint firstAttribute="centerY" secondItem="oQO-gH-rCk" secondAttribute="centerY" id="Zjh-By-Hbn"/>
+                            <constraint firstItem="oQO-gH-rCk" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="lym-49-O7a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ocg-oW-xmo"/>

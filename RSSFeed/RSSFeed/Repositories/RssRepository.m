@@ -130,7 +130,7 @@ static RssRepository *_instance;
             
             
             Rss* rss = [[Rss alloc] init];
-            rss.url = url;
+            rss.url = [NSURL URLWithString:url];
             rss.channel = source;
             rss.title = title;
             rss.image = imageData;

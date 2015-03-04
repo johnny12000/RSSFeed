@@ -30,7 +30,7 @@
                                if(!connectionError)
                                {
                                    RssParser* parser = [[RssParser alloc]init];
-                                   result = [parser getRssArrayFromData:data];
+                                   result = [parser getRssArrayFromData:data fromChannel:url];
                                }
                                
                                handler(result, connectionError);

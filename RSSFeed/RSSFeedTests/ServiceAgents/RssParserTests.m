@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "RssParser.h"
+#import "Rss.h"
 
 @interface RssParserTests : XCTestCase
 
@@ -36,9 +37,13 @@
     
     NSData *testData = [[NSData alloc] initWithContentsOfFile:fileName];
     
-    NSArray* result = [parser getRssArrayFromData:testData];
+    NSArray* result = [parser getRssArrayFromData:testData fromChannel:@"test"];
     
     NSUInteger number = [result count];
+    
+    for (Rss* rss in result) {
+        XCTAssertEqual(@"test", rss.channel);
+    }
     
     XCTAssertEqual(20, number);
 }

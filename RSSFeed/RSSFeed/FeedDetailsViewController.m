@@ -49,7 +49,7 @@
     
     id content = [rdr getContentOfUrl:self.feed.url];
     
-    //[self.contentWebView loadRequest:content];
+    [self.contentWebView loadRequest:content];
     //self.contentWebView lo
     
 }
