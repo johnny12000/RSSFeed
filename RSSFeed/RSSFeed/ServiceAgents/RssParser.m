@@ -20,6 +20,9 @@
 
 @property NSString * channel;
 
+@property BOOL isImageCDATA;
+@property NSMutableString* imgLink;
+
 @end
 
 
@@ -64,6 +67,11 @@ didStartElement:(NSString *)elementName
         
         NSURL *url = [NSURL URLWithString:[attributeDict valueForKey:@"url"]];
         [self.item setValue:[NSData dataWithContentsOfURL:url] forKey:@"image"];
+    }
+
+    if([elementName isEqualToString:@"imglink"]) {
+        self.isImageCDATA = TRUE;
+        self.imgLink = [NSMutableString stringWithString:@""];
     }
     
     [self.value setString:@""];
@@ -111,6 +119,15 @@ didStartElement:(NSString *)elementName
     if([elementName isEqualToString:@"description"]) {
         [self.item setValue:[self.value copy] forKey:@"shortDescription"];
     }
+    
+    
+    if([elementName isEqualToString:@"imglink"]) {
+        self.isImageCDATA = FALSE;
+        
+        NSURL *url = [NSURL URLWithString:self.imgLink];
+        [self.item setValue:[NSData dataWithContentsOfURL:url] forKey:@"image"];
+        
+    }
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
@@ -118,5 +135,21 @@ didStartElement:(NSString *)elementName
     //NSLog(@"Value: %@", self.value);
 }
 
+- (void) parser:(NSXMLParser *)parser foundCDATA:(NSData *)CDATABlock {
+    if(self.isImageCDATA)
+    {
+        //extract image name from cdata
+        
+        NSString *text = [[NSString alloc] initWithData:CDATABlock encoding:NSASCIIStringEncoding];
+        text = [text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        NSRange range = NSMakeRange(0,10);
+        text = [text stringByReplacingCharactersInRange:range withString:@"" ];
+        text = [text stringByReplacingOccurrencesOfString:@"\" title=\"\" alt=\"\" />" withString:@""];
+        
+        [self.imgLink appendString:text];
+        
+    }
+    
+}
 
 @end
