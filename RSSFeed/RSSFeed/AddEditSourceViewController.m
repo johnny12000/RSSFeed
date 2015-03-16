@@ -49,7 +49,7 @@
     
     self.source.name = self.sourceNameTextField.text;
     self.source.url = self.sourceUrlTextField.text;
-    self.source.isUsed = TRUE;
+    self.source.isUsed = [NSNumber numberWithInteger:TRUE];
     
     [self.reader getImageDataFromUrl:self.source.url completionHandler:^(NSData* image, NSError* error){
         self.source.image = image;

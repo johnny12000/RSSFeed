@@ -138,7 +138,7 @@ static RssRepository *_instance;
             rss.channel = source;
             rss.title = title;
             rss.image = imageData;
-            rss.shortDescription = shortDescription;
+            rss.shortdescription = shortDescription;
             rss.content = content;
             
             [retval addObject:rss];
@@ -154,7 +154,7 @@ static RssRepository *_instance;
     
     //CREATE TABLE Favorites (url title, source text, title text, date text, image blob, short_description text, content blob, index_number integer);
     
-    NSString* query = [NSString stringWithFormat: @"INSERT INTO Favorites (url, source, title, date, image, short_description, content, index_number) VALUES ('%@', '%@', '%@', '%@', '%@', '%@', '%@', %d)", rss.url, rss.channel, rss.title, [self getUTCFormateDate:rss.date], [rss.image base64EncodedStringWithOptions:0], rss.shortDescription, rss.content, 0];
+    NSString* query = [NSString stringWithFormat: @"INSERT INTO Favorites (url, source, title, date, image, short_description, content, index_number) VALUES ('%@', '%@', '%@', '%@', '%@', '%@', '%@', %d)", rss.url, rss.channel, rss.title, [self getUTCFormateDate:rss.date], [rss.image base64EncodedStringWithOptions:0], rss.shortdescription, rss.content, 0];
     
     char* errInfo;
     

@@ -86,7 +86,9 @@
     
     Source* source = [[self.sources filteredArrayUsingPredicate:srcPredicate] firstObject];
     
-    NSPredicate* isFavPredicate = [NSPredicate predicateWithFormat:@"url = %@", rss.url.absoluteString];
+    NSURL*url = [NSURL URLWithString:rss.url];
+    
+    NSPredicate* isFavPredicate = [NSPredicate predicateWithFormat:@"url = %@", url.absoluteString];
     BOOL isFavorite = [self.favorites filteredArrayUsingPredicate:isFavPredicate].count != 0;
     
     [cell setCellModel:rss andSource:source isFavorite:isFavorite];

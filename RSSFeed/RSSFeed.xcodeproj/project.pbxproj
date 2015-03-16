@@ -14,6 +14,7 @@
 		A73A44071A890DF300728E3A /* Source.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A44061A890DF300728E3A /* Source.m */; };
 		A73A440B1A890EF000728E3A /* RssReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A440A1A890EF000728E3A /* RssReader.m */; };
 		A73A440E1A89135F00728E3A /* RssReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A440D1A89135F00728E3A /* RssReaderTests.m */; };
+		A794897A1AB73818007F36FC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A79489781AB73818007F36FC /* Model.xcdatamodeld */; };
 		A7DBF3A21AA604FA0060AC9B /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */; };
 		B2F188DC1A7EBCA1007DECDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188DB1A7EBCA1007DECDE /* main.m */; };
 		B2F188DF1A7EBCA1007DECDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188DE1A7EBCA1007DECDE /* AppDelegate.m */; };
@@ -63,6 +64,7 @@
 		A73A44091A890EF000728E3A /* RssReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RssReader.h; path = ServiceAgents/RssReader.h; sourceTree = "<group>"; };
 		A73A440A1A890EF000728E3A /* RssReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssReader.m; path = ServiceAgents/RssReader.m; sourceTree = "<group>"; };
 		A73A440D1A89135F00728E3A /* RssReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssReaderTests.m; path = ServiceAgents/RssReaderTests.m; sourceTree = "<group>"; };
+		A79489791AB73818007F36FC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		B2F188D61A7EBCA1007DECDE /* RSSFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F188DA1A7EBCA1007DECDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				B2F4B7B71A9F9D5A0097D219 /* MainTabBarController.h */,
 				B2F4B7B81A9F9D5A0097D219 /* MainTabBarController.m */,
 				A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */,
+				A79489781AB73818007F36FC /* Model.xcdatamodeld */,
 			);
 			path = RSSFeed;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				B2F4B79D1A964DC10097D219 /* RssRepository.m in Sources */,
 				B2F4B7951A8D25C50097D219 /* RssParser.m in Sources */,
 				A723C42B1AA71476003944DD /* ChannelParser.m in Sources */,
+				A794897A1AB73818007F36FC /* Model.xcdatamodeld in Sources */,
 				B2F4B7A71A9BCD130097D219 /* AddEditSourceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +610,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A79489781AB73818007F36FC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A79489791AB73818007F36FC /* Model.xcdatamodel */,
+			);
+			currentVersion = A79489791AB73818007F36FC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B2F188CE1A7EBCA1007DECDE /* Project object */;
 }

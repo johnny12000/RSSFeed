@@ -41,7 +41,7 @@
     
     self.feedDateLabel.text = [formatter stringFromDate: self.feed.date];
     
-    self.feedDescriptionLabel.text = self.feed.shortDescription;//.description;
+    self.feedDescriptionLabel.text = self.feed.shortdescription;//.description;
     
     self.sourceImageView.image = [UIImage imageWithData:self.source.image];
     

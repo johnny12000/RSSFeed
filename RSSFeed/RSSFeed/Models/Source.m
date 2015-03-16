@@ -10,6 +10,12 @@
 
 @implementation Source
 
+@dynamic uid;
+@dynamic image;
+@dynamic name;
+@dynamic url;
+@dynamic index;
+@dynamic isUsed;
 
 - (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image andIsUsed:(BOOL)isUsed {
     return [self initWithUid:[[NSUUID UUID] UUIDString] name:name url:url index:index andImage:image andIsUsed:isUsed];
@@ -20,9 +26,9 @@
         self.uid = uid;
         self.name = name;
         self.url = url;
-        self.index = index;
+        //self.index = (NSNumber)index;
         self.image = image;
-        self.isUsed = isUsed;
+        //self.isUsed = (BOOL)isUsed;
     }
     
     return self;
