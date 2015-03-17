@@ -22,17 +22,15 @@
 
 + (ManagedRssRepository*) instance;
 
-- (Rss*) newRss;
-
-
-- (NSArray*) getSources;
-- (BOOL) addSource:(Source*)source;
-- (BOOL) updateSource:(Source*)source;
-- (BOOL) deleteSource:(Source*)source;
-
+- (Rss*) createFeed;
+- (Rss*) getFeedByUrl:(NSString*)url;
 - (NSArray*) getFavorites;
-- (BOOL) addFavorite:(Rss*)rss;
-- (BOOL) removeFavorite:(Rss*)rss;
 
+- (Source*) createSource;
+- (NSArray*) getSources;
+
+- (void) deleteObject:(NSManagedObject*)object;
+
+- (BOOL) saveRepository:(NSError**)error;
 
 @end

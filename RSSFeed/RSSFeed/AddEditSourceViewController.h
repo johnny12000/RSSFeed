@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Source.h"
-#import "RssRepository.h"
+#import "ManagedRssRepository.h"
 #import "RssReader.h"
 #import "NSString+Validation.h"
 

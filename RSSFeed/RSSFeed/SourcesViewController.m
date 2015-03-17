@@ -81,7 +81,10 @@
         
         Source *object = (Source*)[self.sources objectAtIndex:indexPath.row];
         [self.sources removeObjectAtIndex:indexPath.row];
-        BOOL result = [self.repository deleteSource:object];
+        
+        [self.repository delete:object];
+        NSError* error = nil;
+        BOOL result = [self.repository saveRepository:&error];
         
         if(result)
         {
@@ -106,13 +109,18 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Source* source = [self.sources objectAtIndex:indexPath.row];
     source.isUsed = [NSNumber numberWithBool:TRUE];
-    [self.repository updateSource:source];
+    
+    NSError* error = nil;
+    
+    [self.repository saveRepository:&error];
 }
 
 - (void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     Source* source = [self.sources objectAtIndex:indexPath.row];
     source.isUsed = FALSE;
-    [self.repository updateSource:source];
+    
+    NSError* error = nil;
+    [self.repository saveRepository:&error];
 }
 
 

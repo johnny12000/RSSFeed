@@ -19,10 +19,6 @@
 @property (nonatomic, retain) NSNumber * index;
 @property (nonatomic, retain) NSNumber * isUsed;
 
-- (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image andIsUsed:(BOOL)isUsed;
-- (id) initWithUid:(NSString*)uid name:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image andIsUsed:(BOOL)isUsed;
-- (id) init;
-
-+ (Source*) newSource;
+- (void) initializeWithUid:(NSString*)uid name:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image andIsUsed:(BOOL)isUsed;
 
 @end

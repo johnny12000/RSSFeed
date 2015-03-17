@@ -17,35 +17,13 @@
 @dynamic index;
 @dynamic isUsed;
 
-- (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image andIsUsed:(BOOL)isUsed {
-    return [self initWithUid:[[NSUUID UUID] UUIDString] name:name url:url index:index andImage:image andIsUsed:isUsed];
-}
-
-- (id) initWithUid:(NSString*)uid name:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image andIsUsed:(BOOL)isUsed {
-    
-    Source* src = [NSEntityDescription insertNewObjectForEntityForName:@"Source"
-                                                inManagedObjectContext:[ManagedRssRepository instance].context];
-    src.uid = uid;
-    src.name = name;
-    src.url = url;
-    src.index = [NSNumber numberWithInt:index];
-    src.image = image;
-    src.isUsed = [NSNumber numberWithBool:isUsed];
-    
-    return src;
-}
-
-+ (Source*) newSource {
-    Source* src = [NSEntityDescription insertNewObjectForEntityForName:@"Source"
-                                                inManagedObjectContext:[ManagedRssRepository instance].context];
-    src.uid = nil;
-    src.name = @"";
-    src.url = @"";
-    src.index = [NSNumber numberWithInt:0];
-    src.image = nil;
-    src.isUsed = [NSNumber numberWithBool:TRUE];
-    
-    return src;
+- (void) initializeWithUid:(NSString *)uid name:(NSString *)name url:(NSString *)url index:(NSInteger)index andImage:(NSData *)image andIsUsed:(BOOL)isUsed {
+    self.uid = nil;
+    self.name = @"";
+    self.url = @"";
+    self.index = [NSNumber numberWithInt:0];
+    self.image = nil;
+    self.isUsed = [NSNumber numberWithBool:TRUE];
 }
 
 @end

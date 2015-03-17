@@ -25,6 +25,13 @@
 
 @property ManagedRssRepository* repository;
 
+@property NSData* image;
+@property NSString* title;
+@property NSDate* date;
+@property NSString* url;
+@property NSString* shortdescription;
+@property NSString* content;
+
 @end
 
 
@@ -69,14 +76,14 @@ didStartElement:(NSString *)elementName
     
     if([elementName isEqualToString:@"item"])
     {
-        self.item = [self.repository newRss];
-        self.item.channel = [self.channel copy];
+        //self.item = [self.repository createFeed];
+        //self.item.channel = [self.channel copy];
     }
     
     if([elementName isEqualToString:@"media:thumbnail"]) {
         
         NSURL *url = [NSURL URLWithString:[attributeDict valueForKey:@"url"]];
-        [self.item setValue:[NSData dataWithContentsOfURL:url] forKey:@"image"];
+        self.image = [NSData dataWithContentsOfURL:url];
     }
 
     if([elementName isEqualToString:@"imglink"]) {
@@ -93,41 +100,52 @@ didStartElement:(NSString *)elementName
   qualifiedName:(NSString *)qName {
     
     if([elementName isEqualToString:@"item"]) {
+        self.item = [self.repository getFeedByUrl:self.url];
+        if(!self.item){
+            self.item = [self.repository createFeed];
+            
+            self.item.channel = [self.channel copy];
+            self.item.image = [self.image copy];
+            self.item.title = [self.title copy];
+            self.item.date = [self.date copy];
+            self.item.url = [self.url copy];
+            self.item.shortdescription = [self.shortdescription copy];
+            self.item.content = [self.content copy];
+            self.item.isFavorite = FALSE;
+        }
+        
         [self.result addObject:self.item];
     }
     
     if([elementName isEqualToString:@"title"]) {
-        
-        self.item.title =  [self.value copy];
+        self.title = [self.value copy];
     }
     
     if([elementName isEqualToString:@"link"]) {
-        
-        self.item.url = [self.value copy];
+        self.url = [self.value copy];
     }
     
     if([elementName isEqualToString:@"url"]) {
         NSURL *url = [NSURL URLWithString:self.value];
-        self.item.image = [NSData dataWithContentsOfURL:url];
+        self.image = [NSData dataWithContentsOfURL:url];
     }
     
     if ([elementName isEqualToString:@"pubDate"]){
         NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:@"EEE, dd MMM YYYY hh:mm:ss ZZZ"];
         [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en"]];
-        
-        self.item.date = [formatter dateFromString:self.value];
+        self.date = [formatter dateFromString:self.value];
     }
     
     if([elementName isEqualToString:@"description"]) {
-        self.item.shortdescription = [self.value copy];
+        self.shortdescription = [self.value copy];
     }
     
     if([elementName isEqualToString:@"imglink"]) {
         self.isImageCDATA = FALSE;
         
         NSURL *url = [NSURL URLWithString:self.imgLink];
-        self.item.image = [NSData dataWithContentsOfURL:url];
+        self.image = [NSData dataWithContentsOfURL:url];
     }
 }
 
@@ -147,7 +165,6 @@ didStartElement:(NSString *)elementName
         text = [text stringByReplacingOccurrencesOfString:@"\" title=\"\" alt=\"\" />" withString:@""];
         
         [self.imgLink appendString:text];
-        
     }
     
 }

@@ -62,8 +62,8 @@
 - (IBAction)setFavorite:(id)sender {
     
     self.feed.isFavorite = self.feed.isFavorite ?  [NSNumber numberWithBool:FALSE] : [NSNumber numberWithBool:TRUE];
-    
-    BOOL result = [self.repository addFavorite:self.feed];
+    NSError* error = nil;
+    BOOL result = [self.repository saveRepository:&error];
     
     if(result)
        [self.feed notifyFeedAddedToFavorites];

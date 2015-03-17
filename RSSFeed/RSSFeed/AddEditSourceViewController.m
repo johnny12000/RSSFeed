@@ -12,6 +12,7 @@
 
 @property Source* source;
 @property RssReader* reader;
+@property ManagedRssRepository* repository;
 
 @end
 
@@ -22,6 +23,7 @@
     self = [super initWithCoder:coder];
     if (self) {
         self.reader = [[RssReader alloc] init];
+        self.repository = [ManagedRssRepository instance];
     }
     return self;
 }
@@ -48,7 +50,7 @@
 - (IBAction)sourceEdited:(id)sender {
     
     if(!self.source)
-        self.source = [Source newSource];
+        self.source = [self.repository createSource];
         
     self.source.name = self.sourceNameTextField.text;
     self.source.url = self.sourceUrlTextField.text;
@@ -57,14 +59,13 @@
     [self.reader getImageDataFromUrl:self.source.url completionHandler:^(NSData* image, NSError* error){
         self.source.image = image;
         
-        BOOL result;
-        
-        if(self.source.uid)
-            result = [[ManagedRssRepository instance] updateSource:self.source];
-        else{
+        if(!self.source.uid) {
             self.source.uid = [[NSUUID UUID] UUIDString];
-            result = [[ManagedRssRepository instance] addSource:self.source];
         }
+        
+        BOOL result;
+        NSError* repoerror = nil;
+        result = [self.repository saveRepository:&repoerror];
         
         if(result){
             //TODO: some message should be displayed

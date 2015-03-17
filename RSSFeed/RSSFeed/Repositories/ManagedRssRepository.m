@@ -46,49 +46,24 @@ static ManagedRssRepository* _instance;
     return _instance;
 }
 
-- (Rss*) newRss {
+- (Rss*) createFeed {
     Rss* rss = [NSEntityDescription insertNewObjectForEntityForName:@"Rss" inManagedObjectContext:self.context];
     return rss;
 }
 
-
-- (NSArray*) getSources {
+- (Rss*) getFeedByUrl:(NSString *)url {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Source"
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Rss"
                                               inManagedObjectContext:self.context];
+    
+    NSPredicate* pred = [NSPredicate predicateWithFormat:@"url=%@", url];
+    fetchRequest.predicate=pred;
     
     NSError* error = nil;
     [fetchRequest setEntity:entity];
     NSArray *fetchedObjects = [self.context executeFetchRequest:fetchRequest error:&error];
-    return fetchedObjects;
-}
-
-- (BOOL) addSource:(Source*)source {
     
-    NSError* error = nil;
-    
-    [self.context save:&error];
-    
-    return error == nil;
-}
-
-- (BOOL) updateSource:(Source*)source {
-    NSError* error = nil;
-    
-    [self.context save:&error];
-    
-    return error == nil;
-}
-
-- (BOOL) deleteSource:(Source*)source {
-    
-    [self.context deleteObject:source];
-    
-    NSError* error = nil;
-    
-    [self.context save:&error];
-    
-    return error == nil;
+    return [fetchedObjects firstObject];
 }
 
 - (NSArray*) getFavorites {
@@ -105,23 +80,32 @@ static ManagedRssRepository* _instance;
     return fetchedObjects;
 }
 
-- (BOOL) addFavorite:(Rss*)rss {
-    
-    NSError* error = nil;
-    
-    [self.context save:&error];
-    
-    return error == nil;
+- (Source*) createSource {
+    Source* src = [NSEntityDescription insertNewObjectForEntityForName:@"Source" inManagedObjectContext:self.context];
+    return src;
 }
 
-- (BOOL) removeFavorite:(Rss*)rss {
-    [self.context deleteObject:rss];
+- (NSArray*) getSources {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Source"
+                                              inManagedObjectContext:self.context];
     
     NSError* error = nil;
+    [fetchRequest setEntity:entity];
+    NSArray *fetchedObjects = [self.context executeFetchRequest:fetchRequest error:&error];
+    return fetchedObjects;
+}
+
+- (void) deleteObject:(NSManagedObject*)object {
+    [self.context deleteObject:object];
+}
+
+- (BOOL) saveRepository:(NSError *__autoreleasing *)error {
+    NSError* err = nil;
     
-    [self.context save:&error];
-    
-    return error == nil;
+    [self.context save:&err];
+    //error = err;
+    return err == nil;
 }
 
 @end
