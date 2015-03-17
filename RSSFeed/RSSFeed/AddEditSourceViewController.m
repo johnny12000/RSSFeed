@@ -31,8 +31,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.sourceNameTextField.text = self.source.name;
-    self.sourceUrlTextField.text = self.source.url;
+    self.sourceNameTextField.text = self.source ? self.source.name : @"";
+    self.sourceUrlTextField.text =  self.source ? self.source.url : @"";
     
     [self setViewState];
 }
@@ -47,6 +47,9 @@
 
 - (IBAction)sourceEdited:(id)sender {
     
+    if(!self.source)
+        self.source = [Source newSource];
+        
     self.source.name = self.sourceNameTextField.text;
     self.source.url = self.sourceUrlTextField.text;
     self.source.isUsed = [NSNumber numberWithInteger:TRUE];
@@ -57,10 +60,10 @@
         BOOL result;
         
         if(self.source.uid)
-            result = [[RssRepository instance] updateSource:self.source];
+            result = [[ManagedRssRepository instance] updateSource:self.source];
         else{
             self.source.uid = [[NSUUID UUID] UUIDString];
-            result = [[RssRepository instance] addSource:self.source];
+            result = [[ManagedRssRepository instance] addSource:self.source];
         }
         
         if(result){
@@ -94,7 +97,7 @@
 
 - (void) setNewModel
 {
-    self.source = [[Source alloc]init];
+    //self.source = [[Source alloc]init];
 }
 
 #pragma mark - Set View State

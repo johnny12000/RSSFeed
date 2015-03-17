@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-
+#import "ManagedRssRepository.h"
 
 @interface Source : NSManagedObject
 
@@ -21,5 +21,8 @@
 
 - (id) initWithName:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image andIsUsed:(BOOL)isUsed;
 - (id) initWithUid:(NSString*)uid name:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image andIsUsed:(BOOL)isUsed;
+- (id) init;
+
++ (Source*) newSource;
 
 @end

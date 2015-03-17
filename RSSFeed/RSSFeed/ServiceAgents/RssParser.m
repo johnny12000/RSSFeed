@@ -23,11 +23,21 @@
 @property BOOL isImageCDATA;
 @property NSMutableString* imgLink;
 
+@property ManagedRssRepository* repository;
+
 @end
 
 
 @implementation RssParser
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.repository = [ManagedRssRepository instance];
+    }
+    return self;
+}
 
 - (NSArray*) getRssArrayFromData:(NSData*)data fromChannel:(NSString *)url {
     
@@ -59,7 +69,7 @@ didStartElement:(NSString *)elementName
     
     if([elementName isEqualToString:@"item"])
     {
-        self.item = [[Rss alloc]init];
+        self.item = [self.repository newRss];
         self.item.channel = [self.channel copy];
     }
     
@@ -82,12 +92,6 @@ didStartElement:(NSString *)elementName
    namespaceURI:(NSString *)namespaceURI
   qualifiedName:(NSString *)qName {
     
-    //NSLog(@"Found an element named: %@ with a value of: %@", elementName, self.value);
-    
-//    if([elementName isEqualToString:@"channel"]) {
-//        self.channel = [self.value copy];
-//    }
-    
     if([elementName isEqualToString:@"item"]) {
         [self.result addObject:self.item];
     }
@@ -99,13 +103,12 @@ didStartElement:(NSString *)elementName
     
     if([elementName isEqualToString:@"link"]) {
         
-        
-        [self.item setValue:[NSURL URLWithString:[self.value copy]] forKey:@"url"];
+        self.item.url = [self.value copy];
     }
     
     if([elementName isEqualToString:@"url"]) {
         NSURL *url = [NSURL URLWithString:self.value];
-        [self.item setValue:[NSData dataWithContentsOfURL:url] forKey:@"image"];
+        self.item.image = [NSData dataWithContentsOfURL:url];
     }
     
     if ([elementName isEqualToString:@"pubDate"]){
@@ -113,26 +116,23 @@ didStartElement:(NSString *)elementName
         [formatter setDateFormat:@"EEE, dd MMM YYYY hh:mm:ss ZZZ"];
         [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en"]];
         
-        [self.item setValue:[formatter dateFromString:self.value] forKey:@"date"];
+        self.item.date = [formatter dateFromString:self.value];
     }
     
     if([elementName isEqualToString:@"description"]) {
-        [self.item setValue:[self.value copy] forKey:@"shortDescription"];
+        self.item.shortdescription = [self.value copy];
     }
-    
     
     if([elementName isEqualToString:@"imglink"]) {
         self.isImageCDATA = FALSE;
         
         NSURL *url = [NSURL URLWithString:self.imgLink];
-        [self.item setValue:[NSData dataWithContentsOfURL:url] forKey:@"image"];
-        
+        self.item.image = [NSData dataWithContentsOfURL:url];
     }
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     [self.value appendString:string];
-    //NSLog(@"Value: %@", self.value);
 }
 
 - (void) parser:(NSXMLParser *)parser foundCDATA:(NSData *)CDATABlock {

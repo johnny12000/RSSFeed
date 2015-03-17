@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ManagedRssRepository.h"
 
 @interface RssParser : NSObject <NSXMLParserDelegate>
 

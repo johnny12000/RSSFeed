@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RssReader.h"
 #import "RssRepository.h"
+#import "ManagedRssRepository.h"
 #import "FeedTableViewCell.h"
 #import "FeedDetailsViewController.h"
 

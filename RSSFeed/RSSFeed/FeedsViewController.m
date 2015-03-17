@@ -13,7 +13,7 @@
 
 @property RssReader* rssReader;
 @property NSMutableArray* feeds;
-@property RssRepository* repository;
+@property ManagedRssRepository* repository;
 @property NSArray* sources;
 @property NSArray* favorites;
 
@@ -29,8 +29,8 @@
         self.rssReader = [[RssReader alloc] init];
     
     if(self.repository == nil)
-        self.repository = [[RssRepository alloc] init];
-    
+        self.repository = [ManagedRssRepository instance];
+        
     UINib *nib = [UINib nibWithNibName:@"FeedCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"FeedCell"];
     

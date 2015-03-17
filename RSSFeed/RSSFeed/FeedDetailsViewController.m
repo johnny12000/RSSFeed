@@ -13,7 +13,7 @@
 
 @property Rss* feed;
 @property Source* source;
-@property RssRepository* repository;
+@property ManagedRssRepository* repository;
 
 @end
 
@@ -23,7 +23,7 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        self.repository = [RssRepository instance];
+        self.repository = [ManagedRssRepository instance];
     }
     return self;
 }
@@ -47,7 +47,7 @@
     
     RssReader *rdr = [[RssReader alloc] init];
     
-    id content = [rdr getContentOfUrl:self.feed.url];
+    id content = [rdr getContentOfUrl:[NSURL URLWithString: self.feed.url]];
     
     [self.contentWebView loadRequest:content];
 }
@@ -60,6 +60,8 @@
 #pragma mark - Actions
 
 - (IBAction)setFavorite:(id)sender {
+    
+    self.feed.isFavorite = self.feed.isFavorite ?  [NSNumber numberWithBool:FALSE] : [NSNumber numberWithBool:TRUE];
     
     BOOL result = [self.repository addFavorite:self.feed];
     

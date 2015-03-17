@@ -22,16 +22,30 @@
 }
 
 - (id) initWithUid:(NSString*)uid name:(NSString*)name url:(NSString*)url index:(NSInteger)index andImage:(NSData*)image andIsUsed:(BOOL)isUsed {
-    if(self == [super init]){
-        self.uid = uid;
-        self.name = name;
-        self.url = url;
-        //self.index = (NSNumber)index;
-        self.image = image;
-        //self.isUsed = (BOOL)isUsed;
-    }
     
-    return self;
+    Source* src = [NSEntityDescription insertNewObjectForEntityForName:@"Source"
+                                                inManagedObjectContext:[ManagedRssRepository instance].context];
+    src.uid = uid;
+    src.name = name;
+    src.url = url;
+    src.index = [NSNumber numberWithInt:index];
+    src.image = image;
+    src.isUsed = [NSNumber numberWithBool:isUsed];
+    
+    return src;
+}
+
++ (Source*) newSource {
+    Source* src = [NSEntityDescription insertNewObjectForEntityForName:@"Source"
+                                                inManagedObjectContext:[ManagedRssRepository instance].context];
+    src.uid = nil;
+    src.name = @"";
+    src.url = @"";
+    src.index = [NSNumber numberWithInt:0];
+    src.image = nil;
+    src.isUsed = [NSNumber numberWithBool:TRUE];
+    
+    return src;
 }
 
 @end

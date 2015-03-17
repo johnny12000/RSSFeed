@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Rss.h"
-#import "RssRepository.h"
+#import "ManagedRssRepository.h"
 #import "Rss+Notifications.h"
 #import "Source.h"
 

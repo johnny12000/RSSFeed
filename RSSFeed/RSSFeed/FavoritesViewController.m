@@ -11,7 +11,7 @@
 @interface FavoritesViewController ()
 
 @property NSArray* favorites;
-@property RssRepository* repository;
+@property ManagedRssRepository* repository;
 @property NSArray* sources;
 
 @end
@@ -23,7 +23,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     if(self.repository == nil)
-        self.repository = [[RssRepository alloc] init];
+        self.repository = [ManagedRssRepository instance];
     
     UINib *nib = [UINib nibWithNibName:@"FeedCell" bundle:nil];
     [self.favoritesTableView registerNib:nib forCellReuseIdentifier:@"FeedCell"];

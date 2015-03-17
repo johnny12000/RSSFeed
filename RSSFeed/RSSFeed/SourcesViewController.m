@@ -7,12 +7,12 @@
 //
 
 #import "SourcesViewController.h"
-#import "Repositories/RssRepository.h"
+#import "ManagedRssRepository.h"
 #import "Source.h"
 
 @interface SourcesViewController ()
 
-@property RssRepository* repository;
+@property ManagedRssRepository* repository;
 @property NSMutableArray* sources;
 
 @end
@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.repository = [[RssRepository alloc] init];
+    self.repository = [ManagedRssRepository instance];
     
     // Do any additional setup after loading the view.
     self.sourcesTable.delegate = self;
@@ -105,7 +105,7 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Source* source = [self.sources objectAtIndex:indexPath.row];
-    source.isUsed = TRUE;
+    source.isUsed = [NSNumber numberWithBool:TRUE];
     [self.repository updateSource:source];
 }
 

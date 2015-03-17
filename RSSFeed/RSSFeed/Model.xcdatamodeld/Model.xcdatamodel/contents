@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1510" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Favorites" representedClassName="Rss" syncable="YES"/>
     <entity name="Rss" representedClassName="Rss" syncable="YES">
         <attribute name="channel" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
@@ -20,6 +21,7 @@
     </entity>
     <elements>
         <element name="Rss" positionX="-45" positionY="0" width="128" height="165"/>
-        <element name="Source" positionX="-18" positionY="27" width="128" height="133"/>
+        <element name="Source" positionX="133" positionY="2" width="128" height="133"/>
+        <element name="Favorites" positionX="133" positionY="209" width="128" height="43"/>
     </elements>
 </model>
