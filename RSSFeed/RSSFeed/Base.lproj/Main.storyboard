@@ -188,8 +188,15 @@
                             <constraint firstItem="oQO-gH-rCk" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="lym-49-O7a"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ocg-oW-xmo"/>
+                    <navigationItem key="navigationItem" id="Ocg-oW-xmo">
+                        <barButtonItem key="rightBarButtonItem" title="Delete" id="jpn-lj-naY">
+                            <connections>
+                                <action selector="deleteClicked:" destination="8rJ-Kc-sve" id="uCa-iR-BjO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="deleteButton" destination="jpn-lj-naY" id="lwO-Zi-nzV"/>
                         <outlet property="favoritesTableView" destination="oQO-gH-rCk" id="jnx-bv-laG"/>
                         <segue destination="VKD-1z-80J" kind="show" identifier="FeedDetailSegue" id="Npj-1m-VpX"/>
                     </connections>

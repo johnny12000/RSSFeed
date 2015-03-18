@@ -15,6 +15,9 @@
 
 @interface FavoritesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *deleteButton;
+- (IBAction)deleteClicked:(id)sender;
+
 @property (strong, nonatomic) IBOutlet UITableView *favoritesTableView;
 
 @end

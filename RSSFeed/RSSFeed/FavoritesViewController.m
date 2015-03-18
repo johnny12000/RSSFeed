@@ -10,7 +10,7 @@
 
 @interface FavoritesViewController ()
 
-@property NSArray* favorites;
+@property NSMutableArray* favorites;
 @property ManagedRssRepository* repository;
 @property NSArray* sources;
 
@@ -43,7 +43,7 @@
 #pragma mark - Data
 
 - (void) reloadData {
-    self.favorites = [self.repository getFavorites];
+    self.favorites = [NSMutableArray arrayWithArray: [self.repository getFavorites]];
     self.sources = [self.repository getSources];
     
     [self.favoritesTableView reloadData];
@@ -74,6 +74,46 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self performSegueWithIdentifier:@"FeedDetailSegue" sender:self];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        Rss* object = (Rss*)[self.favorites objectAtIndex:indexPath.row];
+        object.isFavorite = [NSNumber numberWithBool:FALSE];
+        
+        [self.favorites removeObjectAtIndex:indexPath.row];
+        
+        NSError* error = nil;
+        BOOL result = [self.repository saveRepository:&error];
+        
+        if(result)
+        {
+            //TODO: display error message
+        }
+        
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        [self reloadData];
+    }
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+#pragma mark - Action
+
+- (IBAction)deleteClicked:(id)sender {
+    
+    self.favoritesTableView.editing = !self.favoritesTableView.editing;
+    
+    if(self.favoritesTableView.isEditing)
+        self.deleteButton.title = @"Done";
+    else
+        self.deleteButton.title = @"Delete";
+    
 }
 
 #pragma mark - Navigation
