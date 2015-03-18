@@ -1,0 +1,87 @@
+
+/* Class = "UILabel"; text = "RSSFeed"; ObjectID = "1SD-Ab-jdN"; */
+"1SD-Ab-jdN.text" = "RSSFeed";
+
+/* Class = "UILabel"; text = "Source"; ObjectID = "5gv-aS-iZm"; */
+"5gv-aS-iZm.text" = "Izvor";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "5ho-at-TBB"; */
+"5ho-at-TBB.title" = "Obriši";
+
+/* Class = "UILabel"; text = "Published"; ObjectID = "71b-jS-tze"; */
+"71b-jS-tze.text" = "Objavljeno";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "72z-nk-5Ly"; */
+"72z-nk-5Ly.text" = "Naslov";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "7P5-zZ-6XO"; */
+"7P5-zZ-6XO.text" = "Datum";
+
+/* Class = "UIViewController"; title = "Favorites"; ObjectID = "8rJ-Kc-sve"; */
+"8rJ-Kc-sve.title" = "Omiljeni";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "AUg-6g-3Dd"; */
+"AUg-6g-3Dd.title" = "Gotovo";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "EVA-Pm-Mn9"; */
+"EVA-Pm-Mn9.title" = "Otkaži";
+
+/* Class = "UITabBarItem"; title = "About"; ObjectID = "EuM-p6-GAW"; */
+"EuM-p6-GAW.title" = "O";
+
+/* Class = "UILabel"; text = "Source Name"; ObjectID = "GWg-Kp-TSi"; */
+"GWg-Kp-TSi.text" = "Ime izvora";
+
+/* Class = "UIBarButtonItem"; title = "Share"; ObjectID = "HEB-Qu-bTz"; */
+"HEB-Qu-bTz.title" = "Deli";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "HTX-Yz-riU"; */
+"HTX-Yz-riU.text" = "Naslov";
+
+/* Class = "UILabel"; text = "Lorem ipsum"; ObjectID = "L37-D7-u0C"; */
+"L37-D7-u0C.text" = "Lorem ipsum";
+
+/* Class = "UILabel"; text = "johnny12000@gmail.com"; ObjectID = "NFf-jD-luQ"; */
+"NFf-jD-luQ.text" = "johnny12000@gmail.com";
+
+/* Class = "UILabel"; text = "Version 1.0"; ObjectID = "Vub-df-Ng2"; */
+"Vub-df-Ng2.text" = "Verzija 1.0";
+
+/* Class = "UIViewController"; title = "Sources"; ObjectID = "WRw-mY-9KN"; */
+"WRw-mY-9KN.title" = "Izvori";
+
+/* Class = "UIBarButtonItem"; title = "Add"; ObjectID = "XPv-8g-iQz"; */
+"XPv-8g-iQz.title" = "Dodaj";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "XcA-5z-X0F"; */
+"XcA-5z-X0F.title" = "Naslov";
+
+/* Class = "UILabel"; text = "Nikola Ristic"; ObjectID = "cIn-nw-tMj"; */
+"cIn-nw-tMj.text" = "Nikola Ristic";
+
+/* Class = "UITabBarItem"; title = "Favorites"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Omiljeni";
+
+/* Class = "UITableViewController"; title = "Feeds"; ObjectID = "cUt-ZX-ex4"; */
+"cUt-ZX-ex4.title" = "Feedovi";
+
+/* Class = "UITabBarItem"; title = "Sources"; ObjectID = "cph-pG-30N"; */
+"cph-pG-30N.title" = "Izvori";
+
+/* Class = "UILabel"; text = "Source Url"; ObjectID = "d1k-2A-mmi"; */
+"d1k-2A-mmi.text" = "Izvorni Url";
+
+/* Class = "UINavigationItem"; title = "Add/Edit Source"; ObjectID = "kUa-NO-6Vz"; */
+"kUa-NO-6Vz.title" = "Dodaj/Promeni Izvor";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "lQI-su-JN2"; */
+"lQI-su-JN2.text" = "Opis";
+
+/* Class = "UITabBarItem"; title = "Feeds"; ObjectID = "nt5-07-NtU"; */
+"nt5-07-NtU.title" = "Feedovi";
+
+/* Class = "UIViewController"; title = "About"; ObjectID = "rUV-GS-w0L"; */
+"rUV-GS-w0L.title" = "O";
+
+/* Class = "UINavigationItem"; title = "Sources"; ObjectID = "s1P-VY-Xil"; */
+"s1P-VY-Xil.title" = "Izvori";
