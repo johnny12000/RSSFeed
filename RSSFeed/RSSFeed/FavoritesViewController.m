@@ -67,7 +67,7 @@
     
     Source* source = [[self.sources filteredArrayUsingPredicate:srcPredicate] firstObject];
     
-    [cell setCellModel:rss andSource:source isFavorite:TRUE];
+    [cell setCellModel:rss andSource:source index:indexPath.row];
     
     return cell;
 }

@@ -28,7 +28,7 @@
 }
 
 
-- (void) setCellModel:(Rss*)feed andSource:(Source*)source isFavorite:(BOOL)isFavorite {
+- (void) setCellModel:(Rss*)feed andSource:(Source*)source index:(int)index {
     
     self.feed = feed;
     self.source = source;
@@ -42,7 +42,10 @@
     self.sourceImageView.image = [UIImage imageWithData:source.image];
     self.feedImageView.image = [[UIImage alloc] initWithData:self.feed.image];
     
-    [self.isFavoriteImageView setHidden:!isFavorite];
+    [self.isFavoriteImageView setHidden:!feed.isFavorite];
+    
+    if(index % 2 == 1)
+        self.contentView.backgroundColor = [UIColor grayColor];
 }
 
 @end

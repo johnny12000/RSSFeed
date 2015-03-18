@@ -91,7 +91,7 @@
     NSPredicate* isFavPredicate = [NSPredicate predicateWithFormat:@"url = %@", url.absoluteString];
     BOOL isFavorite = [self.favorites filteredArrayUsingPredicate:isFavPredicate].count != 0;
     
-    [cell setCellModel:rss andSource:source isFavorite:isFavorite];
+    [cell setCellModel:rss andSource:source index:indexPath.row];
     
     return cell;
 }

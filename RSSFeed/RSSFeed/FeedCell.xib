@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -69,6 +69,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="contentView" destination="0Da-mU-Atg" id="hvC-LT-PuL"/>
                 <outlet property="feedDateLabel" destination="eRF-BM-dK1" id="fqX-Kz-zPh"/>
                 <outlet property="feedImageView" destination="mkF-01-f9T" id="SPH-Cx-cXb"/>
                 <outlet property="feedTitleLabel" destination="nOd-hA-Ob3" id="yc5-1u-tfg"/>
