@@ -91,9 +91,9 @@
                                     <rect key="frame" x="16" y="223" width="368" height="20.5"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biS-7k-Opn">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biS-7k-Opn">
                                 <rect key="frame" x="554" y="114" width="30" height="30"/>
-                                <state key="normal" image="first">
+                                <state key="normal" image="favorites">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -144,7 +144,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="XcA-5z-X0F">
-                        <barButtonItem key="rightBarButtonItem" title="Share" id="HEB-Qu-bTz">
+                        <barButtonItem key="rightBarButtonItem" image="share" id="HEB-Qu-bTz">
                             <connections>
                                 <action selector="shareFeed:" destination="VKD-1z-80J" id="R1C-tf-ptc"/>
                             </connections>
@@ -189,7 +189,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ocg-oW-xmo">
-                        <barButtonItem key="rightBarButtonItem" title="Delete" id="jpn-lj-naY">
+                        <barButtonItem key="rightBarButtonItem" image="delete" id="jpn-lj-naY">
                             <connections>
                                 <action selector="deleteClicked:" destination="8rJ-Kc-sve" id="uCa-iR-BjO"/>
                             </connections>
@@ -256,12 +256,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sources" id="s1P-VY-Xil">
-                        <barButtonItem key="leftBarButtonItem" title="Add" id="XPv-8g-iQz">
+                        <barButtonItem key="leftBarButtonItem" image="add" id="XPv-8g-iQz">
                             <connections>
                                 <segue destination="SiL-2G-m76" kind="show" identifier="AddSourceSegue" id="Pcr-F5-JpO"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Delete" id="5ho-at-TBB">
+                        <barButtonItem key="rightBarButtonItem" image="delete" id="5ho-at-TBB">
                             <connections>
                                 <action selector="setSourceDelete:" destination="WRw-mY-9KN" id="VJ3-zS-eQB"/>
                             </connections>
@@ -464,7 +464,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="first" id="EuM-p6-GAW"/>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="EuM-p6-GAW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aj2-zf-JwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -496,7 +496,7 @@
         <scene sceneID="e31-vy-aL2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7ey-6b-Smc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sources" image="first" id="cph-pG-30N"/>
+                    <tabBarItem key="tabBarItem" title="Sources" image="sources" id="cph-pG-30N"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aN6-sw-0KX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -515,7 +515,7 @@
         <scene sceneID="eqy-ea-bxR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9x1-pq-yJj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feeds" id="nt5-07-NtU"/>
+                    <tabBarItem key="tabBarItem" title="Feeds" image="feeds" id="nt5-07-NtU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gCf-sz-s7I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -534,7 +534,7 @@
         <scene sceneID="vGB-vy-Uu3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aBV-1p-Y6p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favorites" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y8D-C4-kVe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -551,8 +551,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="about" width="16" height="16"/>
+        <image name="add" width="16" height="16"/>
+        <image name="delete" width="16" height="16"/>
+        <image name="favorites" width="16" height="16"/>
+        <image name="feeds" width="16" height="16"/>
+        <image name="share" width="16" height="16"/>
+        <image name="sources" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="k2U-hk-VR3"/>

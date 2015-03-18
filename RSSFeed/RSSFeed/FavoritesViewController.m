@@ -110,7 +110,7 @@
     self.favoritesTableView.editing = !self.favoritesTableView.editing;
     
     if(self.favoritesTableView.isEditing)
-        self.deleteButton.title = @"Done";
+        self.deleteButton.title = NSLocalizedString(@"DONE", nil);
     else
         self.deleteButton.title = @"Delete";
     

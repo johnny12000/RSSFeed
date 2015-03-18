@@ -38,7 +38,7 @@
                             <rect key="frame" x="158" y="104" width="123.5" height="20.5"/>
                         </variation>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="jbv-7i-Vl1">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="jbv-7i-Vl1">
                         <rect key="frame" x="272" y="73" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="D5f-Fb-UoO"/>
@@ -80,6 +80,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="star" width="16" height="16"/>
     </resources>
 </document>
