@@ -52,7 +52,7 @@ static RssRepository *_instance;
             //NSData *imageData = [[NSData alloc]initWithBytes:sqlite3_column_blob(statement, 4) length:sqlite3_column_bytes(statement, 4)];
             BOOL isUsed = sqlite3_column_int(statement, 5);
             
-            Source *src = [[Source alloc]  initWithUid:uid name:name url:url index:index andImage:imageData andIsUsed:isUsed];
+            Source *src = nil;//[[Source alloc]  initWithUid:uid name:name url:url index:index andImage:imageData andIsUsed:isUsed];
             [retval addObject:src];
             
         }
