@@ -32,6 +32,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.contentWebView.delegate = self;
+    self.contentWebView.scrollView.scrollEnabled = NO;
+    //self.contentWebView.backgroundColor = [UIColor greenColor];
+    //self.view.backgroundColor = [UIColor redColor];
+    
     self.feedImageView.image = [UIImage imageWithData:self.feed.image];
     
     self.feedTitleLabel.text = self.feed.title;
@@ -50,6 +55,18 @@
     id content = [rdr getContentOfUrl:[NSURL URLWithString: self.feed.url]];
     
     [self.contentWebView loadRequest:content];
+    
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    
+    CGRect frame = self.contentWebView.frame;
+    frame.size.height = self.contentWebView.scrollView.contentSize.height;
+    self.contentWebView.frame = frame;
+    
+    self.feedScrollView.contentSize = frame.size;
+    
+    [self.contentWebView sizeToFit];
 }
 
 - (void)didReceiveMemoryWarning {

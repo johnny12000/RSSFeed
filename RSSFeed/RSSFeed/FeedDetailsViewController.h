@@ -12,7 +12,8 @@
 #import "Rss+Notifications.h"
 #import "Source.h"
 
-@interface FeedDetailsViewController : UIViewController
+@interface FeedDetailsViewController : UIViewController<UIWebViewDelegate>
+@property (strong, nonatomic) IBOutlet UIScrollView *feedScrollView;
 
 @property (strong, nonatomic) IBOutlet UIImageView *feedImageView;
 @property (strong, nonatomic) IBOutlet UILabel *feedDateLabel;
