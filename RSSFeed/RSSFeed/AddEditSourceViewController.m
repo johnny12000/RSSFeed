@@ -67,6 +67,8 @@
         NSError* repoerror = nil;
         result = [self.repository saveRepository:&repoerror];
         
+        [self notifySourceAddedOrChanged];
+        
         if(result){
             //TODO: some message should be displayed
         }
@@ -88,6 +90,13 @@
 
 - (IBAction)linkChanged:(id)sender {
     [self setViewState];
+}
+
+- (void) notifySourceAddedOrChanged {
+    
+    NSNotification *notification = [NSNotification notificationWithName:@"SourceChanged" object:self];
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
+    
 }
 
 #pragma mark - Set Model

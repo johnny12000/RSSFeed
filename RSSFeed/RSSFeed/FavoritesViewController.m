@@ -17,6 +17,21 @@
 @end
 
 @implementation FavoritesViewController
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserverForName:@"NewFavorite" object:self queue:nil usingBlock:^(NSNotification *note) {
+            [self reloadData];
+        }];
+    }
+    return self;
+}
+
+- (void) dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:nil name:@"NewFavorite" object:nil];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

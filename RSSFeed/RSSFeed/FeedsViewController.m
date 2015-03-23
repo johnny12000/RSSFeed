@@ -21,6 +21,23 @@
 
 @implementation FeedsViewController
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        
+        [[NSNotificationCenter defaultCenter] addObserverForName:@"SourceChanged" object:nil queue:nil usingBlock:^(NSNotification* notification){
+            [self refreshData];
+        }];
+    }
+    return self;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:nil name:@"SourceChanged" object:nil];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
