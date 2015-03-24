@@ -99,9 +99,8 @@
     FeedTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     Rss* rss = [self.feeds objectAtIndex:indexPath.row];
-    NSPredicate* srcPredicate = [NSPredicate predicateWithFormat:@"url = %@", rss.channel];
     
-    Source* source = [[self.sources filteredArrayUsingPredicate:srcPredicate] firstObject];
+    Source* source = [self.sources getSourceForRss:rss];
     
     [cell setCellModel:rss andSource:source index:indexPath.row];
     
@@ -121,10 +120,7 @@
         FeedDetailsViewController *vc = [segue destinationViewController];
         
         Rss* rss = [self.feeds objectAtIndex:self.tableView.indexPathForSelectedRow.row];
-        
-        NSPredicate* srcPredicate = [NSPredicate predicateWithFormat:@"url = %@", rss.channel];
-        
-        Source* source = [[self.sources filteredArrayUsingPredicate:srcPredicate] firstObject];
+        Source* source = [self.sources getSourceForRss:rss];
         
         [vc setModel:rss withSource:source];
     }

@@ -17,6 +17,7 @@
 		A794897A1AB73818007F36FC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A79489781AB73818007F36FC /* Model.xcdatamodeld */; };
 		A7D2C90B1AC06ED700857B97 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D2C90A1AC06ED700857B97 /* Constants.m */; };
 		A7D3D1F31AB98F22003DE94C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7D3D1F51AB98F22003DE94C /* Localizable.strings */; };
+		A7DAD01C1AC1730C003892B4 /* NSArray+Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DAD01B1AC1730C003892B4 /* NSArray+Filters.m */; };
 		A7DBF3A21AA604FA0060AC9B /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */; };
 		A7DF5CD91AB82D0300A9AE5F /* ManagedRssRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DF5CD81AB82D0300A9AE5F /* ManagedRssRepository.m */; };
 		B2F188DC1A7EBCA1007DECDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188DB1A7EBCA1007DECDE /* main.m */; };
@@ -74,6 +75,8 @@
 		A7D3D1F01AB97F54003DE94C /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A7D3D1F41AB98F22003DE94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A7D3D1F61AB98F25003DE94C /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A7DAD01A1AC1730C003892B4 /* NSArray+Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Filters.h"; path = "Helpers/NSArray+Filters.h"; sourceTree = "<group>"; };
+		A7DAD01B1AC1730C003892B4 /* NSArray+Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Filters.m"; path = "Helpers/NSArray+Filters.m"; sourceTree = "<group>"; };
 		A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		A7DF5CD71AB82D0300A9AE5F /* ManagedRssRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagedRssRepository.h; path = Repositories/ManagedRssRepository.h; sourceTree = "<group>"; };
 		A7DF5CD81AB82D0300A9AE5F /* ManagedRssRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManagedRssRepository.m; path = Repositories/ManagedRssRepository.m; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				B2F4B7AC1A9F8D830097D219 /* NSString+Validation.m */,
 				B2F4B7B41A9F9BED0097D219 /* Rss+Notifications.h */,
 				B2F4B7B51A9F9BED0097D219 /* Rss+Notifications.m */,
+				A7DAD01A1AC1730C003892B4 /* NSArray+Filters.h */,
+				A7DAD01B1AC1730C003892B4 /* NSArray+Filters.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				A73A44071A890DF300728E3A /* Source.m in Sources */,
 				A73A440B1A890EF000728E3A /* RssReader.m in Sources */,
 				B2F4B7AA1A9CEA090097D219 /* FeedDetailsViewController.m in Sources */,
+				A7DAD01C1AC1730C003892B4 /* NSArray+Filters.m in Sources */,
 				B2F188DF1A7EBCA1007DECDE /* AppDelegate.m in Sources */,
 				B2F4B7B91A9F9D5A0097D219 /* MainTabBarController.m in Sources */,
 				B2F188E21A7EBCA1007DECDE /* FeedsViewController.m in Sources */,

@@ -12,6 +12,7 @@
 #import "FeedTableViewCell.h"
 #import "FeedDetailsViewController.h"
 #import "Constants.h"
+#import "NSArray+Filters.h"
 
 @interface FeedsViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
 
