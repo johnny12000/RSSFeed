@@ -21,14 +21,31 @@
 
 @implementation FeedsViewController
 
+#pragma mark - Initialization
+
 - (instancetype)initWithCoder:(NSCoder *)coder
+{
+    return [self initWithCoder:coder reader:[[RssReader alloc] init] andRepository:[ManagedRssRepository instance]];
+}
+
+- (instancetype) initWithCoder:(NSCoder *)coder reader:(RssReader*)rssReader andRepository:(ManagedRssRepository*)rssRepository
 {
     self = [super initWithCoder:coder];
     if (self) {
         
-        [[NSNotificationCenter defaultCenter] addObserverForName:NOTIFICATION_SOURCE_CHANGED object:nil queue:nil usingBlock:^(NSNotification* notification){
+        [[NSNotificationCenter defaultCenter] addObserverForName:NOTIFICATION_SOURCE_CHANGED
+                                                          object:nil
+                                                           queue:nil
+                                                      usingBlock:^(NSNotification* notification){
             [self refreshData];
         }];
+        
+        if(self.rssReader == nil)
+            self.rssReader = rssReader;
+        
+        if(self.repository == nil)
+            self.repository = rssRepository;
+        
     }
     return self;
 }
@@ -37,17 +54,12 @@
     [[NSNotificationCenter defaultCenter] removeObserver:nil name:NOTIFICATION_SOURCE_CHANGED object:nil];
 }
 
+#pragma mark - Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    if(self.rssReader == nil)
-        self.rssReader = [[RssReader alloc] init];
-    
-    if(self.repository == nil)
-        self.repository = [ManagedRssRepository instance];
-        
     UINib *nib = [UINib nibWithNibName:NIB_FEED_CELL bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:NIB_FEED_CELL];
     
@@ -72,7 +84,6 @@
     NSPredicate* filterSources = [NSPredicate predicateWithFormat:@"isUsed = TRUE"];
     
     self.sources = [[self.repository getSources] filteredArrayUsingPredicate:filterSources];
-    
     self.favorites = [self.repository getFavorites];
     
     self.feeds = [[NSMutableArray alloc]init];

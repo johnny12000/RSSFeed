@@ -17,13 +17,24 @@
 @end
 
 @implementation FavoritesViewController
+
+#pragma mark - Initialization
+
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
+    return [self initWithCoder:coder andRepository:[ManagedRssRepository instance]];
+}
+
+- (instancetype) initWithCoder:(NSCoder *)coder andRepository:(ManagedRssRepository*)repository {
     self = [super initWithCoder:coder];
     if (self) {
         [[NSNotificationCenter defaultCenter] addObserverForName:NOTIFICATION_NEW_FAVORITE object:self queue:nil usingBlock:^(NSNotification *note) {
             [self reloadData];
         }];
+        
+        if(self.repository == nil)
+            self.repository = repository;
+        
     }
     return self;
 }
@@ -32,13 +43,12 @@
     [[NSNotificationCenter defaultCenter] removeObserver:nil name:NOTIFICATION_NEW_FAVORITE object:nil];
 }
 
+#pragma mark - Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    if(self.repository == nil)
-        self.repository = [ManagedRssRepository instance];
     
     UINib *nib = [UINib nibWithNibName:NIB_FEED_CELL bundle:nil];
     [self.favoritesTableView registerNib:nib forCellReuseIdentifier:NIB_FEED_CELL];

@@ -18,16 +18,24 @@
 
 @implementation AddEditSourceViewController
 
+#pragma mark - Initialization
+
 - (instancetype)initWithCoder:(NSCoder *)coder
+{
+    return [self initWithCoder:coder reader:[[RssReader alloc] init] repository:[ManagedRssRepository instance]];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder reader:(RssReader*)reader repository:(ManagedRssRepository*)rssRepository
 {
     self = [super initWithCoder:coder];
     if (self) {
-        self.reader = [[RssReader alloc] init];
-        self.repository = [ManagedRssRepository instance];
+        self.reader = reader;
+        self.repository = rssRepository;
     }
     return self;
 }
 
+#pragma mark - Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];

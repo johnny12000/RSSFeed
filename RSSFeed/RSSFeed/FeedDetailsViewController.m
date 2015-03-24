@@ -18,15 +18,23 @@
 
 @implementation FeedDetailsViewController
 
+#pragma mark - Initalization
+
 - (instancetype)initWithCoder:(NSCoder *)coder
+{
+    return [self initWithCoder:coder repository:[ManagedRssRepository instance]];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder repository:(ManagedRssRepository*)rssRepo
 {
     self = [super initWithCoder:coder];
     if (self) {
-        self.repository = [ManagedRssRepository instance];
+        self.repository = rssRepo;
     }
     return self;
 }
 
+#pragma mark - Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];

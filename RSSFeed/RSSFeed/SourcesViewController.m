@@ -23,10 +23,27 @@
 @synthesize repository;
 @synthesize sources;
 
+
+#pragma mark - Initialization
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    return [self initWithCoder:coder repository:[ManagedRssRepository instance]];
+}
+
+- (instancetype) initWithCoder:(NSCoder *)coder repository:(ManagedRssRepository*)rssRepository {
+    self = [super initWithCoder:coder];
+    if (self) {
+        if(!self.repository)
+            self.repository = rssRepository;
+    }
+    return self;
+}
+
+#pragma mark - Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.repository = [ManagedRssRepository instance];
     
     // Do any additional setup after loading the view.
     self.sourcesTable.delegate = self;
