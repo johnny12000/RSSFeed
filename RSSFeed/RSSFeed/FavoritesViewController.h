@@ -11,6 +11,7 @@
 #import "ManagedRssRepository.h"
 #import "FeedTableViewCell.h"
 #import "FeedDetailsViewController.h"
+#import "Constants.h"
 
 
 @interface FavoritesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>

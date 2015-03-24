@@ -21,7 +21,7 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        [[NSNotificationCenter defaultCenter] addObserverForName:@"NewFavorite" object:self queue:nil usingBlock:^(NSNotification *note) {
+        [[NSNotificationCenter defaultCenter] addObserverForName:NOTIFICATION_NEW_FAVORITE object:self queue:nil usingBlock:^(NSNotification *note) {
             [self reloadData];
         }];
     }
@@ -29,7 +29,7 @@
 }
 
 - (void) dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:nil name:@"NewFavorite" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:nil name:NOTIFICATION_NEW_FAVORITE object:nil];
 }
 
 
@@ -40,8 +40,8 @@
     if(self.repository == nil)
         self.repository = [ManagedRssRepository instance];
     
-    UINib *nib = [UINib nibWithNibName:@"FeedCell" bundle:nil];
-    [self.favoritesTableView registerNib:nib forCellReuseIdentifier:@"FeedCell"];
+    UINib *nib = [UINib nibWithNibName:NIB_FEED_CELL bundle:nil];
+    [self.favoritesTableView registerNib:nib forCellReuseIdentifier:NIB_FEED_CELL];
     
     self.favoritesTableView.dataSource = self;
     self.favoritesTableView.delegate = self;

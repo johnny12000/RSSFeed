@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Rss.h"
 #import "Source.h"
+#import "Constants.h"
 
 @interface FeedTableViewCell : UITableViewCell
 
