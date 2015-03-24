@@ -7,6 +7,7 @@
 //
 
 #import "MainTabBarController.h"
+
 @interface MainTabBarController ()
 
 @property NSInteger numberOfNewFavorites;
@@ -23,7 +24,7 @@
     if (self) {
         self.numberOfNewFavorites = 0;
         
-        [[NSNotificationCenter defaultCenter] addObserverForName:@"NewFavorite" object:nil queue:nil usingBlock:^(NSNotification* notification){
+        [[NSNotificationCenter defaultCenter] addObserverForName:NOTIFICATION_NEW_FAVORITE object:nil queue:nil usingBlock:^(NSNotification* notification){
             self.numberOfNewFavorites++;
             
             UITabBarItem *tabBarItem = [[self.mainTabBar items] objectAtIndex:1];
@@ -37,7 +38,7 @@
 
 - (void)dealloc
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:nil name:@"NewFavorite" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:nil name:NOTIFICATION_NEW_FAVORITE object:nil];
 }
 
 

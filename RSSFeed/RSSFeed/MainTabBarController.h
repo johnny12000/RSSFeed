@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants.h"
 
 @interface MainTabBarController : UITabBarController
 @property (strong, nonatomic) IBOutlet UITabBar *mainTabBar;

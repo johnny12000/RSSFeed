@@ -7,6 +7,7 @@
 //
 
 #import "Rss.h"
+#import "Constants.h"
 
 @interface Rss (Notifications)
 

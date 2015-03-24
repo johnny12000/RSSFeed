@@ -12,7 +12,7 @@
 
 - (void) notifyFeedAddedToFavorites {
     
-    NSNotification *notification = [NSNotification notificationWithName:@"NewFavorite" object:self];
+    NSNotification *notification = [NSNotification notificationWithName:NOTIFICATION_NEW_FAVORITE object:self];
     
     [[NSNotificationCenter defaultCenter] postNotification:notification];
 }

@@ -7,7 +7,6 @@
 //
 
 #import "FeedDetailsViewController.h"
-#import "RssReader.h"
 
 @interface FeedDetailsViewController ()
 
@@ -42,7 +41,7 @@
     self.feedTitleLabel.text = self.feed.title;
     
     NSDateFormatter* formatter  = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"dd.MM.YYYY HH:mm"];
+    [formatter setDateFormat:DATE_FORMAT];
     
     self.feedDateLabel.text = [formatter stringFromDate: self.feed.date];
     

@@ -9,4 +9,7 @@
 #import "Constants.h"
 
 NSString* const NOTIFICATION_SOURCE_CHANGED = @"SourceChanged";
+NSString* const NOTIFICATION_NEW_FAVORITE = @"NewFavorite";
+
 NSString* const NIB_FEED_CELL = @"FeedCell";
+NSString* const DATE_FORMAT = @"dd.MM.YYYY HH:mm";

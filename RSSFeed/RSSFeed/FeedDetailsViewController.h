@@ -11,6 +11,8 @@
 #import "ManagedRssRepository.h"
 #import "Rss+Notifications.h"
 #import "Source.h"
+#import "Constants.h"
+#import "RssReader.h"
 
 @interface FeedDetailsViewController : UIViewController<UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIScrollView *feedScrollView;
