@@ -44,6 +44,8 @@
     //self.contentWebView.backgroundColor = [UIColor greenColor];
     //self.view.backgroundColor = [UIColor redColor];
     
+    self.navigationItem.title = self.feed.title;
+    
     self.feedImageView.image = [UIImage imageWithData:self.feed.image];
     
     self.feedTitleLabel.text = self.feed.title;
@@ -74,6 +76,8 @@
     self.feedScrollView.contentSize = frame.size;
     
     [self.contentWebView sizeToFit];
+    
+    self.webViewHeightConstraint.constant = frame.size.height;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -23,6 +23,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *sourceImageView;
 @property (strong, nonatomic) IBOutlet UILabel *feedDescriptionLabel;
 @property (strong, nonatomic) IBOutlet UIWebView *contentWebView;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *webViewHeightConstraint;
 
 - (IBAction)setFavorite:(id)sender;
 - (IBAction)shareFeed:(id)sender;
