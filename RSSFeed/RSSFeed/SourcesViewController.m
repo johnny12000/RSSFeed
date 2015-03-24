@@ -98,11 +98,11 @@
     
     if ([self.sourcesTable isEditing]) {
         [self.sourcesTable setEditing:NO animated:YES];
-        self.deleteButton.title = @"Delete";
+        self.deleteButton.image = [UIImage imageNamed:@"delete"];
     }
     else {
         [self.sourcesTable setEditing:YES animated:YES];
-        self.deleteButton.title = @"Done";
+        self.deleteButton.image = [UIImage imageNamed:@"done"];
     }
 }
 

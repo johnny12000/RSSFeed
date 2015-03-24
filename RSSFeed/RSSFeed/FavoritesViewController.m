@@ -122,13 +122,13 @@
 
 - (IBAction)deleteClicked:(id)sender {
     
-    self.favoritesTableView.editing = !self.favoritesTableView.editing;
-    
-    if(self.favoritesTableView.isEditing)
-        self.deleteButton.title = NSLocalizedString(@"DONE", nil);
-    else
-        self.deleteButton.title = @"Delete";
-    
+    if(self.favoritesTableView.isEditing){
+        [self.favoritesTableView setEditing:NO animated:YES];
+        self.deleteButton.image = [UIImage imageNamed:@"delete"];
+    } else {
+        [self.favoritesTableView setEditing:YES animated:YES];
+        self.deleteButton.image = [UIImage imageNamed:@"done"];
+    }
 }
 
 #pragma mark - Navigation
