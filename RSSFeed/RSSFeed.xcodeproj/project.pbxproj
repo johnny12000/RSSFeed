@@ -15,6 +15,7 @@
 		A73A440B1A890EF000728E3A /* RssReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A440A1A890EF000728E3A /* RssReader.m */; };
 		A73A440E1A89135F00728E3A /* RssReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A440D1A89135F00728E3A /* RssReaderTests.m */; };
 		A794897A1AB73818007F36FC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A79489781AB73818007F36FC /* Model.xcdatamodeld */; };
+		A7D2C90B1AC06ED700857B97 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D2C90A1AC06ED700857B97 /* Constants.m */; };
 		A7D3D1F31AB98F22003DE94C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7D3D1F51AB98F22003DE94C /* Localizable.strings */; };
 		A7DBF3A21AA604FA0060AC9B /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */; };
 		A7DF5CD91AB82D0300A9AE5F /* ManagedRssRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DF5CD81AB82D0300A9AE5F /* ManagedRssRepository.m */; };
@@ -67,6 +68,8 @@
 		A73A440A1A890EF000728E3A /* RssReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssReader.m; path = ServiceAgents/RssReader.m; sourceTree = "<group>"; };
 		A73A440D1A89135F00728E3A /* RssReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RssReaderTests.m; path = ServiceAgents/RssReaderTests.m; sourceTree = "<group>"; };
 		A79489791AB73818007F36FC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A7D2C9091AC0640700857B97 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A7D2C90A1AC06ED700857B97 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		A7D3D1EF1AB97F54003DE94C /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Main.strings; sourceTree = "<group>"; };
 		A7D3D1F01AB97F54003DE94C /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A7D3D1F41AB98F22003DE94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 				A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */,
 				A79489781AB73818007F36FC /* Model.xcdatamodeld */,
 				A7D3D1F51AB98F22003DE94C /* Localizable.strings */,
+				A7D2C9091AC0640700857B97 /* Constants.h */,
+				A7D2C90A1AC06ED700857B97 /* Constants.m */,
 			);
 			path = RSSFeed;
 			sourceTree = "<group>";
@@ -402,6 +407,7 @@
 				B2F189121A7EC464007DECDE /* AboutViewController.m in Sources */,
 				B2F1890F1A7EC457007DECDE /* SourcesViewController.m in Sources */,
 				A7109EC81A9CBE3400A68D19 /* FeedTableViewCell.m in Sources */,
+				A7D2C90B1AC06ED700857B97 /* Constants.m in Sources */,
 				B2F188E51A7EBCA1007DECDE /* FavoritesViewController.m in Sources */,
 				A73A44071A890DF300728E3A /* Source.m in Sources */,
 				A73A440B1A890EF000728E3A /* RssReader.m in Sources */,
@@ -497,6 +503,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",

@@ -94,7 +94,7 @@
 
 - (void) notifySourceAddedOrChanged {
     
-    NSNotification *notification = [NSNotification notificationWithName:@"SourceChanged" object:self];
+    NSNotification *notification = [NSNotification notificationWithName:NOTIFICATION_SOURCE_CHANGED object:self];
     [[NSNotificationCenter defaultCenter] postNotification:notification];
     
 }

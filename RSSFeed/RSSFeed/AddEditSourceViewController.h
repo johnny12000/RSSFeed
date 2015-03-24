@@ -11,6 +11,7 @@
 #import "ManagedRssRepository.h"
 #import "RssReader.h"
 #import "NSString+Validation.h"
+#import "Constants.h"
 
 @interface AddEditSourceViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextField *sourceNameTextField;

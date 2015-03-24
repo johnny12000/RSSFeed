@@ -26,7 +26,7 @@
     self = [super initWithCoder:coder];
     if (self) {
         
-        [[NSNotificationCenter defaultCenter] addObserverForName:@"SourceChanged" object:nil queue:nil usingBlock:^(NSNotification* notification){
+        [[NSNotificationCenter defaultCenter] addObserverForName:NOTIFICATION_SOURCE_CHANGED object:nil queue:nil usingBlock:^(NSNotification* notification){
             [self refreshData];
         }];
     }
@@ -34,7 +34,7 @@
 }
 
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:nil name:@"SourceChanged" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:nil name:NOTIFICATION_SOURCE_CHANGED object:nil];
 }
 
 
@@ -48,8 +48,8 @@
     if(self.repository == nil)
         self.repository = [ManagedRssRepository instance];
         
-    UINib *nib = [UINib nibWithNibName:@"FeedCell" bundle:nil];
-    [self.tableView registerNib:nib forCellReuseIdentifier:@"FeedCell"];
+    UINib *nib = [UINib nibWithNibName:NIB_FEED_CELL bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:NIB_FEED_CELL];
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     self.refreshControl = refreshControl;
@@ -102,11 +102,6 @@
     NSPredicate* srcPredicate = [NSPredicate predicateWithFormat:@"url = %@", rss.channel];
     
     Source* source = [[self.sources filteredArrayUsingPredicate:srcPredicate] firstObject];
-    
-    NSURL*url = [NSURL URLWithString:rss.url];
-    
-    NSPredicate* isFavPredicate = [NSPredicate predicateWithFormat:@"url = %@", url.absoluteString];
-    BOOL isFavorite = [self.favorites filteredArrayUsingPredicate:isFavPredicate].count != 0;
     
     [cell setCellModel:rss andSource:source index:indexPath.row];
     
