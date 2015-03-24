@@ -18,7 +18,7 @@
                             <outlet property="delegate" destination="cUt-ZX-ex4" id="dCg-cv-fMd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="oEA-CQ-Ael"/>
+                    <navigationItem key="navigationItem" title="Feeds" id="oEA-CQ-Ael"/>
                     <connections>
                         <segue destination="VKD-1z-80J" kind="show" identifier="FeedDetailSegue" id="Rhl-Wo-4wB"/>
                     </connections>
@@ -182,7 +182,7 @@
                             <constraint firstItem="oQO-gH-rCk" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="lym-49-O7a"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ocg-oW-xmo">
+                    <navigationItem key="navigationItem" title="Favorites" id="Ocg-oW-xmo">
                         <barButtonItem key="rightBarButtonItem" image="delete" id="jpn-lj-naY">
                             <connections>
                                 <action selector="deleteClicked:" destination="8rJ-Kc-sve" id="uCa-iR-BjO"/>
