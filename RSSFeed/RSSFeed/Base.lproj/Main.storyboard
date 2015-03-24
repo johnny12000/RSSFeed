@@ -170,7 +170,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="118" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oQO-gH-rCk">
-                                <rect key="frame" x="0.0" y="64" width="600" height="472"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -178,8 +178,8 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="oQO-gH-rCk" secondAttribute="centerX" id="BG7-zj-4LN"/>
                             <constraint firstAttribute="width" secondItem="oQO-gH-rCk" secondAttribute="width" id="NBc-MK-asd"/>
-                            <constraint firstAttribute="centerY" secondItem="oQO-gH-rCk" secondAttribute="centerY" id="Zjh-By-Hbn"/>
-                            <constraint firstItem="oQO-gH-rCk" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="lym-49-O7a"/>
+                            <constraint firstItem="oQO-gH-rCk" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="-64" id="lym-49-O7a"/>
+                            <constraint firstAttribute="height" secondItem="oQO-gH-rCk" secondAttribute="height" id="nie-dj-D75"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="Ocg-oW-xmo">
