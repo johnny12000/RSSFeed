@@ -34,11 +34,7 @@
     self.source = source;
     
     self.feedTitleLabel.text = self.feed.title;
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:DATE_FORMAT];
-    
-    self.feedDateLabel.text = [dateFormatter stringFromDate:self.feed.date];
+    self.feedDateLabel.text = [self.feed.date getDateString];
     self.sourceImageView.image = [UIImage imageWithData:source.image];
     self.feedImageView.image = [[UIImage alloc] initWithData:self.feed.image];
     

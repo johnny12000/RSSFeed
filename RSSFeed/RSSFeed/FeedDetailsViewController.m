@@ -13,6 +13,7 @@
 @property Rss* feed;
 @property Source* source;
 @property ManagedRssRepository* repository;
+@property RssReader* reader;
 
 @end
 
@@ -22,14 +23,15 @@
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
-    return [self initWithCoder:coder repository:[ManagedRssRepository instance]];
+    return [self initWithCoder:coder repository:[ManagedRssRepository instance] reader:[[RssReader alloc] init]];
 }
 
-- (instancetype)initWithCoder:(NSCoder *)coder repository:(ManagedRssRepository*)rssRepo
+- (instancetype)initWithCoder:(NSCoder *)coder repository:(ManagedRssRepository*)rssRepo reader:(RssReader*)rssReader
 {
     self = [super initWithCoder:coder];
     if (self) {
         self.repository = rssRepo;
+        self.reader = rssReader;
     }
     return self;
 }
@@ -41,28 +43,16 @@
     
     self.contentWebView.delegate = self;
     self.contentWebView.scrollView.scrollEnabled = NO;
-    //self.contentWebView.backgroundColor = [UIColor greenColor];
-    //self.view.backgroundColor = [UIColor redColor];
     
     self.navigationItem.title = self.feed.title;
     
     self.feedImageView.image = [UIImage imageWithData:self.feed.image];
-    
     self.feedTitleLabel.text = self.feed.title;
-    
-    NSDateFormatter* formatter  = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:DATE_FORMAT];
-    
-    self.feedDateLabel.text = [formatter stringFromDate: self.feed.date];
-    
-    self.feedDescriptionLabel.text = self.feed.shortdescription;//.description;
-    
+    self.feedDateLabel.text = [self.feed.date getDateString];
+    self.feedDescriptionLabel.text = self.feed.shortdescription;
     self.sourceImageView.image = [UIImage imageWithData:self.source.image];
     
-    RssReader *rdr = [[RssReader alloc] init];
-    
-    id content = [rdr getContentOfUrl:[NSURL URLWithString: self.feed.url]];
-    
+    id content = [self.reader getContentOfUrl:[NSURL URLWithString: self.feed.url]];
     [self.contentWebView loadRequest:content];
     
 }

@@ -10,6 +10,7 @@
 #import "Rss.h"
 #import "Source.h"
 #import "Constants.h"
+#import "NSDate+Formats.h"
 
 @interface FeedTableViewCell : UITableViewCell
 

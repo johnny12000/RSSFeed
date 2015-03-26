@@ -18,6 +18,7 @@
 		A7D2C90B1AC06ED700857B97 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D2C90A1AC06ED700857B97 /* Constants.m */; };
 		A7D3D1F31AB98F22003DE94C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7D3D1F51AB98F22003DE94C /* Localizable.strings */; };
 		A7DAD01C1AC1730C003892B4 /* NSArray+Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DAD01B1AC1730C003892B4 /* NSArray+Filters.m */; };
+		A7DB78F31AC4023C00AEF88C /* NSDate+Formats.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DB78F21AC4023C00AEF88C /* NSDate+Formats.m */; };
 		A7DBF3A21AA604FA0060AC9B /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */; };
 		A7DF5CD91AB82D0300A9AE5F /* ManagedRssRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DF5CD81AB82D0300A9AE5F /* ManagedRssRepository.m */; };
 		B2F188DC1A7EBCA1007DECDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F188DB1A7EBCA1007DECDE /* main.m */; };
@@ -77,6 +78,8 @@
 		A7D3D1F61AB98F25003DE94C /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A7DAD01A1AC1730C003892B4 /* NSArray+Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Filters.h"; path = "Helpers/NSArray+Filters.h"; sourceTree = "<group>"; };
 		A7DAD01B1AC1730C003892B4 /* NSArray+Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Filters.m"; path = "Helpers/NSArray+Filters.m"; sourceTree = "<group>"; };
+		A7DB78F11AC4023C00AEF88C /* NSDate+Formats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Formats.h"; path = "Helpers/NSDate+Formats.h"; sourceTree = "<group>"; };
+		A7DB78F21AC4023C00AEF88C /* NSDate+Formats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Formats.m"; path = "Helpers/NSDate+Formats.m"; sourceTree = "<group>"; };
 		A7DBF3A11AA604FA0060AC9B /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		A7DF5CD71AB82D0300A9AE5F /* ManagedRssRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagedRssRepository.h; path = Repositories/ManagedRssRepository.h; sourceTree = "<group>"; };
 		A7DF5CD81AB82D0300A9AE5F /* ManagedRssRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManagedRssRepository.m; path = Repositories/ManagedRssRepository.m; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				B2F4B7B51A9F9BED0097D219 /* Rss+Notifications.m */,
 				A7DAD01A1AC1730C003892B4 /* NSArray+Filters.h */,
 				A7DAD01B1AC1730C003892B4 /* NSArray+Filters.m */,
+				A7DB78F11AC4023C00AEF88C /* NSDate+Formats.h */,
+				A7DB78F21AC4023C00AEF88C /* NSDate+Formats.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 				A7DAD01C1AC1730C003892B4 /* NSArray+Filters.m in Sources */,
 				B2F188DF1A7EBCA1007DECDE /* AppDelegate.m in Sources */,
 				B2F4B7B91A9F9D5A0097D219 /* MainTabBarController.m in Sources */,
+				A7DB78F31AC4023C00AEF88C /* NSDate+Formats.m in Sources */,
 				B2F188E21A7EBCA1007DECDE /* FeedsViewController.m in Sources */,
 				B2F4B7B61A9F9BED0097D219 /* Rss+Notifications.m in Sources */,
 				B2F188DC1A7EBCA1007DECDE /* main.m in Sources */,
